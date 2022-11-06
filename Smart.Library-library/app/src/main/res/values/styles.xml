@@ -10,4 +10,5 @@
 
     </style>
 
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight">    </style>
 </resources>

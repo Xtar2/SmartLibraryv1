@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.ErrorCodes;
@@ -25,12 +26,13 @@ import java.util.List;
 
 public class LoginActivity extends AppCompatActivity {
     private static final int RC_SIGN_IN = 123;
-
+    int modeNightYes = AppCompatDelegate.MODE_NIGHT_YES;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         login();
+
     }
 
     private void login() {
@@ -56,7 +58,7 @@ public class LoginActivity extends AppCompatActivity {
                     AuthUI.getInstance().createSignInIntentBuilder()
                             .setAvailableProviders(providers)
                             .setIsSmartLockEnabled(false)
-                            .setLogo(R.drawable.logo)
+                            .setLogo(R.drawable.logomodooscuro)
                             .build(),
                     RC_SIGN_IN);
         }
@@ -90,6 +92,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         }
     }
+
 }
 
 

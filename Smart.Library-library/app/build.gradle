@@ -67,6 +67,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore:24.4.0'
     implementation 'com.google.android.gms:play-services-auth:20.3.0'
     implementation 'com.google.firebase:firebase-auth:20.3.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
 
     //Zxing
 implementation 'com.journeyapps:zxing-android-embedded:4.1.0'

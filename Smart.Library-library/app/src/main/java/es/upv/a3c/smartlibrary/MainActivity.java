@@ -16,6 +16,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.SearchView;
+import android.widget.Toolbar;
 
 import com.firebase.ui.auth.AuthUI;
 import com.getbase.floatingactionbutton.FloatingActionButton;
@@ -40,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
 
 
@@ -115,7 +118,9 @@ MenuBoton.collapse();
         });
 
 
+
     }
+
 
 
     @Override
@@ -139,7 +144,7 @@ MenuBoton.collapse();
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        if (id == R.id.menu_usuario) {
+        if (id == R.id.imagen) {
             Intent intent = new Intent(this, UsuarioActivity.class);
             startActivity(intent);
         }

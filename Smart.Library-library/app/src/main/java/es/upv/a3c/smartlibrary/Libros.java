@@ -5,9 +5,11 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.SearchView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -32,6 +34,7 @@ public class Libros extends Fragment  {
     Button Escaneo;
     Button Btnadd;
     private SearchView searchView;
+    Spinner PrestamoLibros;
 
     public Libros(){
 
@@ -47,6 +50,13 @@ public class Libros extends Fragment  {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.libros, container, false);
         db = FirebaseFirestore.getInstance();
+
+
+
+
+
+
+       //ISBN BASE DATOS
         Codigo = view.findViewById(R.id.TextoEscaneo);
         Escaneo = view.findViewById(R.id.Escaneo);
         searchView = view.findViewById(R.id.searchView);
