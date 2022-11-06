@@ -1,0 +1,797 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:2:1-61:12
+MERGED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:2:1-109:12
+MERGED from [com.google.android.material:material:1.6.1] C:\Users\pokem\.gradle\caches\transforms-3\ce02f3f7664ba9eb629fc57f47e65fc3\transformed\material-1.6.1\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\pokem\.gradle\caches\transforms-3\fae15a032f7194e43b6919feca645684\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\pokem\.gradle\caches\transforms-3\d492b1857be31db1eb323da8d605d430\transformed\appcompat-resources-1.5.1\AndroidManifest.xml:17:1-22:12
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.6.1] C:\Users\pokem\.gradle\caches\transforms-3\dda4a0363e943e4de98d66b7e57aa4ec\transformed\library-1.6.1\AndroidManifest.xml:6:1-15:12
+MERGED from [androidx.appcompat:appcompat:1.5.1] C:\Users\pokem\.gradle\caches\transforms-3\a628b047a528adad8d38afe27c2e2503\transformed\appcompat-1.5.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.clans:fab:1.6.4] C:\Users\pokem\.gradle\caches\transforms-3\71b3392c7f1929571f684e293b613954\transformed\fab-1.6.4\AndroidManifest.xml:2:1-14:12
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\18ae456eefa18f20b20d3fd04790385f\transformed\firebase-storage-20.1.0\AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9617712fc2e3b472808a75f597c78fb6\transformed\firebase-database-20.1.0\AndroidManifest.xml:15:1-37:12
+MERGED from [com.android.volley:volley:1.2.1] C:\Users\pokem\.gradle\caches\transforms-3\19ef208e1689858cc37b5fb428245319\transformed\volley-1.2.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\fa3a27395b13472aaec322b16d513631\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.getbase:floatingactionbutton:1.10.1] C:\Users\pokem\.gradle\caches\transforms-3\3ff03487fc46a85374e81ab08540d0a6\transformed\floatingactionbutton-1.10.1\AndroidManifest.xml:2:1-14:12
+MERGED from [com.google.firebase:firebase-firestore:24.4.0] C:\Users\pokem\.gradle\caches\transforms-3\a741201619a4e8795c97a33c8cd14e4b\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:2:1-25:12
+MERGED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:17:1-73:12
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\pokem\.gradle\caches\transforms-3\0b28dbd955736b826f8a6a67528e99e6\transformed\circleimageview-3.0.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:17:1-56:12
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] C:\Users\pokem\.gradle\caches\transforms-3\3df142d4faa3afd9cbd5a445b97679c8\transformed\firebase-appcheck-interop-16.1.0\AndroidManifest.xml:15:1-25:12
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\pokem\.gradle\caches\transforms-3\cfe71196ae08322e0516214e8ff3ea9a\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\e66b34993606700fb27a08e374852cfa\transformed\firebase-common-20.2.0\AndroidManifest.xml:15:1-39:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\pokem\.gradle\caches\transforms-3\0bccd5eb36afd673419b04a28794c54a\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\c912996325fc5fcd1dcde1e84a4599da\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\d9aced560884e1b4a08afac34d1af8a7\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\b35c1026506ad23c72cae9b6077241ed\transformed\play-services-auth-api-phone-18.0.1\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\pokem\.gradle\caches\transforms-3\eebb32d457bf724b99a7bfdbdbdf3120\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\pokem\.gradle\caches\transforms-3\513489b37b25e31c2959a75663f5d08a\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\ae2c843528e04ad00306c7b9fed17697\transformed\play-services-base-18.0.1\AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\fc2986fbe7609999a376f72423b22a78\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\pokem\.gradle\caches\transforms-3\cda6b2e66c2f63b3b55d415b621196fd\transformed\play-services-basement-18.1.0\AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\pokem\.gradle\caches\transforms-3\ada796b0ae7e608aec43ed69b9ecae00\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.5.1] C:\Users\pokem\.gradle\caches\transforms-3\49f96f045650470edf653ea4d83eb3ed\transformed\activity-1.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\e1212ece46926db6ae0082c9f6716005\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\03ddc9d1d4c263191ba09003584505d9\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\4aa1a099af7148c6493091a8bedd144d\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\b3848cc1d3b5d029edc85b81e91f32db\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\pokem\.gradle\caches\transforms-3\f6a0053eee54c86e3989c3af1c754943\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\pokem\.gradle\caches\transforms-3\09cd7f207db9e66e4a8cd2db281e6645\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.8.0] C:\Users\pokem\.gradle\caches\transforms-3\21a1bafd713eec6725dcfc435c2e2ff9\transformed\core-ktx-1.8.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\4e2a7c8617864a155a30ca59415fc8e4\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\09195a5dd91bc3d588cae653cd01434c\transformed\emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c1c50335a700fbde08c1f1eb1db196ab\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\pokem\.gradle\caches\transforms-3\c21e9f262f5cd817fc7d67785a83fdb4\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\b50ed18cca91452259f0fc5f95b524ba\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\pokem\.gradle\caches\transforms-3\0a421e77e68cd8219501a6fc2c87549e\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\pokem\.gradle\caches\transforms-3\8a28143bba122e492d83b26afa01680b\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\pokem\.gradle\caches\transforms-3\49ec733aae324e4f50e190109026c740\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\pokem\.gradle\caches\transforms-3\1ed45cd4201d867ba543f86aefac0d58\transformed\browser-1.4.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\fb9bda8bdfc8481207d9d5e9b1070472\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\8b777906b5f79ede1ee0a4bad868ed2b\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\pokem\.gradle\caches\transforms-3\b0dfb1fd3cb6c752e35520b815a4e266\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\1ca0464ff56afd3aa794b857d3c17a14\transformed\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\8ac2382ea699768d1281f8b8acfe87cd\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\cf8c22e33c04a367931864d161066662\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.8.0] C:\Users\pokem\.gradle\caches\transforms-3\2918a66d163dea0404f53e82d285c4d8\transformed\core-1.8.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\fd08e2ab49dedac8cec1d9e262506670\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\pokem\.gradle\caches\transforms-3\ea8421a87f85d746cc1f9e62cbe8bb18\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\pokem\.gradle\caches\transforms-3\327ef8d3d1fd14685c8869573a49242b\transformed\lifecycle-service-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\pokem\.gradle\caches\transforms-3\f1b49b467381333fb8bde733704c2c1a\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\3c3664e304ea495e4c031c7712f289c3\transformed\savedstate-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\9ec7308c41b824726f2a6683edb04e60\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\pokem\.gradle\caches\transforms-3\4073ab3e820681ca8f60de7aed1ad955\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.firebase:firebase-components:17.0.1] C:\Users\pokem\.gradle\caches\transforms-3\8d7300b8986d50a646ec9c24d03b6826\transformed\firebase-components-17.0.1\AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\32613e3d49c531d1e384f6ad0770cb47\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\pokem\.gradle\caches\transforms-3\b710f836a8ef65121a8d6736761924ff\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\5176461c8355aa7cc94445a594597ee8\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\pokem\.gradle\caches\transforms-3\10c69ee2427136e12d01f7204efcee9d\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\pokem\.gradle\caches\transforms-3\f6da718a909facab080901c41c0e2420\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\pokem\.gradle\caches\transforms-3\1f1aeb8bc3201f61253e95f05b841e77\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\bf8707a409a60fd60e4386de8cfb7d71\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\c45e2920cb3e37029c5674265eac3a07\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\8c1f22cdc49f0944a453222e80276d64\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\pokem\.gradle\caches\transforms-3\806bc6f4031a1065b4f3571ef409385f\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\pokem\.gradle\caches\transforms-3\363c65e2912cdb6dd510d6ccdd0f090a\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
+MERGED from [io.grpc:grpc-android:1.48.1] C:\Users\pokem\.gradle\caches\transforms-3\5fc675d977f9e6a5a2af0a37b22ba465\transformed\grpc-android-1.48.1\AndroidManifest.xml:2:1-11:12
+INJECTED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:2:1-61:12
+	package
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:4:5-38
+		INJECTED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:2:1-61:12
+		INJECTED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:2:1-61:12
+		INJECTED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:6:5-66
+MERGED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:13:5-67
+MERGED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:13:5-67
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\18ae456eefa18f20b20d3fd04790385f\transformed\firebase-storage-20.1.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\18ae456eefa18f20b20d3fd04790385f\transformed\firebase-storage-20.1.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9617712fc2e3b472808a75f597c78fb6\transformed\firebase-database-20.1.0\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9617712fc2e3b472808a75f597c78fb6\transformed\firebase-database-20.1.0\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.4.0] C:\Users\pokem\.gradle\caches\transforms-3\a741201619a4e8795c97a33c8cd14e4b\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:13:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.4.0] C:\Users\pokem\.gradle\caches\transforms-3\a741201619a4e8795c97a33c8cd14e4b\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:13:5-67
+MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:6:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:7:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:8:22-77
+application
+ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:9:5-59:19
+MERGED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:15:5-107:19
+MERGED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:15:5-107:19
+MERGED from [com.google.android.material:material:1.6.1] C:\Users\pokem\.gradle\caches\transforms-3\ce02f3f7664ba9eb629fc57f47e65fc3\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.6.1] C:\Users\pokem\.gradle\caches\transforms-3\ce02f3f7664ba9eb629fc57f47e65fc3\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\pokem\.gradle\caches\transforms-3\fae15a032f7194e43b6919feca645684\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\pokem\.gradle\caches\transforms-3\fae15a032f7194e43b6919feca645684\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [com.github.clans:fab:1.6.4] C:\Users\pokem\.gradle\caches\transforms-3\71b3392c7f1929571f684e293b613954\transformed\fab-1.6.4\AndroidManifest.xml:12:5-20
+MERGED from [com.github.clans:fab:1.6.4] C:\Users\pokem\.gradle\caches\transforms-3\71b3392c7f1929571f684e293b613954\transformed\fab-1.6.4\AndroidManifest.xml:12:5-20
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\18ae456eefa18f20b20d3fd04790385f\transformed\firebase-storage-20.1.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\18ae456eefa18f20b20d3fd04790385f\transformed\firebase-storage-20.1.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9617712fc2e3b472808a75f597c78fb6\transformed\firebase-database-20.1.0\AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9617712fc2e3b472808a75f597c78fb6\transformed\firebase-database-20.1.0\AndroidManifest.xml:27:5-35:19
+MERGED from [com.getbase:floatingactionbutton:1.10.1] C:\Users\pokem\.gradle\caches\transforms-3\3ff03487fc46a85374e81ab08540d0a6\transformed\floatingactionbutton-1.10.1\AndroidManifest.xml:12:5-20
+MERGED from [com.getbase:floatingactionbutton:1.10.1] C:\Users\pokem\.gradle\caches\transforms-3\3ff03487fc46a85374e81ab08540d0a6\transformed\floatingactionbutton-1.10.1\AndroidManifest.xml:12:5-20
+MERGED from [com.google.firebase:firebase-firestore:24.4.0] C:\Users\pokem\.gradle\caches\transforms-3\a741201619a4e8795c97a33c8cd14e4b\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:15:5-23:19
+MERGED from [com.google.firebase:firebase-firestore:24.4.0] C:\Users\pokem\.gradle\caches\transforms-3\a741201619a4e8795c97a33c8cd14e4b\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:15:5-23:19
+MERGED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:26:5-71:19
+MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:26:5-71:19
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\pokem\.gradle\caches\transforms-3\0b28dbd955736b826f8a6a67528e99e6\transformed\circleimageview-3.0.0\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\pokem\.gradle\caches\transforms-3\0b28dbd955736b826f8a6a67528e99e6\transformed\circleimageview-3.0.0\AndroidManifest.xml:9:5-20
+MERGED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:46:5-54:19
+MERGED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:46:5-54:19
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] C:\Users\pokem\.gradle\caches\transforms-3\3df142d4faa3afd9cbd5a445b97679c8\transformed\firebase-appcheck-interop-16.1.0\AndroidManifest.xml:23:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] C:\Users\pokem\.gradle\caches\transforms-3\3df142d4faa3afd9cbd5a445b97679c8\transformed\firebase-appcheck-interop-16.1.0\AndroidManifest.xml:23:5-20
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\pokem\.gradle\caches\transforms-3\cfe71196ae08322e0516214e8ff3ea9a\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\pokem\.gradle\caches\transforms-3\cfe71196ae08322e0516214e8ff3ea9a\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\e66b34993606700fb27a08e374852cfa\transformed\firebase-common-20.2.0\AndroidManifest.xml:24:5-37:19
+MERGED from [com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\e66b34993606700fb27a08e374852cfa\transformed\firebase-common-20.2.0\AndroidManifest.xml:24:5-37:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\pokem\.gradle\caches\transforms-3\0bccd5eb36afd673419b04a28794c54a\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\pokem\.gradle\caches\transforms-3\0bccd5eb36afd673419b04a28794c54a\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\pokem\.gradle\caches\transforms-3\513489b37b25e31c2959a75663f5d08a\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\pokem\.gradle\caches\transforms-3\513489b37b25e31c2959a75663f5d08a\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\ae2c843528e04ad00306c7b9fed17697\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\ae2c843528e04ad00306c7b9fed17697\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\fc2986fbe7609999a376f72423b22a78\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\fc2986fbe7609999a376f72423b22a78\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\pokem\.gradle\caches\transforms-3\cda6b2e66c2f63b3b55d415b621196fd\transformed\play-services-basement-18.1.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\pokem\.gradle\caches\transforms-3\cda6b2e66c2f63b3b55d415b621196fd\transformed\play-services-basement-18.1.0\AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\09195a5dd91bc3d588cae653cd01434c\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\09195a5dd91bc3d588cae653cd01434c\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.8.0] C:\Users\pokem\.gradle\caches\transforms-3\2918a66d163dea0404f53e82d285c4d8\transformed\core-1.8.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.8.0] C:\Users\pokem\.gradle\caches\transforms-3\2918a66d163dea0404f53e82d285c4d8\transformed\core-1.8.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\pokem\.gradle\caches\transforms-3\ea8421a87f85d746cc1f9e62cbe8bb18\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\pokem\.gradle\caches\transforms-3\ea8421a87f85d746cc1f9e62cbe8bb18\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\pokem\.gradle\caches\transforms-3\4073ab3e820681ca8f60de7aed1ad955\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\pokem\.gradle\caches\transforms-3\4073ab3e820681ca8f60de7aed1ad955\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\pokem\.gradle\caches\transforms-3\b710f836a8ef65121a8d6736761924ff\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\pokem\.gradle\caches\transforms-3\b710f836a8ef65121a8d6736761924ff\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.8.0] C:\Users\pokem\.gradle\caches\transforms-3\2918a66d163dea0404f53e82d285c4d8\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:16:9-35
+	android:label
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:14:9-41
+	android:hardwareAccelerated
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:19:9-43
+	android:fullBackupContent
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:12:9-54
+	android:roundIcon
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:15:9-54
+	tools:targetApi
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:18:9-29
+	android:icon
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:13:9-43
+	android:allowBackup
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:10:9-35
+	android:theme
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:17:9-50
+	android:dataExtractionRules
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:11:9-65
+activity#es.upv.a3c.smartlibrary.LoginActivity
+ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:22:9-28:20
+	android:exported
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:23:13-36
+	android:name
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:22:19-48
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:24:13-27:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:25:17-69
+	android:name
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:25:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:26:17-77
+	android:name
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:26:27-74
+activity#es.upv.a3c.smartlibrary.MainActivity
+ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:30:9-33:20
+	android:exported
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:32:13-36
+	android:name
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:31:13-41
+activity#es.upv.a3c.smartlibrary.UsuarioActivity
+ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:35:9-36:60
+	android:label
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:36:13-57
+	android:name
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:35:19-50
+activity#es.upv.a3c.smartlibrary.ReservasActivity
+ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:38:9-41:20
+	android:exported
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:40:13-36
+	android:name
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:39:13-45
+activity#es.upv.a3c.smartlibrary.EstadisticasActivity
+ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:43:9-46:20
+	android:exported
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:45:13-36
+	android:name
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:44:13-49
+activity#es.upv.a3c.smartlibrary.EliminarUsuarioActivity
+ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:48:9-52:20
+	android:exported
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:50:13-36
+	android:theme
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:51:13-73
+	android:name
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:49:13-52
+activity#es.upv.a3c.smartlibrary.AcercadeActivity
+ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:54:9-56:66
+	android:label
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:55:13-42
+	android:theme
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:56:13-64
+	android:name
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:54:19-51
+uses-sdk
+INJECTED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml
+MERGED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:8:5-10:41
+MERGED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:8:5-10:41
+MERGED from [com.google.android.material:material:1.6.1] C:\Users\pokem\.gradle\caches\transforms-3\ce02f3f7664ba9eb629fc57f47e65fc3\transformed\material-1.6.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.6.1] C:\Users\pokem\.gradle\caches\transforms-3\ce02f3f7664ba9eb629fc57f47e65fc3\transformed\material-1.6.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\pokem\.gradle\caches\transforms-3\fae15a032f7194e43b6919feca645684\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\pokem\.gradle\caches\transforms-3\fae15a032f7194e43b6919feca645684\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\pokem\.gradle\caches\transforms-3\d492b1857be31db1eb323da8d605d430\transformed\appcompat-resources-1.5.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\pokem\.gradle\caches\transforms-3\d492b1857be31db1eb323da8d605d430\transformed\appcompat-resources-1.5.1\AndroidManifest.xml:20:5-44
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.6.1] C:\Users\pokem\.gradle\caches\transforms-3\dda4a0363e943e4de98d66b7e57aa4ec\transformed\library-1.6.1\AndroidManifest.xml:11:5-13:41
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.6.1] C:\Users\pokem\.gradle\caches\transforms-3\dda4a0363e943e4de98d66b7e57aa4ec\transformed\library-1.6.1\AndroidManifest.xml:11:5-13:41
+MERGED from [androidx.appcompat:appcompat:1.5.1] C:\Users\pokem\.gradle\caches\transforms-3\a628b047a528adad8d38afe27c2e2503\transformed\appcompat-1.5.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.5.1] C:\Users\pokem\.gradle\caches\transforms-3\a628b047a528adad8d38afe27c2e2503\transformed\appcompat-1.5.1\AndroidManifest.xml:20:5-44
+MERGED from [com.github.clans:fab:1.6.4] C:\Users\pokem\.gradle\caches\transforms-3\71b3392c7f1929571f684e293b613954\transformed\fab-1.6.4\AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.clans:fab:1.6.4] C:\Users\pokem\.gradle\caches\transforms-3\71b3392c7f1929571f684e293b613954\transformed\fab-1.6.4\AndroidManifest.xml:8:5-10:41
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\18ae456eefa18f20b20d3fd04790385f\transformed\firebase-storage-20.1.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\18ae456eefa18f20b20d3fd04790385f\transformed\firebase-storage-20.1.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9617712fc2e3b472808a75f597c78fb6\transformed\firebase-database-20.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9617712fc2e3b472808a75f597c78fb6\transformed\firebase-database-20.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.android.volley:volley:1.2.1] C:\Users\pokem\.gradle\caches\transforms-3\19ef208e1689858cc37b5fb428245319\transformed\volley-1.2.1\AndroidManifest.xml:5:5-43
+MERGED from [com.android.volley:volley:1.2.1] C:\Users\pokem\.gradle\caches\transforms-3\19ef208e1689858cc37b5fb428245319\transformed\volley-1.2.1\AndroidManifest.xml:5:5-43
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\fa3a27395b13472aaec322b16d513631\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\fa3a27395b13472aaec322b16d513631\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.getbase:floatingactionbutton:1.10.1] C:\Users\pokem\.gradle\caches\transforms-3\3ff03487fc46a85374e81ab08540d0a6\transformed\floatingactionbutton-1.10.1\AndroidManifest.xml:8:5-10:41
+MERGED from [com.getbase:floatingactionbutton:1.10.1] C:\Users\pokem\.gradle\caches\transforms-3\3ff03487fc46a85374e81ab08540d0a6\transformed\floatingactionbutton-1.10.1\AndroidManifest.xml:8:5-10:41
+MERGED from [com.google.firebase:firebase-firestore:24.4.0] C:\Users\pokem\.gradle\caches\transforms-3\a741201619a4e8795c97a33c8cd14e4b\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-firestore:24.4.0] C:\Users\pokem\.gradle\caches\transforms-3\a741201619a4e8795c97a33c8cd14e4b\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:21:5-44
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\pokem\.gradle\caches\transforms-3\0b28dbd955736b826f8a6a67528e99e6\transformed\circleimageview-3.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\pokem\.gradle\caches\transforms-3\0b28dbd955736b826f8a6a67528e99e6\transformed\circleimageview-3.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] C:\Users\pokem\.gradle\caches\transforms-3\3df142d4faa3afd9cbd5a445b97679c8\transformed\firebase-appcheck-interop-16.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] C:\Users\pokem\.gradle\caches\transforms-3\3df142d4faa3afd9cbd5a445b97679c8\transformed\firebase-appcheck-interop-16.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\pokem\.gradle\caches\transforms-3\cfe71196ae08322e0516214e8ff3ea9a\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\pokem\.gradle\caches\transforms-3\cfe71196ae08322e0516214e8ff3ea9a\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\e66b34993606700fb27a08e374852cfa\transformed\firebase-common-20.2.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\e66b34993606700fb27a08e374852cfa\transformed\firebase-common-20.2.0\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\pokem\.gradle\caches\transforms-3\0bccd5eb36afd673419b04a28794c54a\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\pokem\.gradle\caches\transforms-3\0bccd5eb36afd673419b04a28794c54a\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\c912996325fc5fcd1dcde1e84a4599da\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\c912996325fc5fcd1dcde1e84a4599da\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\d9aced560884e1b4a08afac34d1af8a7\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\d9aced560884e1b4a08afac34d1af8a7\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\b35c1026506ad23c72cae9b6077241ed\transformed\play-services-auth-api-phone-18.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\b35c1026506ad23c72cae9b6077241ed\transformed\play-services-auth-api-phone-18.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\pokem\.gradle\caches\transforms-3\eebb32d457bf724b99a7bfdbdbdf3120\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\pokem\.gradle\caches\transforms-3\eebb32d457bf724b99a7bfdbdbdf3120\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\pokem\.gradle\caches\transforms-3\513489b37b25e31c2959a75663f5d08a\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\pokem\.gradle\caches\transforms-3\513489b37b25e31c2959a75663f5d08a\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\ae2c843528e04ad00306c7b9fed17697\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\ae2c843528e04ad00306c7b9fed17697\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\fc2986fbe7609999a376f72423b22a78\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\fc2986fbe7609999a376f72423b22a78\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\pokem\.gradle\caches\transforms-3\cda6b2e66c2f63b3b55d415b621196fd\transformed\play-services-basement-18.1.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\pokem\.gradle\caches\transforms-3\cda6b2e66c2f63b3b55d415b621196fd\transformed\play-services-basement-18.1.0\AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\pokem\.gradle\caches\transforms-3\ada796b0ae7e608aec43ed69b9ecae00\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\pokem\.gradle\caches\transforms-3\ada796b0ae7e608aec43ed69b9ecae00\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.5.1] C:\Users\pokem\.gradle\caches\transforms-3\49f96f045650470edf653ea4d83eb3ed\transformed\activity-1.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.5.1] C:\Users\pokem\.gradle\caches\transforms-3\49f96f045650470edf653ea4d83eb3ed\transformed\activity-1.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\e1212ece46926db6ae0082c9f6716005\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\e1212ece46926db6ae0082c9f6716005\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\03ddc9d1d4c263191ba09003584505d9\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\03ddc9d1d4c263191ba09003584505d9\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\4aa1a099af7148c6493091a8bedd144d\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\4aa1a099af7148c6493091a8bedd144d\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\b3848cc1d3b5d029edc85b81e91f32db\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\b3848cc1d3b5d029edc85b81e91f32db\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\pokem\.gradle\caches\transforms-3\f6a0053eee54c86e3989c3af1c754943\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\pokem\.gradle\caches\transforms-3\f6a0053eee54c86e3989c3af1c754943\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\pokem\.gradle\caches\transforms-3\09cd7f207db9e66e4a8cd2db281e6645\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\pokem\.gradle\caches\transforms-3\09cd7f207db9e66e4a8cd2db281e6645\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.8.0] C:\Users\pokem\.gradle\caches\transforms-3\21a1bafd713eec6725dcfc435c2e2ff9\transformed\core-ktx-1.8.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.8.0] C:\Users\pokem\.gradle\caches\transforms-3\21a1bafd713eec6725dcfc435c2e2ff9\transformed\core-ktx-1.8.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\4e2a7c8617864a155a30ca59415fc8e4\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\4e2a7c8617864a155a30ca59415fc8e4\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\09195a5dd91bc3d588cae653cd01434c\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\09195a5dd91bc3d588cae653cd01434c\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c1c50335a700fbde08c1f1eb1db196ab\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c1c50335a700fbde08c1f1eb1db196ab\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\pokem\.gradle\caches\transforms-3\c21e9f262f5cd817fc7d67785a83fdb4\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\pokem\.gradle\caches\transforms-3\c21e9f262f5cd817fc7d67785a83fdb4\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\b50ed18cca91452259f0fc5f95b524ba\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\b50ed18cca91452259f0fc5f95b524ba\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\pokem\.gradle\caches\transforms-3\0a421e77e68cd8219501a6fc2c87549e\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\pokem\.gradle\caches\transforms-3\0a421e77e68cd8219501a6fc2c87549e\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\pokem\.gradle\caches\transforms-3\8a28143bba122e492d83b26afa01680b\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\pokem\.gradle\caches\transforms-3\8a28143bba122e492d83b26afa01680b\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\pokem\.gradle\caches\transforms-3\49ec733aae324e4f50e190109026c740\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\pokem\.gradle\caches\transforms-3\49ec733aae324e4f50e190109026c740\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\pokem\.gradle\caches\transforms-3\1ed45cd4201d867ba543f86aefac0d58\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\pokem\.gradle\caches\transforms-3\1ed45cd4201d867ba543f86aefac0d58\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\fb9bda8bdfc8481207d9d5e9b1070472\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\fb9bda8bdfc8481207d9d5e9b1070472\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\8b777906b5f79ede1ee0a4bad868ed2b\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\8b777906b5f79ede1ee0a4bad868ed2b\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\pokem\.gradle\caches\transforms-3\b0dfb1fd3cb6c752e35520b815a4e266\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\pokem\.gradle\caches\transforms-3\b0dfb1fd3cb6c752e35520b815a4e266\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\1ca0464ff56afd3aa794b857d3c17a14\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\1ca0464ff56afd3aa794b857d3c17a14\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\8ac2382ea699768d1281f8b8acfe87cd\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\8ac2382ea699768d1281f8b8acfe87cd\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\cf8c22e33c04a367931864d161066662\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\cf8c22e33c04a367931864d161066662\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.8.0] C:\Users\pokem\.gradle\caches\transforms-3\2918a66d163dea0404f53e82d285c4d8\transformed\core-1.8.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.8.0] C:\Users\pokem\.gradle\caches\transforms-3\2918a66d163dea0404f53e82d285c4d8\transformed\core-1.8.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\fd08e2ab49dedac8cec1d9e262506670\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\fd08e2ab49dedac8cec1d9e262506670\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\pokem\.gradle\caches\transforms-3\ea8421a87f85d746cc1f9e62cbe8bb18\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\pokem\.gradle\caches\transforms-3\ea8421a87f85d746cc1f9e62cbe8bb18\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\pokem\.gradle\caches\transforms-3\327ef8d3d1fd14685c8869573a49242b\transformed\lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\pokem\.gradle\caches\transforms-3\327ef8d3d1fd14685c8869573a49242b\transformed\lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\pokem\.gradle\caches\transforms-3\f1b49b467381333fb8bde733704c2c1a\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\pokem\.gradle\caches\transforms-3\f1b49b467381333fb8bde733704c2c1a\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\3c3664e304ea495e4c031c7712f289c3\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\3c3664e304ea495e4c031c7712f289c3\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\9ec7308c41b824726f2a6683edb04e60\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\9ec7308c41b824726f2a6683edb04e60\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\pokem\.gradle\caches\transforms-3\4073ab3e820681ca8f60de7aed1ad955\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\pokem\.gradle\caches\transforms-3\4073ab3e820681ca8f60de7aed1ad955\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-components:17.0.1] C:\Users\pokem\.gradle\caches\transforms-3\8d7300b8986d50a646ec9c24d03b6826\transformed\firebase-components-17.0.1\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:17.0.1] C:\Users\pokem\.gradle\caches\transforms-3\8d7300b8986d50a646ec9c24d03b6826\transformed\firebase-components-17.0.1\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\32613e3d49c531d1e384f6ad0770cb47\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\32613e3d49c531d1e384f6ad0770cb47\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\pokem\.gradle\caches\transforms-3\b710f836a8ef65121a8d6736761924ff\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\pokem\.gradle\caches\transforms-3\b710f836a8ef65121a8d6736761924ff\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\5176461c8355aa7cc94445a594597ee8\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\5176461c8355aa7cc94445a594597ee8\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\pokem\.gradle\caches\transforms-3\10c69ee2427136e12d01f7204efcee9d\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\pokem\.gradle\caches\transforms-3\10c69ee2427136e12d01f7204efcee9d\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\pokem\.gradle\caches\transforms-3\f6da718a909facab080901c41c0e2420\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\pokem\.gradle\caches\transforms-3\f6da718a909facab080901c41c0e2420\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\pokem\.gradle\caches\transforms-3\1f1aeb8bc3201f61253e95f05b841e77\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\pokem\.gradle\caches\transforms-3\1f1aeb8bc3201f61253e95f05b841e77\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\bf8707a409a60fd60e4386de8cfb7d71\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\bf8707a409a60fd60e4386de8cfb7d71\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\c45e2920cb3e37029c5674265eac3a07\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\c45e2920cb3e37029c5674265eac3a07\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\8c1f22cdc49f0944a453222e80276d64\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\pokem\.gradle\caches\transforms-3\8c1f22cdc49f0944a453222e80276d64\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\pokem\.gradle\caches\transforms-3\806bc6f4031a1065b4f3571ef409385f\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\pokem\.gradle\caches\transforms-3\806bc6f4031a1065b4f3571ef409385f\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\pokem\.gradle\caches\transforms-3\363c65e2912cdb6dd510d6ccdd0f090a\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\pokem\.gradle\caches\transforms-3\363c65e2912cdb6dd510d6ccdd0f090a\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.48.1] C:\Users\pokem\.gradle\caches\transforms-3\5fc675d977f9e6a5a2af0a37b22ba465\transformed\grpc-android-1.48.1\AndroidManifest.xml:5:5-7:41
+MERGED from [io.grpc:grpc-android:1.48.1] C:\Users\pokem\.gradle\caches\transforms-3\5fc675d977f9e6a5a2af0a37b22ba465\transformed\grpc-android-1.48.1\AndroidManifest.xml:5:5-7:41
+INJECTED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\18ae456eefa18f20b20d3fd04790385f\transformed\firebase-storage-20.1.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\18ae456eefa18f20b20d3fd04790385f\transformed\firebase-storage-20.1.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9617712fc2e3b472808a75f597c78fb6\transformed\firebase-database-20.1.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9617712fc2e3b472808a75f597c78fb6\transformed\firebase-database-20.1.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.4.0] C:\Users\pokem\.gradle\caches\transforms-3\a741201619a4e8795c97a33c8cd14e4b\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.4.0] C:\Users\pokem\.gradle\caches\transforms-3\a741201619a4e8795c97a33c8cd14e4b\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:5-79
+MERGED from [io.grpc:grpc-android:1.48.1] C:\Users\pokem\.gradle\caches\transforms-3\5fc675d977f9e6a5a2af0a37b22ba465\transformed\grpc-android-1.48.1\AndroidManifest.xml:9:5-79
+MERGED from [io.grpc:grpc-android:1.48.1] C:\Users\pokem\.gradle\caches\transforms-3\5fc675d977f9e6a5a2af0a37b22ba465\transformed\grpc-android-1.48.1\AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:12:22-76
+meta-data#com.google.android.gms.version
+ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:16:9-18:69
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\pokem\.gradle\caches\transforms-3\cda6b2e66c2f63b3b55d415b621196fd\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\pokem\.gradle\caches\transforms-3\cda6b2e66c2f63b3b55d415b621196fd\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:18:13-66
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:17:13-58
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:19:9-21:63
+	android:value
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:21:13-60
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:20:13-58
+activity#com.firebase.ui.auth.KickoffActivity
+ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:23:9-27:61
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:26:13-29
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:27:13-58
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:24:13-64
+activity#com.firebase.ui.auth.ui.idp.SingleSignInActivity
+ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:28:9-32:61
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:31:13-29
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:30:13-37
+	android:theme
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:32:13-58
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:29:13-76
+activity#com.firebase.ui.auth.ui.credentials.CredentialSaveActivity
+ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:33:9-37:61
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:36:13-29
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:35:13-37
+	android:theme
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:37:13-58
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:34:13-86
+activity#com.firebase.ui.auth.ui.email.RecoverPasswordActivity
+ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:38:9-42:58
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:41:13-72
+	android:windowSoftInputMode
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:42:13-55
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:40:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:39:13-81
+activity#com.firebase.ui.auth.ui.email.EmailActivity
+ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:43:9-47:58
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:46:13-56
+	android:windowSoftInputMode
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:47:13-55
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:45:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:44:13-71
+activity#com.firebase.ui.auth.ui.phone.PhoneActivity
+ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:48:9-52:77
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:51:13-66
+	android:windowSoftInputMode
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:52:13-74
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:50:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:49:13-71
+activity#com.firebase.ui.auth.ui.idp.WelcomeBackIdpPrompt
+ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:53:9-57:58
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:56:13-70
+	android:windowSoftInputMode
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:57:13-55
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:55:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:54:13-76
+activity#com.firebase.ui.auth.ui.email.WelcomeBackPasswordPrompt
+ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:58:9-62:58
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:61:13-75
+	android:windowSoftInputMode
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:62:13-55
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:60:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:59:13-83
+activity#com.firebase.ui.auth.ui.email.WelcomeBackEmailLinkPrompt
+ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:63:9-67:58
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:66:13-75
+	android:windowSoftInputMode
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:67:13-55
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:65:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:64:13-84
+activity#com.firebase.ui.auth.ui.email.EmailLinkCatcherActivity
+ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:68:9-73:58
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:71:13-29
+	android:windowSoftInputMode
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:73:13-55
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:70:13-37
+	android:theme
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:72:13-58
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:69:13-82
+activity#com.firebase.ui.auth.ui.email.EmailLinkErrorRecoveryActivity
+ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:74:9-78:58
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:77:13-56
+	android:windowSoftInputMode
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:78:13-55
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:76:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:75:13-88
+activity#com.firebase.ui.auth.ui.idp.AuthMethodPickerActivity
+ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:79:9-82:65
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:82:13-62
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:81:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:80:13-80
+activity#com.facebook.FacebookActivity
+ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:83:9-87:48
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:86:13-45
+	tools:ignore
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:87:13-45
+	android:configChanges
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:85:13-96
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:84:13-57
+activity#com.facebook.CustomTabActivity
+ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:88:9-100:20
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:90:13-36
+	tools:ignore
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:91:13-45
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:89:13-58
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/facebook_login_protocol_scheme
+ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:92:13-99:29
+action#android.intent.action.VIEW
+ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:93:17-69
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:93:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:95:17-76
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:95:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:96:17-78
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:96:27-75
+data
+ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:98:17-81
+	android:scheme
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:98:23-78
+provider#com.firebase.ui.auth.data.client.AuthUiInitProvider
+ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:102:9-106:38
+	android:authorities
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:104:13-70
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:105:13-37
+	android:initOrder
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:106:13-35
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:103:13-79
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\18ae456eefa18f20b20d3fd04790385f\transformed\firebase-storage-20.1.0\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9617712fc2e3b472808a75f597c78fb6\transformed\firebase-database-20.1.0\AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9617712fc2e3b472808a75f597c78fb6\transformed\firebase-database-20.1.0\AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.firebase:firebase-firestore:24.4.0] C:\Users\pokem\.gradle\caches\transforms-3\a741201619a4e8795c97a33c8cd14e4b\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:16:9-22:19
+MERGED from [com.google.firebase:firebase-firestore:24.4.0] C:\Users\pokem\.gradle\caches\transforms-3\a741201619a4e8795c97a33c8cd14e4b\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:16:9-22:19
+MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:64:9-70:19
+MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:64:9-70:19
+MERGED from [com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\e66b34993606700fb27a08e374852cfa\transformed\firebase-common-20.2.0\AndroidManifest.xml:32:9-36:35
+MERGED from [com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\e66b34993606700fb27a08e374852cfa\transformed\firebase-common-20.2.0\AndroidManifest.xml:32:9-36:35
+	android:exported
+		ADDED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\18ae456eefa18f20b20d3fd04790385f\transformed\firebase-storage-20.1.0\AndroidManifest.xml:31:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\e66b34993606700fb27a08e374852cfa\transformed\firebase-common-20.2.0\AndroidManifest.xml:36:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\e66b34993606700fb27a08e374852cfa\transformed\firebase-common-20.2.0\AndroidManifest.xml:34:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\18ae456eefa18f20b20d3fd04790385f\transformed\firebase-storage-20.1.0\AndroidManifest.xml:30:13-84
+meta-data#com.google.firebase.components:com.google.firebase.storage.StorageRegistrar
+ADDED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\18ae456eefa18f20b20d3fd04790385f\transformed\firebase-storage-20.1.0\AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\18ae456eefa18f20b20d3fd04790385f\transformed\firebase-storage-20.1.0\AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\18ae456eefa18f20b20d3fd04790385f\transformed\firebase-storage-20.1.0\AndroidManifest.xml:33:17-107
+meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
+ADDED from [com.google.firebase:firebase-database:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9617712fc2e3b472808a75f597c78fb6\transformed\firebase-database-20.1.0\AndroidManifest.xml:31:13-33:85
+	android:value
+		ADDED from [com.google.firebase:firebase-database:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9617712fc2e3b472808a75f597c78fb6\transformed\firebase-database-20.1.0\AndroidManifest.xml:33:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-database:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9617712fc2e3b472808a75f597c78fb6\transformed\firebase-database-20.1.0\AndroidManifest.xml:32:17-109
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:24.4.0] C:\Users\pokem\.gradle\caches\transforms-3\a741201619a4e8795c97a33c8cd14e4b\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:19:13-21:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:24.4.0] C:\Users\pokem\.gradle\caches\transforms-3\a741201619a4e8795c97a33c8cd14e4b\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:21:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:24.4.0] C:\Users\pokem\.gradle\caches\transforms-3\a741201619a4e8795c97a33c8cd14e4b\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:20:17-111
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\AndroidManifest.xml:33:9-37:51
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\AndroidManifest.xml:35:13-36
+	android:visibleToInstantApps
+		ADDED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\AndroidManifest.xml:37:13-48
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\AndroidManifest.xml:34:13-89
+activity#com.google.firebase.auth.internal.GenericIdpActivity
+ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:27:9-44:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:29:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:31:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:30:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:32:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:28:13-80
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
+ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:33:13-43:29
+activity#com.google.firebase.auth.internal.RecaptchaActivity
+ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:45:9-62:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:47:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:49:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:48:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:50:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:46:13-79
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:recaptcha
+ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:51:13-61:29
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:67:13-69:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:69:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:68:17-109
+uses-permission#android.permission.CAMERA
+ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:22:5-65
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:22:22-62
+uses-feature#android.hardware.camera
+ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:25:5-27:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:27:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:26:9-47
+uses-feature#android.hardware.camera.front
+ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:28:5-30:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:30:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:29:9-53
+uses-feature#android.hardware.camera.autofocus
+ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:33:5-35:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:35:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:34:9-57
+uses-feature#android.hardware.camera.flash
+ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:36:5-38:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:38:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:37:9-53
+uses-feature#android.hardware.screen.landscape
+ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:39:5-41:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:41:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:40:9-57
+uses-feature#android.hardware.wifi
+ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:42:5-44:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:44:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:43:9-45
+activity#com.journeyapps.barcodescanner.CaptureActivity
+ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:47:9-53:63
+	android:screenOrientation
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:50:13-56
+	android:clearTaskOnLaunch
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:49:13-45
+	android:stateNotNeeded
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:51:13-42
+	android:windowSoftInputMode
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:53:13-60
+	android:theme
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:52:13-54
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:48:13-74
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\e66b34993606700fb27a08e374852cfa\transformed\firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\e66b34993606700fb27a08e374852cfa\transformed\firebase-common-20.2.0\AndroidManifest.xml:27:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\e66b34993606700fb27a08e374852cfa\transformed\firebase-common-20.2.0\AndroidManifest.xml:29:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\e66b34993606700fb27a08e374852cfa\transformed\firebase-common-20.2.0\AndroidManifest.xml:28:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\e66b34993606700fb27a08e374852cfa\transformed\firebase-common-20.2.0\AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\e66b34993606700fb27a08e374852cfa\transformed\firebase-common-20.2.0\AndroidManifest.xml:26:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\ae2c843528e04ad00306c7b9fed17697\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\ae2c843528e04ad00306c7b9fed17697\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\ae2c843528e04ad00306c7b9fed17697\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\ae2c843528e04ad00306c7b9fed17697\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\09195a5dd91bc3d588cae653cd01434c\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\pokem\.gradle\caches\transforms-3\ea8421a87f85d746cc1f9e62cbe8bb18\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\pokem\.gradle\caches\transforms-3\ea8421a87f85d746cc1f9e62cbe8bb18\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\pokem\.gradle\caches\transforms-3\b710f836a8ef65121a8d6736761924ff\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\pokem\.gradle\caches\transforms-3\b710f836a8ef65121a8d6736761924ff\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\09195a5dd91bc3d588cae653cd01434c\transformed\emoji2-1.2.0\AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\09195a5dd91bc3d588cae653cd01434c\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\09195a5dd91bc3d588cae653cd01434c\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\09195a5dd91bc3d588cae653cd01434c\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\09195a5dd91bc3d588cae653cd01434c\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\09195a5dd91bc3d588cae653cd01434c\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\09195a5dd91bc3d588cae653cd01434c\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\pokem\.gradle\caches\transforms-3\ea8421a87f85d746cc1f9e62cbe8bb18\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\pokem\.gradle\caches\transforms-3\ea8421a87f85d746cc1f9e62cbe8bb18\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\pokem\.gradle\caches\transforms-3\ea8421a87f85d746cc1f9e62cbe8bb18\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78

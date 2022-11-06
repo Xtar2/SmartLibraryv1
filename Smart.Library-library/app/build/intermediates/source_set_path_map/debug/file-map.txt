@@ -1,0 +1,45 @@
+es.upv.a3c.smartlibrary.app-emoji2-1.2.0-0 C:\Users\pokem\.gradle\caches\transforms-3\09195a5dd91bc3d588cae653cd01434c\transformed\emoji2-1.2.0\res
+es.upv.a3c.smartlibrary.app-lifecycle-viewmodel-savedstate-2.5.1-1 C:\Users\pokem\.gradle\caches\transforms-3\09cd7f207db9e66e4a8cd2db281e6645\transformed\lifecycle-viewmodel-savedstate-2.5.1\res
+es.upv.a3c.smartlibrary.app-circleimageview-3.0.0-2 C:\Users\pokem\.gradle\caches\transforms-3\0b28dbd955736b826f8a6a67528e99e6\transformed\circleimageview-3.0.0\res
+es.upv.a3c.smartlibrary.app-media-1.0.0-3 C:\Users\pokem\.gradle\caches\transforms-3\1ca0464ff56afd3aa794b857d3c17a14\transformed\media-1.0.0\res
+es.upv.a3c.smartlibrary.app-browser-1.4.0-4 C:\Users\pokem\.gradle\caches\transforms-3\1ed45cd4201d867ba543f86aefac0d58\transformed\browser-1.4.0\res
+es.upv.a3c.smartlibrary.app-core-ktx-1.8.0-5 C:\Users\pokem\.gradle\caches\transforms-3\21a1bafd713eec6725dcfc435c2e2ff9\transformed\core-ktx-1.8.0\res
+es.upv.a3c.smartlibrary.app-core-1.8.0-6 C:\Users\pokem\.gradle\caches\transforms-3\2918a66d163dea0404f53e82d285c4d8\transformed\core-1.8.0\res
+es.upv.a3c.smartlibrary.app-play-services-auth-20.3.0-7 C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\res
+es.upv.a3c.smartlibrary.app-savedstate-1.2.0-8 C:\Users\pokem\.gradle\caches\transforms-3\3c3664e304ea495e4c031c7712f289c3\transformed\savedstate-1.2.0\res
+es.upv.a3c.smartlibrary.app-floatingactionbutton-1.10.1-9 C:\Users\pokem\.gradle\caches\transforms-3\3ff03487fc46a85374e81ab08540d0a6\transformed\floatingactionbutton-1.10.1\res
+es.upv.a3c.smartlibrary.app-recyclerview-1.1.0-10 C:\Users\pokem\.gradle\caches\transforms-3\49ec733aae324e4f50e190109026c740\transformed\recyclerview-1.1.0\res
+es.upv.a3c.smartlibrary.app-activity-1.5.1-11 C:\Users\pokem\.gradle\caches\transforms-3\49f96f045650470edf653ea4d83eb3ed\transformed\activity-1.5.1\res
+es.upv.a3c.smartlibrary.app-emoji2-views-helper-1.2.0-12 C:\Users\pokem\.gradle\caches\transforms-3\4e2a7c8617864a155a30ca59415fc8e4\transformed\emoji2-views-helper-1.2.0\res
+es.upv.a3c.smartlibrary.app-zxing-android-embedded-4.1.0-13 C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\res
+es.upv.a3c.smartlibrary.app-fab-1.6.4-14 C:\Users\pokem\.gradle\caches\transforms-3\71b3392c7f1929571f684e293b613954\transformed\fab-1.6.4\res
+es.upv.a3c.smartlibrary.app-annotation-experimental-1.1.0-15 C:\Users\pokem\.gradle\caches\transforms-3\806bc6f4031a1065b4f3571ef409385f\transformed\annotation-experimental-1.1.0\res
+es.upv.a3c.smartlibrary.app-firebase-ui-auth-7.1.1-16 C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\res
+es.upv.a3c.smartlibrary.app-cardview-1.0.0-17 C:\Users\pokem\.gradle\caches\transforms-3\9ec7308c41b824726f2a6683edb04e60\transformed\cardview-1.0.0\res
+es.upv.a3c.smartlibrary.app-appcompat-1.5.1-18 C:\Users\pokem\.gradle\caches\transforms-3\a628b047a528adad8d38afe27c2e2503\transformed\appcompat-1.5.1\res
+es.upv.a3c.smartlibrary.app-fragment-1.3.6-19 C:\Users\pokem\.gradle\caches\transforms-3\ada796b0ae7e608aec43ed69b9ecae00\transformed\fragment-1.3.6\res
+es.upv.a3c.smartlibrary.app-play-services-base-18.0.1-20 C:\Users\pokem\.gradle\caches\transforms-3\ae2c843528e04ad00306c7b9fed17697\transformed\play-services-base-18.0.1\res
+es.upv.a3c.smartlibrary.app-transition-1.2.0-21 C:\Users\pokem\.gradle\caches\transforms-3\b50ed18cca91452259f0fc5f95b524ba\transformed\transition-1.2.0\res
+es.upv.a3c.smartlibrary.app-startup-runtime-1.1.1-22 C:\Users\pokem\.gradle\caches\transforms-3\b710f836a8ef65121a8d6736761924ff\transformed\startup-runtime-1.1.1\res
+es.upv.a3c.smartlibrary.app-drawerlayout-1.1.1-23 C:\Users\pokem\.gradle\caches\transforms-3\c1c50335a700fbde08c1f1eb1db196ab\transformed\drawerlayout-1.1.1\res
+es.upv.a3c.smartlibrary.app-coordinatorlayout-1.1.0-24 C:\Users\pokem\.gradle\caches\transforms-3\c21e9f262f5cd817fc7d67785a83fdb4\transformed\coordinatorlayout-1.1.0\res
+es.upv.a3c.smartlibrary.app-play-services-basement-18.1.0-25 C:\Users\pokem\.gradle\caches\transforms-3\cda6b2e66c2f63b3b55d415b621196fd\transformed\play-services-basement-18.1.0\res
+es.upv.a3c.smartlibrary.app-material-1.6.1-26 C:\Users\pokem\.gradle\caches\transforms-3\ce02f3f7664ba9eb629fc57f47e65fc3\transformed\material-1.6.1\res
+es.upv.a3c.smartlibrary.app-appcompat-resources-1.5.1-27 C:\Users\pokem\.gradle\caches\transforms-3\d492b1857be31db1eb323da8d605d430\transformed\appcompat-resources-1.5.1\res
+es.upv.a3c.smartlibrary.app-library-1.6.1-28 C:\Users\pokem\.gradle\caches\transforms-3\dda4a0363e943e4de98d66b7e57aa4ec\transformed\library-1.6.1\res
+es.upv.a3c.smartlibrary.app-firebase-common-20.2.0-29 C:\Users\pokem\.gradle\caches\transforms-3\e66b34993606700fb27a08e374852cfa\transformed\firebase-common-20.2.0\res
+es.upv.a3c.smartlibrary.app-lifecycle-process-2.4.1-30 C:\Users\pokem\.gradle\caches\transforms-3\ea8421a87f85d746cc1f9e62cbe8bb18\transformed\lifecycle-process-2.4.1\res
+es.upv.a3c.smartlibrary.app-lifecycle-runtime-2.5.1-31 C:\Users\pokem\.gradle\caches\transforms-3\f1b49b467381333fb8bde733704c2c1a\transformed\lifecycle-runtime-2.5.1\res
+es.upv.a3c.smartlibrary.app-lifecycle-viewmodel-2.5.1-32 C:\Users\pokem\.gradle\caches\transforms-3\f6a0053eee54c86e3989c3af1c754943\transformed\lifecycle-viewmodel-2.5.1\res
+es.upv.a3c.smartlibrary.app-lifecycle-livedata-core-2.5.1-33 C:\Users\pokem\.gradle\caches\transforms-3\f6da718a909facab080901c41c0e2420\transformed\lifecycle-livedata-core-2.5.1\res
+es.upv.a3c.smartlibrary.app-viewpager2-1.0.0-34 C:\Users\pokem\.gradle\caches\transforms-3\fa3a27395b13472aaec322b16d513631\transformed\viewpager2-1.0.0\res
+es.upv.a3c.smartlibrary.app-constraintlayout-2.1.4-35 C:\Users\pokem\.gradle\caches\transforms-3\fae15a032f7194e43b6919feca645684\transformed\constraintlayout-2.1.4\res
+es.upv.a3c.smartlibrary.app-google-services-36 C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\build\generated\res\google-services\debug
+es.upv.a3c.smartlibrary.app-pngs-37 C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\build\generated\res\pngs\debug
+es.upv.a3c.smartlibrary.app-resValues-38 C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\build\generated\res\resValues\debug
+es.upv.a3c.smartlibrary.app-rs-39 C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\build\generated\res\rs\debug
+es.upv.a3c.smartlibrary.app-packageDebugResources-40 C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+es.upv.a3c.smartlibrary.app-packageDebugResources-41 C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+es.upv.a3c.smartlibrary.app-merged_res-42 C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\build\intermediates\merged_res\debug
+es.upv.a3c.smartlibrary.app-debug-43 C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\debug\res
+es.upv.a3c.smartlibrary.app-main-44 C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\res
