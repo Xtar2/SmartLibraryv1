@@ -34,10 +34,10 @@ public class LoginActivity extends AppCompatActivity {
         login();
 
     }
-
+//Funcion para loguearse
     private void login() {
         FirebaseUser usuario = FirebaseAuth.getInstance().getCurrentUser();
-        if (usuario != null) {
+        if (usuario != null) { //Si  hay usuario guardado en BBDD entra
 
             Toast.makeText(this, "Sesión iniciada: " + usuario.getDisplayName() +
                     " - " + usuario.getEmail(), Toast.LENGTH_LONG).show();
@@ -49,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
             startActivity(i);
-        } else {
+        } else { //Si no hay lo crea
             List<AuthUI.IdpConfig> providers = Arrays.asList(
                     new AuthUI.IdpConfig.EmailBuilder().build(),
                     new AuthUI.IdpConfig.GoogleBuilder().build());

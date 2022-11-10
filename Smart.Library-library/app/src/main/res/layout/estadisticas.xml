@@ -36,7 +36,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.android.volley.toolbox.NetworkImageView
-        android:id="@+id/imagen2"
+        android:id="@+id/imagen"
         android:layout_width="54dp"
         android:layout_height="56dp"
         android:layout_marginTop="16dp"

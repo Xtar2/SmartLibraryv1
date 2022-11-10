@@ -7,26 +7,41 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.LruCache;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.SearchView;
+import android.widget.TextView;
 import android.widget.Toolbar;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.ImageLoader;
+import com.android.volley.toolbox.NetworkImageView;
+import com.android.volley.toolbox.Volley;
 import com.firebase.ui.auth.AuthUI;
 import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.getbase.floatingactionbutton.FloatingActionsMenu;
+import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 import com.google.zxing.integration.android.IntentIntegrator;
 
 public class MainActivity extends AppCompatActivity {
@@ -36,17 +51,47 @@ public class MainActivity extends AppCompatActivity {
     FloatingActionButton fab3;
     FloatingActionsMenu MenuBoton;
     SearchView Buscar;
+    private NetworkImageView fotoUsuario;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        usuario = FirebaseAuth.getInstance().getCurrentUser();
+
+        TextView nombre = findViewById(R.id.nombre4);
+        nombre.setText(usuario.getDisplayName());
+
+        // Inicialización Volley (Hacer solo una vez en Singleton o Applicaction)
+        RequestQueue colaPeticiones = Volley.newRequestQueue(
+                getApplicationContext());
+        ImageLoader lectorImagenes = new ImageLoader(colaPeticiones,
+                new ImageLoader.ImageCache() {
+                    private final LruCache<String, Bitmap> cache =
+                            new LruCache<String, Bitmap>(10);
+                    public void putBitmap(String url, Bitmap bitmap) {
+                        cache.put(url, bitmap);
+                    }
+                    public Bitmap getBitmap(String url) {
+                        return cache.get(url);
+                    }
+                });
+        Uri urlImagen = usuario.getPhotoUrl();
+        fotoUsuario = (NetworkImageView)
+                findViewById(R.id.imagen);
+        fotoUsuario.setDefaultImageResId(R.drawable.head);
+        if (urlImagen != null) {
+
+            fotoUsuario.setImageUrl(urlImagen.toString(), lectorImagenes);
+        }
+        loadUrl();
 
 
+getSupportActionBar().hide();
 
 
-
+//BOTON FLOTANTE
         MenuBoton = findViewById(R.id.grupofab);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab1);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -76,7 +121,7 @@ MenuBoton.collapse();
             }
 
         });
-        
+
         usuario = FirebaseAuth.getInstance().getCurrentUser();
         nombres = new String[]{"Libros", "Plazas", "Cabinas"};
         ViewPager2 viewPager = findViewById(R.id.viewpager);
@@ -93,21 +138,20 @@ MenuBoton.collapse();
                     }
                 }
         ).attach();
+
+        //ICONOS TABS
         tabs.getTabAt(0).setIcon(R.drawable.libroabierto2);
         tabs.getTabAt(2).setIcon(R.drawable.cabina_de_entradas);
         tabs.getTabAt(1).setIcon(R.drawable.sentado_en_una_silla);
 
-     
 
+// TABS SELECCIONADOS
         tabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 switch (tab.getPosition()) {
-
-
                 }
             }
-
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
             }
@@ -117,25 +161,107 @@ MenuBoton.collapse();
             }
         });
 
-
-
     }
 
+    //  FOTO DE PERFIL
+    private void loadUrl() {
+        if (usuario!=null&& !TextUtils.isEmpty(usuario.getUid())) {
+            DatabaseReference myDf = FirebaseDatabase.getInstance().getReference().child("User").child(usuario.getUid());
+            myDf.addValueEventListener(new ValueEventListener() {
 
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    String  img = dataSnapshot.getValue(String.class);
+                    RequestQueue colaPeticiones = Volley.newRequestQueue(
+                            getApplicationContext());
+                    ImageLoader lectorImagenes = new ImageLoader(colaPeticiones,
+                            new ImageLoader.ImageCache() {
+                                private final LruCache<String, Bitmap> cache =
+                                        new LruCache<String, Bitmap>(10);
+                                public void putBitmap(String url, Bitmap bitmap) {
+                                    cache.put(url, bitmap);
+                                }
+                                public Bitmap getBitmap(String url) {
+                                    return cache.get(url);
+                                }
+                            });
+                    fotoUsuario.setImageUrl(img,lectorImagenes);
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        if (usuario.getEmail() == null) {
-            getMenuInflater().inflate(R.menu.menu_anonimo, menu);
-            return true;
+                }
 
-        } else {
-            getMenuInflater().inflate(R.menu.menu_main, menu);
-            return true;
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                }
+            });
         }
 
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK) {
+            switch (requestCode) {
+
+                case 2:
+                    final Uri uri = data.getData();
+                    upload (uri);
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
+    }
+
+    private void upload(Uri uri) {
+        StorageReference mStoreReference = FirebaseStorage.getInstance().getReference();
+        StorageReference riversRef = mStoreReference.child(System.currentTimeMillis()+".jpg");
+        UploadTask uploadTask = riversRef.putFile(uri);
+        uploadTask.continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
+            @Override
+            public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
+                if (!task.isSuccessful()) {
+                    throw task.getException();
+                }
+                return riversRef.getDownloadUrl();
+            }
+        }).addOnCompleteListener(new OnCompleteListener<Uri>() {
+            @Override
+            public void onComplete(@NonNull Task<Uri> task) {
+                if (task.isSuccessful()) {
+                    Uri downloadUri = task.getResult();
+                    String url = downloadUri.toString();
+                    RequestQueue colaPeticiones = Volley.newRequestQueue(
+                            getApplicationContext());
+                    ImageLoader lectorImagenes = new ImageLoader(colaPeticiones,
+                            new ImageLoader.ImageCache() {
+                                private final LruCache<String, Bitmap> cache =
+                                        new LruCache<String, Bitmap>(10);
+                                public void putBitmap(String url, Bitmap bitmap) {
+                                    cache.put(url, bitmap);
+                                }
+                                public Bitmap getBitmap(String url) {
+                                    return cache.get(url);
+                                }
+                            });
+                    fotoUsuario.setImageUrl(url,lectorImagenes);
+                    if (usuario!=null&& !TextUtils.isEmpty(usuario.getUid())) {
+                        FirebaseDatabase.getInstance().getReference().child("User").child(usuario.getUid())
+                                .setValue(url);
+                    }
+                } else {
+
+                }
+            }
+        });
+    }
+
+
+
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -144,22 +270,10 @@ MenuBoton.collapse();
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        if (id == R.id.imagen) {
-            Intent intent = new Intent(this, UsuarioActivity.class);
-            startActivity(intent);
-        }
-
-        if (id == R.id.menu_login_anonimo) {
-            cerrarSesion();
-
-
-        }
-
         if (id == R.id.acerca_de) {
             Intent intent = new Intent(this, AcercadeActivity.class);
             startActivity(intent);
         }
-
 
 
         if (id == R.id.fab3) {
@@ -170,10 +284,7 @@ MenuBoton.collapse();
     }
 
 
-    public void CodigoBarrasActivo () {
-    new IntentIntegrator(this).initiateScan();
-    }
-
+//Para cerrar sesion
     public void cerrarSesion() {
         AuthUI.getInstance().signOut(getApplicationContext())
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -190,7 +301,7 @@ MenuBoton.collapse();
                 });
     }
 
-
+//Para ver los tabs
     public class MiPagerAdapter extends FragmentStateAdapter {
         public MiPagerAdapter(FragmentActivity activity) {
             super(activity);
@@ -218,4 +329,7 @@ MenuBoton.collapse();
 
     }
 
+
 }
+
+

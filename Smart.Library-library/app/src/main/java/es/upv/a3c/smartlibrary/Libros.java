@@ -2,6 +2,7 @@ package es.upv.a3c.smartlibrary;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,7 +50,7 @@ public class Libros extends Fragment  {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.libros, container, false);
-        db = FirebaseFirestore.getInstance();
+
 
 
 
@@ -57,6 +58,7 @@ public class Libros extends Fragment  {
 
 
        //ISBN BASE DATOS
+        db = FirebaseFirestore.getInstance();
         Codigo = view.findViewById(R.id.TextoEscaneo);
         Escaneo = view.findViewById(R.id.Escaneo);
         searchView = view.findViewById(R.id.searchView);
@@ -67,18 +69,13 @@ public class Libros extends Fragment  {
             public void onClick(View view) {
                 String ISBN = Codigo.getText().toString();
                 String title = searchView.getQuery().toString();
-                if(title.isEmpty()){
+                if(title.isEmpty()&&ISBN.isEmpty()){
                     Toast.makeText(getContext(),"empty",Toast.LENGTH_SHORT);
-                    return;
-                }
-                if(ISBN.isEmpty()){
-                    Toast.makeText(getContext(),"Ingresar ISBN",Toast.LENGTH_SHORT);
                     return;
                 }
                 putISBN(title,ISBN);
             }
         });
-
 
 
 
@@ -90,17 +87,26 @@ public class Libros extends Fragment  {
         });
         return view;
     }
-
-    private void putISBN(String title,String isbn) {
-        Map<String,Object> map= new HashMap<>();
-        map.put("ISBN",isbn);
+//ISBN a base de datos
+private void putISBN(String title,String isbn) {
+    Map<String,Object> map= new HashMap<>();
+    if (!TextUtils.isEmpty(title)){
         map.put("title",title);
-        String uid= FirebaseAuth.getInstance().getUid();
-        FirebaseDatabase.getInstance().getReference().child("ISBNs").child(uid)
-                .setValue(map);
+    }else{
+        map.put("title","");
+    }
+    if (!TextUtils.isEmpty(isbn)){
+        map.put("ISBN",isbn);
+    }else{
+        map.put("ISBN","");
     }
 
 
+    String uid= FirebaseAuth.getInstance().getUid();
+    FirebaseDatabase.getInstance().getReference().child("ISBNs").child(uid)
+            .setValue(map);
+}
+//Funcion Escaneo
     public void escanear()
     {
 
@@ -109,10 +115,11 @@ public class Libros extends Fragment  {
         integrador.setPrompt("Lector Barras");
         integrador.setCameraId(0);
         integrador.setBeepEnabled(false);
-        integrador.setBarcodeImageEnabled(false);
+        integrador.setBarcodeImageEnabled(true);
         integrador.initiateScan();
-    }
 
+    }
+//Por si cancelas el escaneo
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data){
         IntentResult result = IntentIntegrator.parseActivityResult(requestCode,resultCode,data);
