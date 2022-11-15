@@ -38,7 +38,6 @@ public class LoginActivity extends AppCompatActivity {
     private void login() {
         FirebaseUser usuario = FirebaseAuth.getInstance().getCurrentUser();
         if (usuario != null) { //Si  hay usuario guardado en BBDD entra
-
             Toast.makeText(this, "Sesión iniciada: " + usuario.getDisplayName() +
                     " - " + usuario.getEmail(), Toast.LENGTH_LONG).show();
             Intent i = new Intent(this, MainActivity.class);

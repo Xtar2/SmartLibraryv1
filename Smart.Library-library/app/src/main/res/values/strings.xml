@@ -32,6 +32,21 @@ Aviso: La aplicación registrara su estancia en la biblioteca, avisandole si su 
 
     <string name="scan">Scan</string>
 
+<string name="Prueba">
+    En esta aplicación podremos reservar tanto libros como plazas como cabinas
+
+</string>
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
 
 
 </resources>

@@ -12,11 +12,13 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.util.LruCache;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.SearchView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
@@ -30,6 +32,7 @@ import com.getbase.floatingactionbutton.FloatingActionsMenu;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 import com.google.firebase.auth.FirebaseAuth;
@@ -39,10 +42,15 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.google.zxing.integration.android.IntentIntegrator;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -52,16 +60,19 @@ public class MainActivity extends AppCompatActivity {
     FloatingActionsMenu MenuBoton;
     SearchView Buscar;
     private NetworkImageView fotoUsuario;
+
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        usuario = FirebaseAuth.getInstance().getCurrentUser();
 
+        usuario = FirebaseAuth.getInstance().getCurrentUser();
         TextView nombre = findViewById(R.id.nombre4);
         nombre.setText(usuario.getDisplayName());
+
+
 
         // Inicialización Volley (Hacer solo una vez en Singleton o Applicaction)
         RequestQueue colaPeticiones = Volley.newRequestQueue(
@@ -88,6 +99,8 @@ public class MainActivity extends AppCompatActivity {
         loadUrl();
 
 
+
+// Esconder toolbar
 getSupportActionBar().hide();
 
 
