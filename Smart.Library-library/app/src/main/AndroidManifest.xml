@@ -54,9 +54,9 @@
         <activity android:name=".AcercadeActivity"
             android:label="Acerca de ..."
             android:theme="@style/Theme.AppCompat.Light.Dialog"/>
-<activity android:name=".Libros">
+        <activity android:name=".RegisterActivity">
 
-</activity>
+        </activity>
 
 
     </application>

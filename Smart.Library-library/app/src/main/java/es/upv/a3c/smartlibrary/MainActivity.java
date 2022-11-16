@@ -60,12 +60,18 @@ public class MainActivity extends AppCompatActivity {
     FloatingActionsMenu MenuBoton;
     SearchView Buscar;
     private NetworkImageView fotoUsuario;
+    private FirebaseAuth mAuth;
 
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        mAuth = FirebaseAuth.getInstance();
+        FirebaseUser currentuser = mAuth.getCurrentUser();
+        //establecer campos
 
 
         usuario = FirebaseAuth.getInstance().getCurrentUser();
@@ -174,6 +180,19 @@ MenuBoton.collapse();
             }
         });
 
+    }
+    //------------------------------
+    //Fin del metodo Create
+    //------------------------------
+
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+       usuario = mAuth.getCurrentUser();
+       if (usuario == null){
+           startActivity(new Intent(MainActivity.this,LoginActivity.class));
+       }
     }
 
     //  FOTO DE PERFIL
