@@ -89,6 +89,7 @@ public class UsuarioActivity extends AppCompatActivity {
         TextView email = findViewById(R.id.email);
         email.setText(usuario.getEmail());
 
+        Button botonPerfil = findViewById(R.id.BotonPerfil);
         Button botonReservas = findViewById(R.id.botonReservas);
         Button botonEstadisticas = findViewById(R.id.botonEstadisticas);
         TextView eliminarCuenta = findViewById(R.id.eliminarCuenta);
@@ -112,6 +113,12 @@ public class UsuarioActivity extends AppCompatActivity {
         botonReservas.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 lanzarMisReservas(null);
+            }
+        });
+
+        botonPerfil.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                lanzarMiPerfil(null);
             }
         });
 
@@ -239,6 +246,10 @@ public class UsuarioActivity extends AppCompatActivity {
 
     public void lanzarMisEstadisticas(View view){
         Intent i = new Intent(this, EstadisticasActivity.class);
+        startActivity(i);
+    }
+    public void lanzarMiPerfil(View view){
+        Intent i = new Intent(this,PerfilUsuario.class);
         startActivity(i);
     }
 

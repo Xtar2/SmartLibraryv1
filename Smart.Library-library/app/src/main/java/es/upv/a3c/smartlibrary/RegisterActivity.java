@@ -79,6 +79,7 @@ public class RegisterActivity  extends AppCompatActivity {
             String mail = txtMail.getText().toString();
             String password = txtPassword.getText().toString();
 
+
             if (TextUtils.isEmpty(name)){
                 txtMail.setError("Ingrese un nombre");
                 txtMail.requestFocus();
@@ -97,7 +98,7 @@ public class RegisterActivity  extends AppCompatActivity {
                             DocumentReference documentReference = db.collection("usuarios").document(userID);
 
                             Map<String,Object> usuario = new HashMap<>();
-                            usuario.put("Nombre", name);
+                            usuario.put("name", name);
                             usuario.put("Email", mail);
                             usuario.put("Contraseña", password);
 
