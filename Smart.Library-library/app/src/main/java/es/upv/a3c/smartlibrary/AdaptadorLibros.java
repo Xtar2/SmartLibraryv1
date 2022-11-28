@@ -1,6 +1,7 @@
 package es.upv.a3c.smartlibrary;
 
 
+import android.app.Activity;
 import android.os.Build;
 import android.provider.Contacts;
 import android.provider.ContactsContract;
@@ -8,93 +9,89 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.SearchView;
 import android.widget.TextView;
+import  android.content.Context;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.bumptech.glide.Glide;
+import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
+import com.firebase.ui.firestore.FirestoreRecyclerOptions;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class AdaptadorLibros extends RecyclerView.Adapter<AdaptadorLibros.ViewHolderLibros> {
-    ArrayList<LibrosVo> listaLibros;
+public class AdaptadorLibros extends FirestoreRecyclerAdapter<LibrosVo,AdaptadorLibros.ViewHolderLibros> {
 
-    //lista filtrar
-    ArrayList<LibrosVo> listaOriginal;
-    public AdaptadorLibros(ArrayList<LibrosVo> listaLibros) {
-        this.listaLibros = listaLibros;
-        listaOriginal = new ArrayList<>();
-        listaOriginal.addAll(listaLibros);
+
+    private EventListener eventListener;
+
+    public AdaptadorLibros(@NonNull FirestoreRecyclerOptions<LibrosVo> options) {
+        super(options);
+        this.eventListener = eventListener;
+
     }
 
+    @Override
+    public void onBindViewHolder( ViewHolderLibros holder, int position, @NonNull LibrosVo model) {
+        holder.Nombre.setText(model.getNombre());
+        holder.ISBN.setText(model.getISBN());
+        holder.Descripcion.setText(model.getDescripcion());
+        Glide.with(holder.img.getContext()).load(model.getImg()).into(holder.img);
 
 
 
 
+
+    }
 
     @androidx.annotation.NonNull
     @Override
     //Enlaza esta clase con el archivo de item_lista
     public ViewHolderLibros onCreateViewHolder(@androidx.annotation.NonNull ViewGroup parent, int viewType) {
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_lista,parent,false);
+        return new ViewHolderLibros(v);
 
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_lista,null,false);
-        return new ViewHolderLibros(view);
+        
+
     }
 
-    @Override
-    // enlaza el adaptador con el viewholder
-    public void onBindViewHolder(@androidx.annotation.NonNull ViewHolderLibros holder, int position) {
-   holder.EtiNombre.setText(listaLibros.get(position).getNombre());
-        holder.EtiInformacion.setText(listaLibros.get(position).getInfo());
-        holder.foto.setImageResource(listaLibros.get(position).getFoto());
-    }
 
-    //Metodo de filtrado
-    public  void filtrado(String searchview){
-        int longitud = searchview.length();
-        if(longitud == 0){
-            listaLibros.clear();
-            listaLibros.addAll(listaOriginal);
-       } else{
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N_MR1) {
-                List<LibrosVo> coleccion = listaOriginal.stream().filter(i -> i.getNombre().toLowerCase().contains(searchview.toLowerCase()))
-                        .collect(Collectors.toList());
-                listaLibros.clear();
-                listaLibros.addAll(coleccion);
 
-            } else {
-                for (LibrosVo c: listaOriginal) {
-                    if (c.getNombre().toLowerCase().contains(searchview.toLowerCase())){
-                        listaLibros.add(c);
-                    }
-                }
-                    
-            }
-        }
-        notifyDataSetChanged();
-    }
-
-    @Override
-    //tamaño de la lista
-    public int getItemCount() {
-        return listaLibros.size();
-    }
 
     public class ViewHolderLibros extends RecyclerView.ViewHolder {
 
-        TextView EtiNombre,EtiInformacion;
-        ImageView foto;
+
+        TextView Nombre,Descripcion,ISBN;
+        ImageView img;
+
+
 
         public ViewHolderLibros(@androidx.annotation.NonNull View itemView) {
             super(itemView);
 
-            EtiNombre=itemView.findViewById(R.id.Nombrelibro);
-            EtiInformacion=itemView.findViewById(R.id.Infolibro);
-            foto=itemView.findViewById(R.id.Imagenrecycler);
+         Nombre=itemView.findViewById(R.id.Nombrelibro);
+          Descripcion=itemView.findViewById(R.id.Infolibro);
+            img=itemView.findViewById(R.id.Imagenrecycler);
+            ISBN = itemView.findViewById(R.id.ISBNLibro);
+
+
 
         }
 
 
     }
+    public interface EventListener {
+        void onEventName(String nombre);
+    }
+
+
+
+
 }

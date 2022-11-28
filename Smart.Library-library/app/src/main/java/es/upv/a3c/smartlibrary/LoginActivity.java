@@ -1,7 +1,5 @@
 package es.upv.a3c.smartlibrary;
 
-import static android.content.ContentValues.TAG;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,30 +11,37 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
-import com.firebase.ui.auth.AuthUI;
-import com.firebase.ui.auth.ErrorCodes;
-import com.firebase.ui.auth.IdpResponse;
+import com.facebook.AccessToken;
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
+import com.facebook.login.LoginManager;
+import com.facebook.login.LoginResult;
+import com.facebook.login.widget.LoginButton;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
-import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.Arrays;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 public class LoginActivity extends AppCompatActivity {
     private static final int RC_SIGN_IN = 1;
@@ -44,8 +49,15 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private EditText txtMail;
     private EditText txtPassword;
+    private boolean NuevoUsuario;
     private Button btnLogin;
     private TextView lblRegister;
+    private FirebaseFirestore db;
+    private TextView contraseñaolvidada;
+
+    //Facebook
+   private LoginButton loginButton;
+   private CallbackManager callbackManager;
     String TAG = "GoogleSignInLoginActivity";
     private GoogleSignInClient mGoogleSingInClient;
     private Button btnSignIn;
@@ -54,11 +66,13 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
        setContentView(R.layout.activity_login);
-
+      NuevoUsuario = false;
+      contraseñaolvidada = findViewById(R.id.olvidadacontrasena);
        txtMail =findViewById(R.id.mailLogin);
         txtPassword =findViewById(R.id.txtPassword);
         lblRegister =findViewById(R.id.lblregister);
         btnLogin =findViewById(R.id.btnLogin);
+        db = FirebaseFirestore.getInstance();
 
 
 
@@ -80,20 +94,65 @@ public class LoginActivity extends AppCompatActivity {
 
         mGoogleSingInClient =GoogleSignIn.getClient(this,gso);
         mAuth = FirebaseAuth.getInstance();
+        callbackManager = CallbackManager.Factory.create();
+
         btnSignIn=findViewById(R.id.GoogleButton);
+
+
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 SignIn();
             }
         });
+
+
+        contraseñaolvidada.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this,ReestablecerContraseña.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+
     }
-    //Fin del oncreate
+
+
+
+
+//Fin del oncreate
+
+
+public  void añadirFirestore(String usertype) {
+        Map<String, Object> usuarioGoogle = new HashMap<>();
+        usuarioGoogle.put("NombreGoogle", mAuth.getCurrentUser().getDisplayName());
+        usuarioGoogle.put("EmailGoogle", mAuth.getCurrentUser().getEmail());
+
+        db.collection("UsuariosGoogle").document(mAuth.getCurrentUser().getUid()).set(usuarioGoogle).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                Log.i("", "Nuevo usuario en firestore");
+                startActivity(new Intent(LoginActivity.this, MainActivity.class));
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Log.i("", "Error al añadir a firestore");
+            }
+        });
+    }
+
 
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+
+
 
         if (requestCode == RC_SIGN_IN){
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
@@ -101,6 +160,23 @@ public class LoginActivity extends AppCompatActivity {
 
                 try {
                     GoogleSignInAccount account = task.getResult(ApiException.class);
+                    mAuth.signInWithEmailAndPassword(account.getEmail(),"123456").addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if(task.isSuccessful()) {
+                                Toast.makeText(LoginActivity.this, "Bienvenido", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+                                startActivity(intent);
+                            }else{
+                                Log.w("TAG","Error",task.getException());
+
+                            }
+                            NuevoUsuario = true;
+
+                        }
+
+                    });
+
                     Log.d(TAG, "firebaseAuthWithGoogle:" + account.getId());
                     firebaseAuthWithGoogle(account.getIdToken());
                 }catch (ApiException e) {
@@ -111,6 +187,7 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(this,"Ocurrió un error "+task.getException().toString(),Toast.LENGTH_SHORT).show();
             }
         }
+
     }
 
     private void firebaseAuthWithGoogle (String idToken){
@@ -121,6 +198,11 @@ public class LoginActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                         Log.d(TAG,"signInWithCredential:success");
+                        if (NuevoUsuario){
+                        añadirFirestore("users");
+
+
+                        }
                         Intent dashboardActivity = new Intent(LoginActivity.this,MainActivity.class);
                         startActivity(dashboardActivity);
                         LoginActivity.this.finish();
@@ -176,12 +258,51 @@ public class LoginActivity extends AppCompatActivity {
                         Intent intent = new Intent(LoginActivity.this,MainActivity.class);
                         startActivity(intent);
                     }else{
-                            Log.w("TAG","Error",task.getException());
+                        Toast.makeText(LoginActivity.this, "Autentficación fallida", Toast.LENGTH_SHORT).show();
                         }
                     }
+
             });
         }
+
     }
+
+
+
+
+private void handleFcbookAccessToken(AccessToken token){
+AuthCredential credential = FacebookAuthProvider.getCredential(token.getToken());
+mAuth.signInWithCredential(credential)
+        .addOnCompleteListener(this,new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+if (task.isSuccessful()){
+    FirebaseUser user = mAuth.getCurrentUser();
+    updateUI(user);
+ 
+  Toast.makeText(LoginActivity.this,"Ingresado",Toast.LENGTH_SHORT).show();
+}else{
+    Toast.makeText(LoginActivity.this,"No puede ingresar con esta cuenta",Toast.LENGTH_SHORT).show();
+    updateUI(null);
+}
+            }
+        });
+
+}
+
+    private void updateUI(FirebaseUser user) {
+        if (user != null){
+            Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+            startActivity(intent);
+
+        }else{
+            Toast.makeText(LoginActivity.this,"Logueate para continuar",Toast.LENGTH_SHORT).show();
+        }
+    }
+
+
+
+
 
 }
 

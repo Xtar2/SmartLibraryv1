@@ -8,7 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="BackgroundDialog">#2E2D2D</color>
-    <color name="BotonesPrimarios">#395f60</color>
-    <color name="ColorPrincipal">#de6b07</color>
-    <color name="ColorPrincipalSuave">#ff8f2d</color>
+    <color name="BotonesPrimarios">#5A3E71</color>
+    <color name="ColorPrincipal">#B9BFFF</color>
+    <color name="ColorPrincipalSuave">#B9BFFF</color>
 </resources>

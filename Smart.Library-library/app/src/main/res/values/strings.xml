@@ -49,4 +49,10 @@ Aviso: La aplicación registrara su estancia en la biblioteca, avisandole si su 
     </string-array>
 
 
+    <string name="facebook_app_id">445659974391504</string>
+    <string name="fb_login_protocol_scheme">fb445659974391504</string>
+
+
+
+
 </resources>

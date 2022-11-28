@@ -1,6 +1,7 @@
 package es.upv.a3c.smartlibrary;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
@@ -42,8 +43,11 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
@@ -61,7 +65,8 @@ public class MainActivity extends AppCompatActivity {
     SearchView Buscar;
     private NetworkImageView fotoUsuario;
     private FirebaseAuth mAuth;
-
+    private String idUser;
+    private  FirebaseFirestore fStore;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,14 +74,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        mAuth = FirebaseAuth.getInstance();
-        FirebaseUser currentuser = mAuth.getCurrentUser();
-        //establecer campos
-
-
         usuario = FirebaseAuth.getInstance().getCurrentUser();
-        TextView nombre = findViewById(R.id.nombre4);
-        nombre.setText(usuario.getDisplayName());
 
 
 
@@ -103,6 +101,21 @@ public class MainActivity extends AppCompatActivity {
             fotoUsuario.setImageUrl(urlImagen.toString(), lectorImagenes);
         }
         loadUrl();
+
+
+        //establecer campos
+        TextView nombre = findViewById(R.id.nombre4);
+        mAuth = FirebaseAuth.getInstance();
+        idUser = mAuth.getCurrentUser().getUid();
+        fStore = FirebaseFirestore.getInstance();
+        DocumentReference documentReference = fStore.collection("usuarios").document(idUser);
+        documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
+            @Override
+            public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
+                nombre.setText(value.getString("name"));
+            }
+        });
+
 
 
 
@@ -357,11 +370,7 @@ MenuBoton.collapse();
             }
             return null;
         }
-
-
     }
-
-
 }
 
 

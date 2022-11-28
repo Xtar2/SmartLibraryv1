@@ -2,18 +2,40 @@ package es.upv.a3c.smartlibrary;
 
 public class LibrosVo {
 
-    private String nombre;
-    private String info;
-    int foto;
+    String isbn,descripcion,img,nombre;
 
-    public LibrosVo(){
-
+    public LibrosVo() {
     }
 
-    public LibrosVo(String nombre, String info, int foto) {
+    public LibrosVo(String ISBN, String descripcion, String img, String nombre) {
+        this.isbn = ISBN;
+        this.descripcion = descripcion;
+        this.img = img;
         this.nombre = nombre;
-        this.info = info;
-        this.foto = foto;
+    }
+
+    public String getISBN() {
+        return isbn;
+    }
+
+    public void setISBN(String ISBN) {
+        this.isbn = ISBN;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
     }
 
     public String getNombre() {
@@ -24,19 +46,9 @@ public class LibrosVo {
         this.nombre = nombre;
     }
 
-    public String getInfo() {
-        return info;
-    }
+    @Override
+    public String toString() {
+        return nombre;
 
-    public void setInfo(String info) {
-        this.info = info;
-    }
-
-    public int getFoto() {
-        return foto;
-    }
-
-    public void setFoto(int foto) {
-        this.foto = foto;
     }
 }

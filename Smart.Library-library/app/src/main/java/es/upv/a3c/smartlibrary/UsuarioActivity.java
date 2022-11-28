@@ -16,6 +16,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -36,6 +37,11 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
@@ -50,12 +56,31 @@ public class UsuarioActivity extends AppCompatActivity {
     List<String> permissionList = new ArrayList<>();
     private NetworkImageView fotoUsuario;
     private FirebaseUser usuario;
-
+    FirebaseAuth mAuth;
+    private String idUser;
+    private  FirebaseFirestore fStore;
     @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_usuario);
 
          usuario = FirebaseAuth.getInstance().getCurrentUser();
+
+// Esto se hace para cargar de la base de datos el nombre y el email
+        TextView nombre = findViewById(R.id.nombre);
+        TextView email = findViewById(R.id.email);
+        mAuth = FirebaseAuth.getInstance();
+        idUser = mAuth.getCurrentUser().getUid();
+        fStore = FirebaseFirestore.getInstance();
+        DocumentReference documentReference = fStore.collection("usuarios").document(idUser);
+        documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
+            @Override
+            public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
+                nombre.setText(value.getString("name"));
+                email.setText(value.getString("Email"));
+
+            }
+        });
+
 
 
         // Inicialización Volley (Hacer solo una vez en Singleton o Applicaction)
@@ -83,11 +108,11 @@ public class UsuarioActivity extends AppCompatActivity {
         }
         loadUrl();
 
-        TextView nombre = findViewById(R.id.nombre);
-        nombre.setText(usuario.getDisplayName());
 
-        TextView email = findViewById(R.id.email);
-        email.setText(usuario.getEmail());
+
+
+
+
 
         Button botonPerfil = findViewById(R.id.BotonPerfil);
         Button botonReservas = findViewById(R.id.botonReservas);
@@ -135,6 +160,8 @@ public class UsuarioActivity extends AppCompatActivity {
         });
 
     }
+
+
 
     private void loadUrl() {
         if (usuario!=null&& !TextUtils.isEmpty(usuario.getUid())) {

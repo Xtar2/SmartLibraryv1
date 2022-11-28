@@ -3,8 +3,10 @@ package es.upv.a3c.smartlibrary;
 import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -22,7 +24,9 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
@@ -34,8 +38,10 @@ public class PerfilUsuario extends AppCompatActivity {
      EditText NombreUsuario;
     EditText EmailUsuario;
     EditText ContraseñaUsuario;
-    FirebaseUser usuario;
-    FirebaseAuth firebaseAuth;
+   FirebaseFirestore fStore;
+    FirebaseAuth mAuth;
+    private String idUser;
+    Button GuardarDatos;
 
     DocumentReference documentReference;
 
@@ -45,27 +51,55 @@ public class PerfilUsuario extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.perfil_usuario);
 
-
-  db = FirebaseFirestore.getInstance();
-        firebaseAuth = FirebaseAuth.getInstance();
-        usuario = firebaseAuth.getCurrentUser();
+       GuardarDatos = findViewById(R.id.Guardarcambios);
+        db = FirebaseFirestore.getInstance();
+        mAuth = FirebaseAuth.getInstance();
+        final FirebaseUser usuario = mAuth.getCurrentUser();
+        fStore = FirebaseFirestore.getInstance();
+        idUser = mAuth.getCurrentUser().getUid();
         NombreUsuario = findViewById(R.id.Nombreusuario);
         EmailUsuario = findViewById(R.id.CorreoUsuario);
         ContraseñaUsuario = findViewById(R.id.ContraseñaUsuario);
 
-db.collection("usuarios").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-    @Override
-    public void onComplete(@NonNull Task<QuerySnapshot> task) {
-        if (task.isSuccessful()){
-            for (QueryDocumentSnapshot document : task.getResult()) {
-                Log.d(TAG, document.getId() + "" + document.getData());
-            }
 
-            }else{
-            Log.w(TAG,"Error getting documents", task.getException());
-        }
+
+            DocumentReference documentReference = fStore.collection("usuarios").document(idUser);
+            documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
+                @Override
+                public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
+                  NombreUsuario.setText(value.getString("name"));
+                  EmailUsuario.setText(value.getString("Email"));
+                   ContraseñaUsuario.setText(value.getString("Contraseña"));
+                }
+            });
+
+
+
+
+
+        GuardarDatos.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                ActualizarDatos();
+                 Intent intent = new Intent(PerfilUsuario.this,MainActivity.class);
+                 startActivity(intent);
+
+             }
+         });
+
+
     }
-});
+    private void ActualizarDatos() {
+        String Nombre = NombreUsuario.getText().toString();
+        String Email = EmailUsuario.getText().toString();
+        String Contraseña = ContraseñaUsuario.getText().toString();
+
+        Map<String, Object> map = new HashMap<>();
+        map.put("name", Nombre);
+        map.put("Email", Email);
+        map.put("Contraseña", Contraseña);
+
+        fStore.collection("usuarios").document(idUser).update(map);
     }
 }
 

@@ -7,34 +7,52 @@
 
     <EditText
         android:id="@+id/Nombreusuario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_width="313dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="224dp"
+        android:background="@color/ColorPrincipalSuave"
+        android:drawableStart="@drawable/head"
+        android:drawablePadding="12dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:textColorHint="#5A3E71"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/CorreoUsuario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_width="313dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/ColorPrincipalSuave"
+        android:drawableStart="@drawable/logoemail"
+        android:drawablePadding="12dp"
         android:ems="10"
         android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:textColor="#5A3E71"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Nombreusuario" />
 
     <EditText
         android:id="@+id/ContraseñaUsuario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_width="313dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/ColorPrincipalSuave"
+        android:drawableStart="@drawable/logopassword"
+        android:drawablePadding="12dp"
         android:ems="10"
         android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textColor="#5A3E71"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CorreoUsuario" />
 
@@ -42,9 +60,32 @@
         android:id="@+id/Guardarcambios"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="50dp"
         android:text="Guardar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ContraseñaUsuario" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="MI PERFIL"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Puede editar sus datos y guardarlos con el botón"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 </androidx.constraintlayout.widget.ConstraintLayout>
