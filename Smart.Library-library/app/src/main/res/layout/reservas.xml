@@ -5,230 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="-52dp">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="181dp"
+        android:layout_height="231dp"
+        android:layout_marginBottom="300dp"
 
-        <Button
-            android:id="@+id/button12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="300dp"
-            android:background="#00FFFFFF"
-            android:backgroundTint="#00FFFFFF"
-            android:shadowColor="#FFFFFF"
-            android:text="Modificar"
-            android:textColor="#000000"
-            android:textColorHighlight="#FFFFFF"
-            android:textColorHint="#FFFFFF"
-            android:textColorLink="#CDDC39"
-            android:textSize="17dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.84"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:rippleColor="#FFFFFF"
-            app:strokeColor="#FFFFFF" />
-
-        <Button
-            android:id="@+id/button14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="360dp"
-            android:background="#00FFFFFF"
-            android:backgroundTint="#00FFFFFF"
-            android:shadowColor="#FFFFFF"
-            android:text="Cancelar"
-            android:textColor="#000000"
-            android:textColorHighlight="#FFFFFF"
-            android:textColorHint="#FFFFFF"
-            android:textColorLink="#CDDC39"
-            android:textSize="17dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.84"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:rippleColor="#FFFFFF"
-            app:strokeColor="#FFFFFF" />
-
-        <View
-            android:id="@+id/divider4"
-            android:layout_width="409dp"
-            android:layout_height="1dp"
-            android:layout_marginTop="88dp"
-            android:background="?android:attr/listDivider"
-            android:backgroundTint="#DD1515"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <View
-            android:id="@+id/divider7"
-            android:layout_width="409dp"
-            android:layout_height="1dp"
-            android:layout_marginTop="264dp"
-            android:background="?android:attr/listDivider"
-            android:backgroundTint="#DD1515"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/nombre3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.632"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <com.android.volley.toolbox.NetworkImageView
-            android:id="@+id/imagen3"
-            android:layout_width="54dp"
-            android:layout_height="56dp"
-            android:layout_marginTop="16dp"
-            android:paddingTop="0dp"
-            android:src="@android:drawable/sym_def_app_icon"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.938"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView288"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="32dp"
-            android:text="CabinaH0111"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/divider7" />
-
-        <TextView
-            android:id="@+id/textView26"
-            android:layout_width="114dp"
-            android:layout_height="112dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="20dp"
-            android:text="Reserva a las 11:30 Biblioteca EPSG (Gandía) Las cabinas tienen un límite de 4 horas"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView288" />
-
-        <TextView
-            android:id="@+id/textView29"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="20dp"
-            android:text="Plaza A2-6"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/divider4" />
-
-        <TextView
-            android:id="@+id/textView28"
-            android:layout_width="111dp"
-            android:layout_height="51dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="28dp"
-            android:text="Reserva a las 11:30 Biblioteca EPSG (Gandía) 3 Horas"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView29" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <Button
-        android:id="@+id/button15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:background="#00FFFFFF"
-        android:backgroundTint="#00FFFFFF"
-        android:shadowColor="#FFFFFF"
-        android:text="Modificar"
-        android:textColor="#000000"
-        android:textColorHighlight="#FFFFFF"
-        android:textColorHint="#FFFFFF"
-        android:textColorLink="#CDDC39"
-        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.84"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:rippleColor="#FFFFFF"
-        app:strokeColor="#FFFFFF" />
-
-    <Button
-        android:id="@+id/button14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
-        android:background="#00FFFFFF"
-        android:backgroundTint="#00FFFFFF"
-        android:shadowColor="#FFFFFF"
-        android:text="Cancelar"
-        android:textColor="#000000"
-        android:textColorHighlight="#FFFFFF"
-        android:textColorHint="#FFFFFF"
-        android:textColorLink="#CDDC39"
-        android:textSize="17dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.84"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:rippleColor="#FFFFFF"
-        app:strokeColor="#FFFFFF" />
-
-    <View
-        android:id="@+id/divider4"
-        android:layout_width="409dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="88dp"
-        android:background="?android:attr/listDivider"
-        android:backgroundTint="#DD1515"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <View
-        android:id="@+id/divider7"
-        android:layout_width="409dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="264dp"
-        android:background="?android:attr/listDivider"
-        android:backgroundTint="#DD1515"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/nombre3"
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:text="MIS RESERVAS"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerview"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.632"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <com.android.volley.toolbox.NetworkImageView
-        android:id="@+id/imagen3"
-        android:layout_width="54dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="16dp"
-        android:paddingTop="0dp"
-        android:src="@android:drawable/sym_def_app_icon"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.938"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

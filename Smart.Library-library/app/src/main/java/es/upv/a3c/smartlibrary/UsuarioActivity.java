@@ -2,6 +2,7 @@ package es.upv.a3c.smartlibrary;
 
 import static android.content.ContentValues.TAG;
 
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -13,6 +14,7 @@ import android.util.Log;
 import android.util.LruCache;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -68,6 +70,7 @@ public class UsuarioActivity extends AppCompatActivity {
 // Esto se hace para cargar de la base de datos el nombre y el email
         TextView nombre = findViewById(R.id.nombre);
         TextView email = findViewById(R.id.email);
+        @SuppressLint({"MissingInflatedId" , "LocalSuppress"}) ImageView mapa = findViewById(R.id.mapita);
         mAuth = FirebaseAuth.getInstance();
         idUser = mAuth.getCurrentUser().getUid();
         fStore = FirebaseFirestore.getInstance();
@@ -80,7 +83,12 @@ public class UsuarioActivity extends AppCompatActivity {
 
             }
         });
-
+mapa.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        lanzarMapa(view);
+    }
+});
 
 
         // Inicialización Volley (Hacer solo una vez en Singleton o Applicaction)
@@ -277,6 +285,10 @@ public class UsuarioActivity extends AppCompatActivity {
     }
     public void lanzarMiPerfil(View view){
         Intent i = new Intent(this,PerfilUsuario.class);
+        startActivity(i);
+    }
+    public void lanzarMapa(View view){
+        Intent i = new Intent(this,mapamaps.class);
         startActivity(i);
     }
 

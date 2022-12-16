@@ -19,13 +19,13 @@
             android:layout_width="309dp"
             android:layout_height="54dp"
             android:layout_marginTop="180dp"
-            android:src="@drawable/mesabiblio"
+            android:src="@drawable/mesa"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/silla3"
+            android:id="@+id/idSilla2"
             android:layout_width="31dp"
             android:layout_height="31dp"
             android:layout_marginTop="132dp"
@@ -35,19 +35,39 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/botonAceptar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
-            android:layout_marginTop="772dp"
+            android:layout_marginTop="848dp"
             android:layout_marginEnd="60dp"
             android:text="Confirmar"
             android:textSize="17dp"
             app:cornerRadius="10dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="896dp"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#00FFFFFF"
+            android:shadowColor="#FFFFFF"
+            android:text="Cancelar"
+            android:textColor="@color/black"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#CDDC39"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="#FFFFFF"
+            app:strokeColor="#FFFFFF" />
 
         <TextView
             android:id="@+id/textView12"
@@ -60,32 +80,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="820dp"
-            android:background="#00FFFFFF"
-            android:backgroundTint="#00FFFFFF"
-            android:shadowColor="#FFFFFF"
-            android:text="Cancelar"
-            android:textColorHighlight="#FFFFFF"
-            android:textColorHint="#FFFFFF"
-            android:textColorLink="#CDDC39"
-            android:textSize="17dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.489"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:rippleColor="#FFFFFF"
-            app:strokeColor="#FFFFFF" />
-
         <TextView
             android:id="@+id/textView15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="724dp"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="716dp"
             android:text="Seleccione una hora"
             android:textSize="15dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -95,20 +95,10 @@
             android:id="@+id/textView14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="364dp"
+            android:layout_marginTop="316dp"
             android:text="Seleccione una fecha"
             android:textSize="15dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Spinner
-            android:id="@+id/spinner4"
-            android:layout_width="98dp"
-            android:layout_height="49dp"
-            android:layout_marginTop="708dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.74"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -128,13 +118,14 @@
             android:id="@+id/calendarView"
             android:layout_width="281dp"
             android:layout_height="286dp"
-            android:layout_marginTop="396dp"
+            android:layout_marginTop="352dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/Silla1"
+            android:id="@+id/idSilla1"
             android:layout_width="31dp"
             android:layout_height="31dp"
             android:layout_marginStart="132dp"
@@ -144,7 +135,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/silla4"
+            android:id="@+id/idSilla3"
             android:layout_width="31dp"
             android:layout_height="31dp"
             android:layout_marginStart="136dp"
@@ -154,7 +145,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/silla5"
+            android:id="@+id/idSilla4"
             android:layout_width="31dp"
             android:layout_height="31dp"
             android:layout_marginTop="248dp"
@@ -163,15 +154,155 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <TextView
+            android:id="@+id/textViewFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="@+id/calendarView"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/calendarView"
+            app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+        <Button
+            android:id="@+id/b10"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="748dp"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#00FFFFFF"
+            android:onClick="onClickBotonHora"
+            android:shadowColor="#FFFFFF"
+            android:text="10:00-11:00"
+            android:textColor="@color/black"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#CDDC39"
+            android:textSize="11dp"
+            app:layout_constraintEnd_toStartOf="@+id/b11"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/b9"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="#FFFFFF"
+            app:strokeColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/b17"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="40dp"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#00FFFFFF"
+            android:onClick="onClickBotonHora"
+            android:shadowColor="#FFFFFF"
+            android:text="17:00-18:00"
+            android:textColor="@color/black"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#CDDC39"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/b18"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/b9"
+            app:layout_constraintVertical_bias="0.0"
+            app:rippleColor="#FFFFFF"
+            app:strokeColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/b18"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#00FFFFFF"
+            android:onClick="onClickBotonHora"
+            android:shadowColor="#FFFFFF"
+            android:text="18:00-19:00"
+            android:textColor="@color/black"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#CDDC39"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="@+id/button6"
+            app:layout_constraintEnd_toStartOf="@+id/b19"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/b17"
+            app:layout_constraintTop_toBottomOf="@+id/b10"
+            app:layout_constraintVertical_bias="0.0"
+            app:rippleColor="#FFFFFF"
+            app:strokeColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/b9"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="748dp"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#00FFFFFF"
+            android:onClick="onClickBotonHora"
+            android:shadowColor="#FFFFFF"
+            android:text="9:00-10:00"
+            android:textColor="@color/black"
+            android:textColorLink="#0000FF"
+            android:textSize="11dp"
+            app:layout_constraintEnd_toStartOf="@+id/b10"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="#FFFFFF"
+            app:strokeColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/b11"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="748dp"
+            android:layout_marginEnd="40dp"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#00FFFFFF"
+            android:onClick="onClickBotonHora"
+            android:shadowColor="#FFFFFF"
+            android:text="11:00-12:00"
+            android:textColor="@color/black"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#0000FF"
+            android:textSize="11dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/b10"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="#FFFFFF"
+            app:strokeColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/b19"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="40dp"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#00FFFFFF"
+            android:onClick="onClickBotonHora"
+            android:shadowColor="#FFFFFF"
+            android:text="19:00-20:00"
+            android:textColor="@color/black"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#CDDC39"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/b18"
+            app:layout_constraintTop_toBottomOf="@+id/b11"
+            app:layout_constraintVertical_bias="0.0"
+            app:rippleColor="#FFFFFF"
+            app:strokeColor="#FFFFFF" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
-
-
 </ScrollView>
-
-
-
-
-

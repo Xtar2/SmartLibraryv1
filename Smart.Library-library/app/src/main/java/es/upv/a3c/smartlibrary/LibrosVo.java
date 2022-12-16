@@ -46,9 +46,21 @@ public class LibrosVo {
         this.nombre = nombre;
     }
 
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
     @Override
     public String toString() {
-        return nombre;
-
+        return "LibrosVo{" +
+                "isbn='" + isbn + '\'' +
+                ", descripcion='" + descripcion + '\'' +
+                ", img='" + img + '\'' +
+                ", nombre='" + nombre + '\'' +
+                '}';
     }
 }

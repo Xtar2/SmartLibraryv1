@@ -23,6 +23,7 @@ import com.facebook.FacebookException;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
+import com.firebase.ui.auth.AuthUI;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -35,12 +36,14 @@ import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class LoginActivity extends AppCompatActivity {
@@ -73,6 +76,8 @@ public class LoginActivity extends AppCompatActivity {
         lblRegister =findViewById(R.id.lblregister);
         btnLogin =findViewById(R.id.btnLogin);
         db = FirebaseFirestore.getInstance();
+
+
 
 
 
@@ -118,8 +123,12 @@ public class LoginActivity extends AppCompatActivity {
 
 
 
-
     }
+
+
+
+
+
 
 
 
@@ -129,10 +138,10 @@ public class LoginActivity extends AppCompatActivity {
 
 public  void añadirFirestore(String usertype) {
         Map<String, Object> usuarioGoogle = new HashMap<>();
-        usuarioGoogle.put("NombreGoogle", mAuth.getCurrentUser().getDisplayName());
-        usuarioGoogle.put("EmailGoogle", mAuth.getCurrentUser().getEmail());
+        usuarioGoogle.put("name", mAuth.getCurrentUser().getDisplayName());
+        usuarioGoogle.put("Email", mAuth.getCurrentUser().getEmail());
 
-        db.collection("UsuariosGoogle").document(mAuth.getCurrentUser().getUid()).set(usuarioGoogle).addOnCompleteListener(new OnCompleteListener<Void>() {
+        db.collection("usuarios").document(mAuth.getCurrentUser().getUid()).set(usuarioGoogle).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 Log.i("", "Nuevo usuario en firestore");
@@ -236,36 +245,51 @@ public  void añadirFirestore(String usertype) {
     }
 
 
-    public void userLogin(){
+    public void userLogin() {
         String mail = txtMail.getText().toString();
         String password = txtPassword.getText().toString();
 
-        if(TextUtils.isEmpty(mail)){
+        FirebaseUser user = mAuth.getCurrentUser();
+
+
+        if (TextUtils.isEmpty(mail)) {
             txtMail.setError("Ingrese un correo");
             txtMail.requestFocus();
 
+
         } else if
-            (TextUtils.isEmpty(password)){
-                Toast.makeText(LoginActivity.this,"Ingrese una contraseña",Toast.LENGTH_SHORT).show();
-                txtPassword.requestFocus();
-        }
-        else{
-            mAuth.signInWithEmailAndPassword(mail,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                @Override
-                public void onComplete(@NonNull Task<AuthResult> task) {
-                    if(task.isSuccessful()) {
-                        Toast.makeText(LoginActivity.this, "Bienvenido", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(LoginActivity.this,MainActivity.class);
-                        startActivity(intent);
-                    }else{
-                        Toast.makeText(LoginActivity.this, "Autentficación fallida", Toast.LENGTH_SHORT).show();
+        (TextUtils.isEmpty(password)) {
+            Toast.makeText(LoginActivity.this , "Ingrese una contraseña" , Toast.LENGTH_SHORT).show();
+            txtPassword.requestFocus();
+        } else {
+
+                mAuth.signInWithEmailAndPassword(mail , password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            FirebaseUser user = mAuth.getCurrentUser();
+                            if (user.isEmailVerified()) {
+                                Toast.makeText(LoginActivity.this , "Bienvenido" , Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(LoginActivity.this , MainActivity.class);
+                                startActivity(intent);
+                            } else {
+                                Toast.makeText(LoginActivity.this , "Autentficación fallida" , Toast.LENGTH_SHORT).show();
+                            }
+                        } else {
+                            // Check if the error is caused by an invalid email address
+                            if (task.getException() instanceof FirebaseAuthInvalidCredentialsException) {
+                                // Display an error message if the email address is invalid
+                                Toast.makeText(LoginActivity.this, "Dirección de correo electrónico no válida o contraseña incorrecta", Toast.LENGTH_SHORT).show();
+                            } else {
+                                Toast.makeText(LoginActivity.this, "Revise su correo electrónico para verificarse", Toast.LENGTH_SHORT).show();
+                            }
                         }
                     }
-
-            });
+                });
         }
-
     }
+
+
 
 
 

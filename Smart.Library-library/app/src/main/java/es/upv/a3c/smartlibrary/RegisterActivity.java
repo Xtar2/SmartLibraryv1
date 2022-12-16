@@ -1,5 +1,7 @@
 package es.upv.a3c.smartlibrary;
 
+import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -122,12 +124,27 @@ public class RegisterActivity  extends AppCompatActivity {
                                 @Override
                                 public void onSuccess(Void unused) {
                                 Log.d("TAG","onSuccess: Datos almacenados"+userID);
+
+
+
                                 }
                             });
+
+
+                            FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+                            FirebaseUser user = firebaseAuth.getCurrentUser();
+
+                            user.sendEmailVerification();
+                            Toast.makeText(RegisterActivity.this , "Correo de Verificación enviado, míralo en tu correo eléctronico y verífica tu identidad" , Toast.LENGTH_SHORT).show();
                             Toast.makeText(RegisterActivity.this, "Usuario registrado", Toast.LENGTH_SHORT).show();
                             mAuth.signOut();
                             Intent intent = (new Intent(RegisterActivity.this,LoginActivity.class));
                             startActivity(intent);
+
+
+
+
+
                         }else{
                             Toast.makeText(RegisterActivity.this, "Usuario no registrado"+ task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
@@ -135,4 +152,7 @@ public class RegisterActivity  extends AppCompatActivity {
                 });
             }
         }
+
+
+
 }

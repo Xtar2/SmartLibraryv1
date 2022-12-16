@@ -364,7 +364,7 @@ MenuBoton.collapse();
                 case 0:
                     return new Libros();
                 case 1:
-                    return new Cabinas();
+                    return new CabinasFragment();
                 case 2:
                     return new Plazas();
             }
