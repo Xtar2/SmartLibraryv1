@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -117,7 +118,7 @@ class Plazas extends Fragment {
                 .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                     @Override
                     public void onSuccess(DocumentReference documentReference) {
-                        Log.d("RESERVA", "Reserva realizada correctamente.");
+                        Toast.makeText (getContext(), "La reserva ha sido realizada.", Toast.LENGTH_SHORT).show ();
 
                     }
                 })

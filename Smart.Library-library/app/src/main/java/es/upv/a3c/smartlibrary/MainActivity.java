@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -62,11 +63,14 @@ public class MainActivity extends AppCompatActivity {
     FirebaseUser usuario;
     FloatingActionButton fab3;
     FloatingActionsMenu MenuBoton;
+    private FloatingActionButton fab0;
     SearchView Buscar;
     private NetworkImageView fotoUsuario;
     private FirebaseAuth mAuth;
     private String idUser;
     private  FirebaseFirestore fStore;
+    boolean isOpen = true;
+    @SuppressLint("MissingInflatedId")
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -124,6 +128,26 @@ getSupportActionBar().hide();
 
 
 //BOTON FLOTANTE
+        MenuBoton = findViewById(R.id.grupofab);
+        fab0 = (FloatingActionButton) findViewById(R.id.fab0);
+        fab0.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (isOpen){
+                    fab0.setTitle("deshabilitar");
+                    fab0.setIcon(R.drawable.ic_close);
+                    fab0.setColorNormalResId(R.color.ColorPrincipalSuave);
+                    isOpen = false;
+                }else{
+                    isOpen = true;
+                    fab0.setTitle("habilitar");
+                    fab0.setIcon(R.drawable.ic_baseline_favorite_24);
+                    fab0.setColorNormalResId(R.color.ColorPrincipalSuave);
+                }
+
+                MenuBoton.collapse();
+            }
+        });
         MenuBoton = findViewById(R.id.grupofab);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab1);
         fab.setOnClickListener(new View.OnClickListener() {

@@ -40,6 +40,7 @@ class CabinasFragment extends Fragment {
     View view;
     private String idSillaSeleccionada;
     private Button botonSeleccionado;
+    private Button todostrue;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -53,7 +54,13 @@ class CabinasFragment extends Fragment {
         view = inflater.inflate(R.layout.plazas, container, false);
 
         Inicializar_Interfaz ();
-
+todostrue = view.findViewById(R.id.botoncancelar);
+todostrue.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        TodosATrue();
+    }
+});
         //Calendario
         calendarView = view.findViewById(R.id.calendarView);
         Fecha = (TextView) view.findViewById(R.id.textViewFecha);
@@ -120,7 +127,7 @@ class CabinasFragment extends Fragment {
                         DatabaseReference sillasRef = database.getReference("Sillas");
                         DatabaseReference sillas1Ref = sillasRef.child(silla);
                         DatabaseReference ledRef = sillas1Ref.child("led");
-                        ledRef.setValue("true");
+                        ledRef.setValue("false");
 
                     }
                 })
@@ -451,6 +458,24 @@ class CabinasFragment extends Fragment {
 
 
     }
+public void TodosATrue(){
 
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference sillasRef = database.getReference("Sillas");
+    DatabaseReference sillas1Ref = sillasRef.child("Silla1");
+    DatabaseReference ledRef = sillas1Ref.child("led");
+    ledRef.setValue("true");
+
+    DatabaseReference sillas2Ref = sillasRef.child("Silla2");
+    DatabaseReference ledRef2 = sillas2Ref.child("led");
+    ledRef2.setValue("true");
+    DatabaseReference sillas3Ref = sillasRef.child("Silla3");
+    DatabaseReference ledRef3 = sillas3Ref.child("led");
+    ledRef3.setValue("true");
+    DatabaseReference sillas4Ref = sillasRef.child("Silla4");
+    DatabaseReference ledRef4 = sillas4Ref.child("led");
+    ledRef4.setValue("true");
+
+}
 
 }

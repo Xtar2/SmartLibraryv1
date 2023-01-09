@@ -95,6 +95,10 @@ checkLocationPermission();
                         .fromResource(android.R.drawable.ic_menu_compass))
                 .anchor(0.5f, 0.5f));
 
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+            mapa.setMyLocationEnabled(true);
+        }
+
 
     }
 

@@ -5,7 +5,7 @@ import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.Uri;
+
 import android.os.Bundle;
 
 import android.util.Log;
@@ -16,7 +16,7 @@ import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.EditText;
 
-import android.widget.ImageView;
+
 import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -27,7 +27,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
+
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -64,10 +64,7 @@ public class Libros extends Fragment implements AdaptadorLibros.EventListener {
     AdaptadorLibros adapter;
     TextView LibroEscogido;
     TextView LibroEscogido2;
-    ImageView libroimagen;
-    String LibroNombre;
-    private ArrayList<LibrosVo> Listalibros = new ArrayList<LibrosVo>();
-    SendData listener;
+    private final ArrayList<LibrosVo> Listalibros = new ArrayList<LibrosVo>();
     String CogerNumero;
     TextView Fecha;
     CalendarView Calendarvista;
@@ -82,7 +79,7 @@ long Fechadevolucion;
 String Fechadevoluciontexto;
 List<String> Prueba;
 String FechaBBDD;
-String nombre;
+
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     // Obtener una referencia a la colección de usuarios

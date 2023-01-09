@@ -59,7 +59,6 @@ public class PerfilUsuario extends AppCompatActivity {
         idUser = mAuth.getCurrentUser().getUid();
         NombreUsuario = findViewById(R.id.Nombreusuario);
         EmailUsuario = findViewById(R.id.CorreoUsuario);
-        ContraseñaUsuario = findViewById(R.id.ContraseñaUsuario);
 
 
 
@@ -69,7 +68,6 @@ public class PerfilUsuario extends AppCompatActivity {
                 public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
                   NombreUsuario.setText(value.getString("name"));
                   EmailUsuario.setText(value.getString("Email"));
-                   ContraseñaUsuario.setText(value.getString("Contraseña"));
                 }
             });
 
@@ -97,7 +95,6 @@ public class PerfilUsuario extends AppCompatActivity {
         Map<String, Object> map = new HashMap<>();
         map.put("name", Nombre);
         map.put("Email", Email);
-        map.put("Contraseña", Contraseña);
 
         fStore.collection("usuarios").document(idUser).update(map);
     }

@@ -3,20 +3,50 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#395f60"
     android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="69dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="250dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="250dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/iconoapp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
 
     <EditText
         android:id="@+id/Nombreusuario"
-        android:layout_width="313dp"
+        android:layout_width="0dp"
         android:layout_height="52dp"
         android:layout_marginTop="224dp"
-        android:background="@color/ColorPrincipalSuave"
-        android:drawableStart="@drawable/head"
+        android:layout_marginEnd="75dp"
+        android:background="@drawable/redondeadoderecha"
+        android:drawableStart="@drawable/usuariooo"
         android:drawablePadding="12dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:paddingLeft="5dp"
-        android:textColorHint="#5A3E71"
+        android:textColor="#395f60"
+        android:textColorHint="#395f60"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,47 +54,33 @@
 
     <EditText
         android:id="@+id/CorreoUsuario"
-        android:layout_width="313dp"
+        android:layout_width="0dp"
         android:layout_height="52dp"
         android:layout_marginTop="40dp"
-        android:background="@color/ColorPrincipalSuave"
-        android:drawableStart="@drawable/logoemail"
+        android:layout_marginEnd="75dp"
+        android:background="@drawable/redondeadoderecha"
+        android:drawableStart="@drawable/correo"
         android:drawablePadding="12dp"
         android:ems="10"
-        android:inputType="textEmailAddress"
         android:paddingLeft="10dp"
-        android:textColor="#5A3E71"
+        android:textColor="#395f60"
+        android:textColorHint="#395f60"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Nombreusuario" />
 
-    <EditText
-        android:id="@+id/ContraseñaUsuario"
-        android:layout_width="313dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="40dp"
-        android:background="@color/ColorPrincipalSuave"
-        android:drawableStart="@drawable/logopassword"
-        android:drawablePadding="12dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:paddingLeft="10dp"
-        android:textColor="#5A3E71"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CorreoUsuario" />
-
     <Button
         android:id="@+id/Guardarcambios"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/redondeado"
         android:text="Guardar"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ContraseñaUsuario" />
+        app:layout_constraintTop_toBottomOf="@+id/CorreoUsuario" />
 
     <TextView
         android:id="@+id/textView4"
@@ -73,6 +89,7 @@
         android:layout_marginTop="50dp"
         android:text="MI PERFIL"
         android:textSize="25dp"
+        android:textColor="#FFFFFF"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,6 +100,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:textColor="#FFFFFF"
         android:text="Puede editar sus datos y guardarlos con el botón"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"

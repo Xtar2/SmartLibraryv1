@@ -76,8 +76,8 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="55dp"
-                    android:layout_height="55dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
                     app:cardCornerRadius="250dp">
 
@@ -85,7 +85,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/logomodooscuro" />
+                        android:src="@drawable/iconoapp" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -129,7 +129,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/ColorPrincipalSuave"
+            app:fab_colorPressed="@color/ColorPrincipalSuave"
+            app:fab_icon="@drawable/acercadee"
+            app:fab_size="normal"
+            app:fab_title="habilitar">
 
+
+        </com.getbase.floatingactionbutton.FloatingActionButton>
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab1"
             android:layout_width="wrap_content"
