@@ -37,22 +37,19 @@ Aviso: La aplicación registrara su estancia en la biblioteca, avisandole si su 
 
 </string>
 
-    <string-array name="planets_array">
-        <item>Mercury</item>
-        <item>Venus</item>
-        <item>Earth</item>
-        <item>Mars</item>
-        <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
-    </string-array>
+
 
 
     <string name="facebook_app_id">445659974391504</string>
     <string name="fb_login_protocol_scheme">fb445659974391504</string>
 
-
+    <string-array name="categorias">
+        <item>GTI</item>
+        <item>Turismo</item>
+        <item>Ciencias Ambientales</item>
+        <item>Audiovisuales</item>
+        <item>Teleco</item>
+    </string-array>
 
 
 </resources>

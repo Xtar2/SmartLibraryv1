@@ -13,6 +13,8 @@ public class Cabina extends Reservable
     // MÉTODOS
 
     // Constructor por defecto.
-    public Cabina () {};
+    public Cabina (String id) {
+        super(id);
+    };
 
 }

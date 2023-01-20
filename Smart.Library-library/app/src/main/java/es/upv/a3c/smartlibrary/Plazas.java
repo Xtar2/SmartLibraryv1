@@ -1,7 +1,13 @@
 package es.upv.a3c.smartlibrary;
 
 import android.annotation.SuppressLint;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -13,21 +19,30 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 import java.util.Calendar;
-
+import java.util.Map;
 
 
 class CabinasFragment extends Fragment {
@@ -38,9 +53,14 @@ class CabinasFragment extends Fragment {
     private long msHoraSelect; //Lola
     private int idBotonSelect; //Lola
     View view;
+    private DatabaseReference mDatabase;
+    private TextView mTextView;
+    private ValueEventListener valueEventListener;
     private String idSillaSeleccionada;
     private Button botonSeleccionado;
     private Button todostrue;
+    private FirebaseFirestore fStore;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -52,15 +72,9 @@ class CabinasFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.plazas, container, false);
-
+        fStore = FirebaseFirestore.getInstance();
         Inicializar_Interfaz ();
-todostrue = view.findViewById(R.id.botoncancelar);
-todostrue.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View view) {
-        TodosATrue();
-    }
-});
+
         //Calendario
         calendarView = view.findViewById(R.id.calendarView);
         Fecha = (TextView) view.findViewById(R.id.textViewFecha);
@@ -87,6 +101,24 @@ todostrue.setOnClickListener(new View.OnClickListener() {
                                              }
         );
 
+        mTextView = view.findViewById(R.id.textView40); // NUEVO -- esto es para el textview28
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+        valueEventListener = new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                // Obtiene el valor de la base de datos en la ruta especificada
+                String value = dataSnapshot.child("Temperatura").getValue(String.class);
+                // Actualiza el texto del TextView con el valor obtenido
+                mTextView.setText(value);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                // Maneja el error
+            }
+        };
+        mDatabase.addValueEventListener(valueEventListener);
+
 
         // Fecha actual del calendario.
         Calendar c = Calendar.getInstance();
@@ -108,6 +140,9 @@ todostrue.setOnClickListener(new View.OnClickListener() {
         return view;
 
     }
+
+
+
 
 
     //
@@ -305,6 +340,9 @@ todostrue.setOnClickListener(new View.OnClickListener() {
     }
 
 
+
+
+
     // Valor inicial de los controles.
     private void Inicializar_Interfaz ()
     {
@@ -380,7 +418,7 @@ todostrue.setOnClickListener(new View.OnClickListener() {
 
 
 // BOTÓN SILLA 1
-       Button f = (Button) view.findViewById(R.id.idSilla1);
+        Button f = (Button) view.findViewById(R.id.idSilla1);
         f.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("ResourceAsColor")
             @Override
@@ -389,7 +427,7 @@ todostrue.setOnClickListener(new View.OnClickListener() {
                 // Cambia el color del botón seleccionado anteriormente a su color original
                 if (botonSeleccionado != null) {
                     int color = getResources().getColor(R.color.ColorPrincipalSuave);
-                botonSeleccionado.setBackgroundColor(color);
+                    botonSeleccionado.setBackgroundColor(color);
                 }
                 // Actualiza el botón seleccionado actualmente y cambia su color
                 botonSeleccionado = f;
@@ -399,7 +437,7 @@ todostrue.setOnClickListener(new View.OnClickListener() {
         });
 
         // BOTÓN SILLA 2
-      Button  c = (Button) view.findViewById(R.id.idSilla2);
+        Button  c = (Button) view.findViewById(R.id.idSilla2);
         c.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("ResourceAsColor")
             @Override
@@ -438,6 +476,7 @@ todostrue.setOnClickListener(new View.OnClickListener() {
 
         // BOTÓN SILLA 4
         Button a = (Button) view.findViewById(R.id.idSilla4);
+
         a.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("ResourceAsColor")
             @Override
@@ -454,28 +493,55 @@ todostrue.setOnClickListener(new View.OnClickListener() {
                 CabinasFragment.this.idSillaSeleccionada = "Silla4";
             }
         });
+        //todo  onclick start
+        TextView textView29 = view.findViewById(R.id.textView29);
+        TextView textView28 = view.findViewById(R.id.textView28);
+        TextView textView26 = view.findViewById(R.id.textView26);
+        TextView textView35 = view.findViewById(R.id.textView35);
 
+        final DocumentReference docRef = fStore.collection("Estado")
+                .document("Utilizable");
+        docRef.addSnapshotListener(new EventListener<DocumentSnapshot>() {
+            @Override
+            public void onEvent(@Nullable DocumentSnapshot snapshot,
+                                @Nullable FirebaseFirestoreException e) {
+                if (e != null) {
+                    Log.e("TAG111", "Listen failed.", e);
+                    return;
+                }
 
+                if (snapshot != null && snapshot.exists()) {
+                    Map<String, Object> data = snapshot.getData();
+                    Log.e("TAG111", "Current data: " + snapshot.getData());
+                    if (data==null||data.isEmpty())
+                        return;
+                    f.setClickable((boolean)data.get("1"));
+                    c.setClickable((boolean)data.get("2"));
+                    d.setClickable((boolean)data.get("3"));
+                    a.setClickable((boolean)data.get("4"));
 
+                    f.setEnabled((boolean)data.get("1"));
+                    c.setEnabled((boolean)data.get("2"));
+                    d.setEnabled((boolean)data.get("3"));
+                    a.setEnabled((boolean)data.get("4"));
+
+                    textView29.setText((boolean)data.get("1")?"":"rota");
+                    textView28.setText((boolean)data.get("2")?"":"rota");
+                    textView26.setText((boolean)data.get("3")?"":"rota");
+                    textView35.setText((boolean)data.get("4")?"":"rota");
+                } else {
+                    Log.e("TAG111", "Current data: null");
+                }
+            }
+        });
+        //todo  onclick end
     }
-public void TodosATrue(){
 
-    FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference sillasRef = database.getReference("Sillas");
-    DatabaseReference sillas1Ref = sillasRef.child("Silla1");
-    DatabaseReference ledRef = sillas1Ref.child("led");
-    ledRef.setValue("true");
 
-    DatabaseReference sillas2Ref = sillasRef.child("Silla2");
-    DatabaseReference ledRef2 = sillas2Ref.child("led");
-    ledRef2.setValue("true");
-    DatabaseReference sillas3Ref = sillasRef.child("Silla3");
-    DatabaseReference ledRef3 = sillas3Ref.child("led");
-    ledRef3.setValue("true");
-    DatabaseReference sillas4Ref = sillasRef.child("Silla4");
-    DatabaseReference ledRef4 = sillas4Ref.child("led");
-    ledRef4.setValue("true");
-
-}
+    public void onStop() {
+        super.onStop();
+        // Quita el listener cuando ya no sea necesario
+        mDatabase.removeEventListener(valueEventListener);
+    }
 
 }

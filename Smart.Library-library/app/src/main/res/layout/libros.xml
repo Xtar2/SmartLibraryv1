@@ -24,6 +24,7 @@
             android:layout_marginStart="36dp"
             android:layout_marginTop="32dp"
             android:text="Reservar un libro"
+            android:textColor="@color/white"
             android:textSize="20dp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +36,7 @@
             android:layout_width="0dp"
             android:layout_height="32dp"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="104dp"
+            android:layout_marginTop="105dp"
             android:layout_marginEnd="70dp"
             android:inputType="textLongMessage"
             android:queryHint="Nombre de libro"
@@ -54,6 +55,7 @@
             android:layout_marginTop="72dp"
             android:fontFamily="serif"
             android:text="Nombre del libro:"
+            android:textColor="@color/white"
             android:textSize="18dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -120,6 +122,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="Fecha"
+            android:textColor="@color/white"
             android:textSize="18dp"
             app:layout_constraintBottom_toTopOf="@+id/calendarViewlibros"
             app:layout_constraintEnd_toEndOf="parent"
@@ -164,6 +167,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="788dp"
             android:text="Seleccione la fecha de inicio de prestamo"
+            android:textColor="@color/white"
             android:textSize="18dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -182,12 +186,11 @@
         </FrameLayout>
 
         <ImageView
-            android:layout_width="599dp"
-            android:layout_height="545dp"
-            android:src="@drawable/libroseleccionado"
+            android:layout_width="547dp"
+            android:layout_height="386dp"
+            android:src="@drawable/libroseleccionados"
             app:layout_constraintBottom_toTopOf="@+id/calendarViewlibros"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.511"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/recycler" />
 
@@ -196,14 +199,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="100dp"
             android:text="Ninguno"
+            android:textColor="@color/white"
             android:textSize="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.552"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/recycler" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="140dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="28dp"
+            android:text="Randomizar"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

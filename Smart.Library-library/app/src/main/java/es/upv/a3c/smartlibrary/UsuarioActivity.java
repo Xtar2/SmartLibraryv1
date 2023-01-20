@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -29,6 +30,8 @@ import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
 import com.android.volley.toolbox.Volley;
 import com.firebase.ui.auth.AuthUI;
+import com.getkeepsafe.taptargetview.TapTarget;
+import com.getkeepsafe.taptargetview.TapTargetView;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -44,13 +47,17 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 import java.util.ArrayList;
 import java.util.Currency;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class UsuarioActivity extends AppCompatActivity {
     String[] requestPermission = new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE,
@@ -66,6 +73,25 @@ public class UsuarioActivity extends AppCompatActivity {
         setContentView(R.layout.activity_usuario);
 
          usuario = FirebaseAuth.getInstance().getCurrentUser();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Esto se hace para cargar de la base de datos el nombre y el email
         TextView nombre = findViewById(R.id.nombre);
@@ -125,7 +151,16 @@ mapa.setOnClickListener(new View.OnClickListener() {
         Button botonPerfil = findViewById(R.id.BotonPerfil);
         Button botonReservas = findViewById(R.id.botonReservas);
         Button botonEstadisticas = findViewById(R.id.botonEstadisticas);
-        TextView eliminarCuenta = findViewById(R.id.eliminarCuenta);
+      ImageView botonforos = findViewById(R.id.Forosboton);
+        botonforos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(UsuarioActivity.this,Foros.class);
+                startActivity(intent);
+            }
+        });
+
+
         fotoUsuario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -161,14 +196,152 @@ mapa.setOnClickListener(new View.OnClickListener() {
             }
         });
 
-        eliminarCuenta.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                lanzarEliminarCuenta(null);
-            }
-        });
+
+
+
+
+
+FirebaseFirestore db = FirebaseFirestore.getInstance();
+        db.collection("usuarios").whereEqualTo("Tutorial2", false)
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                // Mostrar tutorial
+                                TapTargetView.Listener listener = new TapTargetView.Listener() {
+                                    @Override
+                                    public void onTargetClick(TapTargetView view) {
+                                        super.onTargetClick(view);
+                                    MiPerfilTutorial();
+                                    }
+                                };
+                                TapTargetView.showFor(UsuarioActivity.this,                 // `this` is an Activity
+                                        TapTarget.forView(fotoUsuario, "Tu foto de perfil" , "Pulsa para cambiarla cuando quieras")
+                                                // All options below are optional
+                                                .outerCircleColor(R.color.ColorPrincipalSuave)      // Specify a color for the outer circle
+                                                .outerCircleAlpha(0.96f)            // Specify the alpha amount for the outer circle
+                                                .targetCircleColor(R.color.white)   // Specify a color for the target circle
+                                                .titleTextSize(20)                  // Specify the size (in sp) of the
+                                                .titleTextColor(R.color.white) // Specify the color of the title text
+                                                .descriptionTextSize(15) // Specify the size (in sp) of the description text
+                                                .descriptionTextColor(R.color.white) // Specify the color of the description text
+                                                .textColor(R.color.white) // Specify a color for both the title and description text
+                                                .textTypeface(Typeface.SANS_SERIF) // Specify a typeface for the text
+                                                .dimColor(R.color.black) // If set, will dim behind the view with 30% opacity of the given color
+                                                .drawShadow(true) // Whether to draw a drop shadow or not
+                                                .cancelable(false) // Whether tapping outside the outer circle dismisses the view
+                                                .tintTarget(true) // Whether to tint the target view's color
+                                                .transparentTarget(false) // Specify whether the target is transparent (displays the content underneath)
+                                                .targetRadius(60) , // Specify the target radius (in dp)
+                                        listener);
+                            }
+
+                        }
+                    }
+                });
+
+
 
     }
 
+     private void MiPerfilTutorial() {
+          TapTargetView.showFor(this ,                 // `this` es la activity actual
+                  TapTarget.forView(findViewById(R.id.BotonPerfil) , "Pagina de Perfil" , "Podras cambiar tu nombre y ver tu correo siempre que quieras")
+                          .tintTarget(false) , // No cambia el color del botón
+                  new TapTargetView.Listener() { // Listener para cuando el tutorial es terminado o cancelado
+                      @Override
+                      public void onTargetClick(TapTargetView view) {
+                          super.onTargetClick(view);
+// Mostrar tutorial en el siguiente tab
+                    MisReservasTutorial();
+                      }
+
+                      @Override
+                      public void onTargetDismissed(TapTargetView view , boolean userInitiated) {
+                          super.onTargetDismissed(view , userInitiated);
+                      }
+                  });
+      }
+
+
+      private void MiEstadisticasTutorial(){
+          TapTargetView.showFor(this ,                 // `this` es la activity actual
+                  TapTarget.forView(findViewById(R.id.botonEstadisticas) , "Pagina de estadisticas" , "En esta pestaña puedes ver los libros que has ido reservando a lo largo del tiempo")
+                          .tintTarget(false) , // No cambia el color del botón
+                  new TapTargetView.Listener() { // Listener para cuando el tutorial es terminado o cancelado
+                      @Override
+                      public void onTargetClick(TapTargetView view) {
+                          super.onTargetClick(view);
+// Mostrar tutorial en el siguiente tab
+                 MapaTutorial();
+                      }
+
+                      @Override
+                      public void onTargetDismissed(TapTargetView view , boolean userInitiated) {
+                          super.onTargetDismissed(view , userInitiated);
+                      }
+                  });
+    }
+
+
+    private void MisReservasTutorial(){
+        TapTargetView.showFor(this ,                 // `this` es la activity actual
+                TapTarget.forView(findViewById(R.id.botonReservas) , "Mis Reservas" , "En esta pestaña puedes ver tanto tus reservas de libros,sillas y cabinas, ademas de poder cancelarlas")
+                        .tintTarget(false) , // No cambia el color del botón
+                new TapTargetView.Listener() { // Listener para cuando el tutorial es terminado o cancelado
+                    @Override
+                    public void onTargetClick(TapTargetView view) {
+                        super.onTargetClick(view);
+// Mostrar tutorial en el siguiente tab
+                       MiEstadisticasTutorial();
+                    }
+
+                    @Override
+                    public void onTargetDismissed(TapTargetView view , boolean userInitiated) {
+                        super.onTargetDismissed(view , userInitiated);
+                    }
+                });
+    }
+    private void MapaTutorial(){
+        TapTargetView.showFor(this ,                 // `this` es la activity actual
+                TapTarget.forView(findViewById(R.id.mapita) , "Pagina de mapa" , "En esta pestaña puedes ver un mapa que te dice donde estas y cuán lejos estas de la biblioteca de la EPSG")
+                        .tintTarget(false) , // No cambia el color del botón
+                new TapTargetView.Listener() { // Listener para cuando el tutorial es terminado o cancelado
+                    @Override
+                    public void onTargetClick(TapTargetView view) {
+                        super.onTargetClick(view);
+// Mostrar tutorial en el siguiente tab
+                      ForosTutorial();
+                    }
+
+                    @Override
+                    public void onTargetDismissed(TapTargetView view , boolean userInitiated) {
+                        super.onTargetDismissed(view , userInitiated);
+                    }
+                });
+    }
+    private void ForosTutorial(){
+        TapTargetView.showFor(this ,                 // `this` es la activity actual
+                TapTarget.forView(findViewById(R.id.Forosboton) , "Pagina de Foros" , "En esta pestaña puedes añadir links junto con una descripcion y subirlos a una categoria determinada para ayudar a la gente a conseguir informacion valiosa para sus estudios ")
+                        .tintTarget(false) , // No cambia el color del botón
+                new TapTargetView.Listener() { // Listener para cuando el tutorial es terminado o cancelado
+                    @Override
+                    public void onTargetClick(TapTargetView view) {
+                        super.onTargetClick(view);
+                        Map<String, Object> map = new HashMap<>();
+                        map.put("Tutorial2", true );
+                        fStore.collection("usuarios").document(idUser).update(map);
+
+                    }
+
+                    @Override
+                    public void onTargetDismissed(TapTargetView view , boolean userInitiated) {
+                        super.onTargetDismissed(view , userInitiated);
+                    }
+                });
+    }
 
 
     private void loadUrl() {

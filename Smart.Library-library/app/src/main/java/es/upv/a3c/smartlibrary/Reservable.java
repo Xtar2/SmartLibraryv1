@@ -1,5 +1,6 @@
 package es.upv.a3c.smartlibrary;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Reservable {
@@ -7,12 +8,19 @@ public abstract class Reservable {
 
     public static final int NO_ESTA = -1;
     protected List<Reserva> listaReservas;
+    private String id;
 
 
     // MÉTODOS
 
     // Constructor por defecto.
-    public Reservable() {
+    public Reservable(String id) {
+        this.id = id;
+        this.listaReservas = new ArrayList<>();
+    }
+
+    public String getId() {
+        return id;
     }
 
     // Buscar reserva por fecha.
@@ -50,6 +58,11 @@ public abstract class Reservable {
             return true;
         }
         return false;
+    }
+
+    // Obtener una reserva por su posicion
+    public Reserva getReserva (int pos){
+        return this.listaReservas.get (pos);
     }
 
 }

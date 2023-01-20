@@ -33,6 +33,8 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 import com.google.firebase.auth.TwitterAuthCredential;
 import com.google.firebase.auth.TwitterAuthProvider;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
@@ -113,21 +115,32 @@ public class LoginActivity extends AppCompatActivity {
 
 public  void añadirFirestore(String usertype) {
         Map<String, Object> usuarioGoogle = new HashMap<>();
-        usuarioGoogle.put("name", mAuth.getCurrentUser().getDisplayName());
-        usuarioGoogle.put("Email", mAuth.getCurrentUser().getEmail());
-
-        db.collection("usuarios").document(mAuth.getCurrentUser().getUid()).set(usuarioGoogle).addOnCompleteListener(new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull Task<Void> task) {
-                Log.i("", "Nuevo usuario en firestore");
-                startActivity(new Intent(LoginActivity.this, MainActivity.class));
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
+    DocumentReference docRef = db.collection("usuarios").document(mAuth.getCurrentUser().getUid());
+    docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+        @Override
+        public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+            if (task.isSuccessful()) {
+                DocumentSnapshot document = task.getResult();
+                if (document.exists()) {
+                    // User already exists, update
+                    Map<String, Object> updateData = new HashMap<>();
+                    updateData.put("Tutorial", true);
+                    usuarioGoogle.put("Tutorial2", true);
+                    db.collection("usuarios").document(mAuth.getCurrentUser().getUid()).update(updateData);
+                } else {
+                    // User is new, set
+                    Map<String, Object> usuarioGoogle = new HashMap<>();
+                    usuarioGoogle.put("name", mAuth.getCurrentUser().getDisplayName());
+                    usuarioGoogle.put("Email", mAuth.getCurrentUser().getEmail());
+                    usuarioGoogle.put("Tutorial", false);
+                    usuarioGoogle.put("Tutorial2", false);
+                    NuevoUsuario = true;
+                    db.collection("usuarios").document(mAuth.getCurrentUser().getUid()).set(usuarioGoogle);
+                }
             }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Log.i("", "Error al añadir a firestore");
-            }
-        });
+        }
+    });
     }
 
 
@@ -176,7 +189,7 @@ public  void añadirFirestore(String usertype) {
                         if (task.isSuccessful()) {
                         Log.d(TAG,"signInWithCredential:success");
                         if (NuevoUsuario){
-                        añadirFirestore("users");
+                        añadirFirestore("usuarios");
 
 
                         }
@@ -243,7 +256,7 @@ public  void añadirFirestore(String usertype) {
                                 Intent intent = new Intent(LoginActivity.this , MainActivity.class);
                                 startActivity(intent);
                             } else {
-                                Toast.makeText(LoginActivity.this , "Autentficación fallida" , Toast.LENGTH_SHORT).show();
+                                Toast.makeText(LoginActivity.this , "Por favor verifica tu correo electrónico" , Toast.LENGTH_SHORT).show();
                             }
                         } else {
                             // Check if the error is caused by an invalid email address

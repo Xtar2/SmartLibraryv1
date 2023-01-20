@@ -3,7 +3,6 @@ package es.upv.a3c.smartlibrary;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.List;
-
 public class Silla extends Reservable
 {
     // ATRIBUTOS
@@ -14,5 +13,7 @@ public class Silla extends Reservable
     // MÉTODOS
 
     // Constructor por defecto.
-    public Silla () {};
+    public Silla (String id) {
+        super(id);
+    };
 }

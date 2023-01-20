@@ -119,6 +119,9 @@ public class RegisterActivity  extends AppCompatActivity {
                             usuario.put("name", name);
                             usuario.put("Email", mail);
                             usuario.put("Contraseña", password);
+                            usuario.put("Tutorial",false);
+                            usuario.put("Tutorial2",false);
+
 
                             documentReference.set(usuario).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
@@ -135,7 +138,7 @@ public class RegisterActivity  extends AppCompatActivity {
                             FirebaseUser user = firebaseAuth.getCurrentUser();
 
                             user.sendEmailVerification();
-                            Toast.makeText(RegisterActivity.this , "Correo de Verificación enviado, míralo en tu correo eléctronico y verífica tu identidad" , Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegisterActivity.this , "Correo de Verificación enviado, míralo en tu correo eléctronico y verífica tu identidad" , Toast.LENGTH_LONG).show();
                             Toast.makeText(RegisterActivity.this, "Usuario registrado", Toast.LENGTH_SHORT).show();
                             mAuth.signOut();
                             Intent intent = (new Intent(RegisterActivity.this,LoginActivity.class));

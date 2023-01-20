@@ -11,16 +11,16 @@
         android:id="@+id/btn_cerrar_sesion"
         android:layout_width="315dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/redondeado"
         android:onClick="cerrarSesion"
         android:padding="8dp"
         android:text="Cerrar sesión"
-        android:background="@drawable/redondeado"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/eliminarCuenta"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonEstadisticas" />
 
     <TextView
         android:id="@+id/nombre"
@@ -41,17 +41,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/eliminarCuenta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
-        android:text="Eliminar cuenta"
-        android:textColor="#BF0000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/email"
@@ -110,13 +99,24 @@
 
     <ImageView
         android:id="@+id/mapita"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/btn_cerrar_sesion"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        android:layout_width="72dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="515dp"
+        app:layout_constraintEnd_toStartOf="@+id/Forosboton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botonEstadisticas"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/mapa" />
+
+    <ImageView
+        android:id="@+id/Forosboton"
+        android:layout_width="92dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="515dp"
+        android:layout_marginEnd="100dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/forologo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

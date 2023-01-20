@@ -5,9 +5,13 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -20,49 +24,66 @@
         tools:targetApi="31"
         android:hardwareAccelerated="true"  >
 
-
+        <service
+            android:name="com.google.android.gms.safetynet.SafetyNetClient"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
         <activity android:name=".LoginActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"
+                    />
             </intent-filter>
         </activity>
 
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"
+            android:screenOrientation="portrait">
 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".UsuarioActivity"
-            android:label="Información sobre el usuario" />
+            android:label="Información sobre el usuario"
+            android:screenOrientation="portrait"/>
 
         <activity
             android:name=".ReservasActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
         </activity>
 
         <activity
             android:name=".EstadisticasActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
         </activity>
 
         <activity
             android:name=".EliminarUsuarioActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.Dialog.MinWidth">
+            android:theme="@style/Theme.AppCompat.Light.Dialog.MinWidth"
+            android:screenOrientation="portrait">
         </activity>
 
         <activity android:name=".AcercadeActivity"
             android:label="Acerca de ..."
             android:theme="@style/Theme.AppCompat.Light.Dialog"/>
-        <activity android:name=".RegisterActivity">
+        <activity android:name=".RegisterActivity"
+            android:screenOrientation="portrait">
 
         </activity>
-        <activity android:name=".PerfilUsuario">
+        <activity android:name=".PerfilUsuario"
+            android:screenOrientation="portrait">
 
         </activity>
-        <activity android:name=".ReestablecerContraseña">
+        <activity android:name=".ReestablecerContraseña"
+            android:screenOrientation="portrait">
 
         </activity>
 
@@ -72,6 +93,14 @@
 
         </activity>
 
+        <activity android:name=".Foros"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <meta-data android:name="com.google.android.safetynet.API_KEY"
+            android:value="@string/google_browse">
+
+        </meta-data>
 
     </application>
 

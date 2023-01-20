@@ -27,7 +27,6 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -52,6 +51,9 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
+
+import es.upv.a3c.smartlibrary.adaptadores.AdaptadorLibros;
 
 public class Libros extends Fragment implements AdaptadorLibros.EventListener {
 
@@ -90,6 +92,20 @@ String FechaBBDD;
 
     // Crear una referencia a la subcolección de perfiles para el usuario actual
     CollectionReference userProfileSubcollection = usersCollection.document(userId).collection("Mis Libros");
+
+
+
+    // Obtener una referencia a la colección de usuarios
+    CollectionReference usersCollection2 = FirebaseFirestore.getInstance().collection("usuarios");
+
+    // Obtener la ID del usuario actual
+    String userId2 = FirebaseAuth.getInstance().getCurrentUser().getUid();
+
+    // Crear una referencia a la subcolección de perfiles para el usuario actual
+    CollectionReference userProfileSubcollection2 = usersCollection2.document(userId2).collection("HistorialReservas");
+
+
+
     public Libros() {
 
     }
@@ -107,12 +123,38 @@ String FechaBBDD;
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.libros , container , false);
 
+
+
+
+        searchView = view.findViewById(R.id.searchView);
+        Button button = view.findViewById(R.id.button3);         // ESTO LO PONES ANTES DEL BUTTONSETONCKICKLISTENER
+
+        button.setOnClickListener(new View.OnClickListener() {  // TODO ESTO LO PONES ANTES DE LA LINEA (recycler = view.findViewById(R.id.recycler);)
+            @Override
+            public void onClick(View v) {
+                searchView.setIconified(false);
+                db.collection("ListadoLibros").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            List<DocumentSnapshot> documents = task.getResult().getDocuments();
+                            int randomIndex = new Random().nextInt(documents.size());
+                            DocumentSnapshot randomBook = documents.get(randomIndex);
+                            String bookName = randomBook.getString("nombre");
+                            searchView.setQuery(bookName, false);
+                        }
+                    }
+                });
+            }
+        });
+
+
         recycler = view.findViewById(R.id.recycler);
         recycler.setLayoutManager(new LinearLayoutManager(getContext()));
+        recycler.setItemAnimator(null);
 
         FirestoreRecyclerOptions<LibrosVo> firestoreRecyclerOptions = new FirestoreRecyclerOptions.Builder<LibrosVo>().setQuery(FirebaseFirestore.getInstance().collection("ListadoLibros") , LibrosVo.class).build();
         adapter = new AdaptadorLibros(firestoreRecyclerOptions , this , Listalibros);
-        adapter.startListening();
         recycler.setAdapter(adapter);
 
         Fecha = view.findViewById(R.id.Fecha);
@@ -290,7 +332,28 @@ String FechaBBDD;
                                                       });
 
 
+                                                  // Crear un mapa con los datos a agregar
+                                                  Map<String, Object> historialReserva = new HashMap<>();
+                                                  historialReserva.put("nombre", NombreLibro);
+                                                  historialReserva.put("isbn", IsbnLibro);
+                                                  historialReserva.put("fecha", FechaLibro);
 
+// Agregar el mapa a la colección "HistorialReservas"
+                                                  userProfileSubcollection2.add(historialReserva)
+                                                          .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                                                              @Override
+                                                              public void onSuccess(DocumentReference documentReference) {
+                                                                  // Mostrar un mensaje de éxito
+                                                                  Toast.makeText(getContext(), "Reserva agregada al historial", Toast.LENGTH_SHORT).show();
+                                                              }
+                                                          })
+                                                          .addOnFailureListener(new OnFailureListener() {
+                                                              @Override
+                                                              public void onFailure(@NonNull Exception e) {
+                                                                  // Mostrar un mensaje de error
+                                                                  Toast.makeText(getContext(), "Error al agregar la reserva al historial", Toast.LENGTH_SHORT).show();
+                                                              }
+                                                          });
 
 
                                               } else {
@@ -330,23 +393,15 @@ String FechaBBDD;
                                                               }
                                                               if (diferencia <= 14) {
                                                                   Toast.makeText(getContext() , "Esta reservado hasta el dia " + Fechadevoluciontexto , Toast.LENGTH_SHORT).show();
-
-
                                                               }
                                                           }
                                                       }
-
                                                   }
-
-
-
                                               }
                                           }
                                       }
                                   });
-
                           }
-
             });
           }
             }
