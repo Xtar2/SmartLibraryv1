@@ -1,16 +1,33 @@
 {
     "logs": [
         {
-            "outputFile": "es.upv.a3c.smartlibrary.app-mergeDebugResources-40:/values-port/values-port.xml",
+            "outputFile": "es.upv.a3c.smartlibrary.app-mergeDebugResources-46:/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\pokem\\.gradle\\caches\\transforms-3\\a628b047a528adad8d38afe27c2e2503\\transformed\\appcompat-1.5.1\\res\\values-port\\values-port.xml",
+                    "source": "C:\\Users\\pokem\\.gradle\\caches\\transforms-3\\3884b320dccfe5fe24360e981acf9b57\\transformed\\appcompat-1.5.1\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
                         "endColumns": "55",
                         "endOffsets": "106"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\pokem\\.gradle\\caches\\transforms-3\\c73e01a31304a1dda530109befce4967\\transformed\\jetified-car-ui-lib-2.1.0\\res\\values-port\\values.xml",
+                    "from": {
+                        "startLines": "4,7,8",
+                        "startColumns": "0,0,0",
+                        "startOffsets": "212,426,491",
+                        "endColumns": "59,64,62",
+                        "endOffsets": "271,490,553"
+                    },
+                    "to": {
+                        "startLines": "3,4,5",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "111,175,244",
+                        "endColumns": "63,68,66",
+                        "endOffsets": "170,239,306"
                     }
                 }
             ]

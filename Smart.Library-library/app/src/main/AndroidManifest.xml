@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="es.upv.a3c.smartlibrary">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/iconoapp"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/iconoapp"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartLibrary"
+        tools:targetApi="31"
+        android:hardwareAccelerated="true"  >
+
+        <service
+            android:name="com.google.android.gms.safetynet.SafetyNetClient"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER"
+                    />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UsuarioActivity"
+            android:label="Información sobre el usuario"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ReservasActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".EstadisticasActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".EliminarUsuarioActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.MinWidth"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".AcercadeActivity"></activity>
+
+        <activity android:name=".RegisterActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".PerfilUsuario"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".ReestablecerContraseña"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <activity android:name=".mapamaps">
+
+        </activity>
+
+        <activity android:name=".Foros"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <meta-data android:name="com.google.android.safetynet.API_KEY"
+            android:value="@string/google_browse">
+
+        </meta-data>
+
+    </application>
+
+
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove"/>
+
+
+</manifest>

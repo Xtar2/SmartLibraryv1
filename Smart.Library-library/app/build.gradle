@@ -1,0 +1,95 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+
+}
+
+android {
+    compileSdk 33
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+    }
+    defaultConfig {
+        applicationId "es.upv.a3c.smartlibrary"
+        minSdk 23
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        key {
+            keyAlias 'smart'
+            keyPassword 'smart123'
+            storeFile file('smart.jks')
+            storePassword 'smart123'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.key
+        }
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.key
+        }
+    }
+    lint {
+        baseline = file("lint-baseline.xml")
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.github.clans:fab:1.6.4'
+    implementation platform('com.google.firebase:firebase-bom:31.1.1')
+    implementation 'com.google.firebase:firebase-storage:20.1.0'
+    implementation 'com.google.firebase:firebase-database:20.1.0'
+    implementation 'com.android.car.ui:car-ui-lib:2.1.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    implementation platform('com.google.firebase:firebase-bom:30.4.1')
+    implementation 'com.firebaseui:firebase-ui-auth:7.1.1'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'com.getbase:floatingactionbutton:1.10.1'
+    implementation 'com.google.firebase:firebase-firestore'
+    implementation 'com.google.firebase:firebase-firestore:24.4.1'
+    implementation 'com.google.android.gms:play-services-auth:20.4.0'
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    implementation 'com.google.android.gms:play-services-safetynet:18.0.0'
+    implementation 'com.getkeepsafe.taptargetview:taptargetview:1.13.1'
+    //noinspection GradleCompatible,GradleCompatible
+
+    implementation 'com.android.support:recyclerview-v7:25.3.1'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.firebaseui:firebase-ui-firestore:8.0.2'
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+    implementation "androidx.recyclerview:recyclerview-selection:1.1.0"
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+
+
+
+
+    //Zxing
+implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
+
+
+
+
+}

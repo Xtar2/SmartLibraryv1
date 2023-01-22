@@ -1,198 +1,446 @@
 [
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\layout_cabinas.xml.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\layout\\cabinas.xml"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-debug-49:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\drawable_cerrarsesion.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\drawable\\cerrarsesion.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_normanymix.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-debug-49:\\drawable\\normanymix.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-debug-43:\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\xml\\backup_rules.xml"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\layout_item_lista2.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\layout\\item_lista2.xml"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\layout_plazas.xml.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\layout\\plazas.xml"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_ic_baseline_favorite_24.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\ic_baseline_favorite_24.xml"
     },
     {
-        "merged": "es.upv.a3c.smartlibrary.app-merged_res-42:/layout_plazas.xml.flat",
-        "source": "es.upv.a3c.smartlibrary.app-main-44:/layout/plazas.xml"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_cabina.jpg.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\cabina.jpg"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-debug-43:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\layout_layout_registro.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\layout\\layout_registro.xml"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-debug-43:\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_google.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\google.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\layout_reservas.xml.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\layout\\reservas.xml"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-debug-49:\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\layout_activity_acercade.xml.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\layout\\activity_acercade.xml"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_boruto5.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\boruto5.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\drawable_usuarioicono.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\drawable\\usuarioicono.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\layout_reservas.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\layout\\reservas.xml"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-debug-43:\\mipmap-mdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_ic_baseline_info_24.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\ic_baseline_info_24.xml"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\layout_activity_eliminar_usuario.xml.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\layout\\activity_eliminar_usuario.xml"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_cabina_de_entradas.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\cabina_de_entradas.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\drawable_fondo_fab.xml.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\drawable\\fondo_fab.xml"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_mesabiblio.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-debug-49:\\drawable\\mesabiblio.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-debug-43:\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-debug-49:\\mipmap-hdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\drawable_acercadee.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\drawable\\acercadee.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_alex.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\alex.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\drawable_head.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\drawable\\head.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\layout_activity_acercade.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\layout\\activity_acercade.xml"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\layout_libros.xml.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\layout\\libros.xml"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_correo.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\correo.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\layout_activity_usuario.xml.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\layout\\activity_usuario.xml"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_ic_close.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\ic_close.xml"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-debug-43:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_bloqueo.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\bloqueo.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\menu_menu_main.xml.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\menu\\menu_main.xml"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_googlelogo.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\googlelogo.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\drawable_logomodooscuro.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\drawable\\logomodooscuro.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-debug-49:\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-debug-43:\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\layout_plazas.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\layout\\plazas.xml"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-debug-43:\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\layout_perfil_usuario.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\layout\\perfil_usuario.xml"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-debug-43:\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-debug-49:\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-debug-43:\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\layout_pojo_sillas_lista.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\layout\\pojo_sillas_lista.xml"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-debug-43:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_lola.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\lola.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\layout_estadisticas.xml.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\layout\\estadisticas.xml"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_cerrarsesion.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\cerrarsesion.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\drawable_libroabierto2.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\drawable\\libroabierto2.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_logoemail.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\logoemail.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-debug-43:\\mipmap-xhdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_boruto4.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\boruto4.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-debug-43:\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_logosii.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\logosii.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\layout_toolbar.xml.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\layout\\toolbar.xml"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_img_2.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\img_2.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\drawable_cabina_de_entradas.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\drawable\\cabina_de_entradas.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_usuarioicono.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\usuarioicono.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\drawable_libroabierto.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\drawable\\libroabierto.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable-v24_mesabiblio.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable-v24\\mesabiblio.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-debug-43:\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_img.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\img.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-debug-43:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_head.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\head.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-debug-43:\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_fondo_fab.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\fondo_fab.xml"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\xml\\data_extraction_rules.xml"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\layout_libros.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\layout\\libros.xml"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\drawable_logo.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\drawable\\logo.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\layout_item_lista3.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\layout\\item_lista3.xml"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\drawable_cabinadebiblio.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\drawable\\cabinadebiblio.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_click.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\click.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\drawable_click.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\drawable\\click.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_boruto3.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\boruto3.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-debug-43:\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_logopassword.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\logopassword.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\drawable_cuenta.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\drawable\\cuenta.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_usuarioo.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\usuarioo.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-debug-43:\\mipmap-hdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_border_line.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\border_line.xml"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\drawable_sentado_en_una_silla.png.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\drawable\\sentado_en_una_silla.png"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_libroabierto.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\libroabierto.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_forologo.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\forologo.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\menu_menu_anonimo.xml.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\menu\\menu_anonimo.xml"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\layout_elemento_lista_foro.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\layout\\elemento_lista_foro.xml"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\drawable_ic_baseline_info_24.xml.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\drawable\\ic_baseline_info_24.xml"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_tan.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\tan.png"
     },
     {
-        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-merged_res-42:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.3.3\\es.upv.a3c.smartlibrary.app-main-44:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_usuariooo.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\usuariooo.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_boruto2.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\boruto2.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_redondeado.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\redondeado.xml"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_mesabilioteca.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\mesabilioteca.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\layout_cabinas.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\layout\\cabinas.xml"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_iconoapp.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\iconoapp.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\layout_estadisticas.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\layout\\estadisticas.xml"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_libroseleccionados.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\libroseleccionados.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_redondeadoderecha.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\redondeadoderecha.xml"
+    },
+    {
+        "merged": "es.upv.a3c.smartlibrary.app-merged_res-48:/layout_plazas.xml.flat",
+        "source": "es.upv.a3c.smartlibrary.app-main-50:/layout/plazas.xml"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_img_1.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\img_1.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_torreoscura.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\torreoscura.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_cuenta.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\cuenta.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_cabinadebiblio.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\cabinadebiblio.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-debug-49:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-pngs-43:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_logosiosi.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\logosiosi.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-debug-49:\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_logologin2.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\logologin2.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-debug-49:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-debug-49:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_mapa.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\mapa.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_boruto1.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\boruto1.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_logomin.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\logomin.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_minianturalogo.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\minianturalogo.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_sentado_en_una_silla.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\sentado_en_una_silla.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-debug-49:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-debug-49:\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_logomodooscuro.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\logomodooscuro.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_libroseleccionado.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\libroseleccionado.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_libroabierto2.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\libroabierto2.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\layout_principalibros.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\layout\\principalibros.xml"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_logologin.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\logologin.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\menu_menu_main.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\layout_activity_usuario.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\layout\\activity_usuario.xml"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\layout_foros.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\layout\\foros.xml"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\layout_contrasenaolvidada.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\layout\\contrasenaolvidada.xml"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_granrectangulo.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\granrectangulo.xml"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_alberto.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\alberto.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\layout_toolbar.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\layout\\toolbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-debug-49:\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_registrologo.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\registrologo.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_cabinas.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\cabinas.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\layout_item_lista4.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\layout\\item_lista4.xml"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\layout_activity_eliminar_usuario.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\layout\\activity_eliminar_usuario.xml"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-debug-49:\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable-v24_candado.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable-v24\\candado.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_aleix.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\aleix.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-debug-49:\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-debug-49:\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-debug-49:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-debug-49:\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_mesa.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\mesa.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\menu_menu_anonimo.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\menu\\menu_anonimo.xml"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_acercadee.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\acercadee.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable-v24_logoverde.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable-v24\\logoverde.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\layout_mapas.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\layout\\mapas.xml"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-debug-49:\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\layout_item_lista.xml.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\layout\\item_lista.xml"
+    },
+    {
+        "merged": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-merged_res-48:\\drawable_logo.png.flat",
+        "source": "C:\\Users\\pokem\\.gradle\\daemon\\7.4\\es.upv.a3c.smartlibrary.app-main-50:\\drawable\\logo.png"
     }
 ]

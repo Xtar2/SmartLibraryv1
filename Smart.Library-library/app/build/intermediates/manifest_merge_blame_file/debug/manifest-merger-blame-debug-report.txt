@@ -5,511 +5,649 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="24"
+8        android:minSdkVersion="23"
 8-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml
-9        android:targetSdkVersion="32" />
+9        android:targetSdkVersion="33" />
 9-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml
 10
-11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:6:5-66
-11-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:6:22-64
-12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-12-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:7:5-80
-12-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:7:22-78
-13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-13-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:8:5-79
-13-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:8:22-77
-14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-14-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:12:5-79
-14-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:12:22-76
-15    <uses-permission android:name="android.permission.CAMERA" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
-15-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:22:5-65
-15-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:22:22-62
-16    <uses-feature
-16-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:25:5-27:36
-17        android:name="android.hardware.camera"
-17-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:26:9-47
-18        android:required="false" />
-18-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:27:9-33
-19    <uses-feature
-19-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:28:5-30:36
-20        android:name="android.hardware.camera.front"
-20-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:29:9-53
-21        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
-21-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:30:9-33
-22    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
-23    <uses-feature
-23-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:33:5-35:36
-24        android:name="android.hardware.camera.autofocus"
-24-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:34:9-57
-25        android:required="false" />
-25-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:35:9-33
-26    <uses-feature
-26-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:36:5-38:36
-27        android:name="android.hardware.camera.flash"
-27-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:37:9-53
-28        android:required="false" />
-28-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:38:9-33
-29    <uses-feature
-29-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:39:5-41:36
-30        android:name="android.hardware.screen.landscape"
-30-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:40:9-57
-31        android:required="false" />
-31-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:41:9-33
-32    <uses-feature
-32-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:42:5-44:36
-33        android:name="android.hardware.wifi"
-33-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:43:9-45
-34        android:required="false" />
-34-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:44:9-33
-35
-36    <application
-36-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:9:5-59:19
-37        android:allowBackup="true"
-37-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:10:9-35
-38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-38-->[androidx.core:core:1.8.0] C:\Users\pokem\.gradle\caches\transforms-3\2918a66d163dea0404f53e82d285c4d8\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
-39        android:dataExtractionRules="@xml/data_extraction_rules"
-39-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:11:9-65
-40        android:debuggable="true"
-41        android:extractNativeLibs="false"
-42        android:fullBackupContent="@xml/backup_rules"
-42-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:12:9-54
-43        android:hardwareAccelerated="true"
-43-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:19:9-43
-44        android:icon="@mipmap/ic_launcher"
-44-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:13:9-43
-45        android:label="@string/app_name"
-45-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:14:9-41
-46        android:roundIcon="@mipmap/ic_launcher_round"
-46-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:15:9-54
-47        android:supportsRtl="true"
-47-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:16:9-35
-48        android:testOnly="true"
-49        android:theme="@style/Theme.SmartLibrary" >
-49-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:17:9-50
-50        <activity
-50-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:22:9-28:20
-51            android:name="es.upv.a3c.smartlibrary.LoginActivity"
-51-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:22:19-48
-52            android:exported="true" >
-52-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:23:13-36
-53            <intent-filter>
-53-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:24:13-27:29
-54                <action android:name="android.intent.action.MAIN" />
-54-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:25:17-69
-54-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:25:25-66
-55
-56                <category android:name="android.intent.category.LAUNCHER" />
-56-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:26:17-77
-56-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:26:27-74
-57            </intent-filter>
-58        </activity>
-59        <activity
-59-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:30:9-33:20
-60            android:name="es.upv.a3c.smartlibrary.MainActivity"
-60-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:31:13-41
-61            android:exported="true" >
-61-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:32:13-36
-62        </activity>
-63        <activity
-63-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:35:9-36:60
-64            android:name="es.upv.a3c.smartlibrary.UsuarioActivity"
-64-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:35:19-50
-65            android:label="Información sobre el usuario" />
-65-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:36:13-57
-66        <activity
-66-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:38:9-41:20
-67            android:name="es.upv.a3c.smartlibrary.ReservasActivity"
-67-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:39:13-45
-68            android:exported="true" >
-68-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:40:13-36
-69        </activity>
-70        <activity
-70-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:43:9-46:20
-71            android:name="es.upv.a3c.smartlibrary.EstadisticasActivity"
-71-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:44:13-49
-72            android:exported="true" >
-72-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:45:13-36
-73        </activity>
-74        <activity
-74-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:48:9-52:20
-75            android:name="es.upv.a3c.smartlibrary.EliminarUsuarioActivity"
-75-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:49:13-52
-76            android:exported="true"
-76-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:50:13-36
-77            android:theme="@style/Theme.AppCompat.Light.Dialog.MinWidth" >
-77-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:51:13-73
-78        </activity>
-79        <activity
-79-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:54:9-56:66
-80            android:name="es.upv.a3c.smartlibrary.AcercadeActivity"
-80-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:54:19-51
-81            android:label="Acerca de ..."
-81-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:55:13-42
-82            android:theme="@style/Theme.AppCompat.Light.Dialog" />
-82-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:56:13-64
-83
-84        <meta-data
-84-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:16:9-18:69
-85            android:name="com.google.android.gms.version"
-85-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:17:13-58
-86            android:value="@integer/google_play_services_version" />
-86-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:18:13-66
-87        <meta-data
-87-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:19:9-21:63
-88            android:name="com.facebook.sdk.ApplicationId"
-88-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:20:13-58
-89            android:value="@string/facebook_application_id" />
-89-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:21:13-60
-90
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:5:5-78
+11-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:6:5-80
+12-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:6:22-78
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:7:5-66
+13-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:7:22-64
+14    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+14-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:8:5-70
+14-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:8:22-68
+15    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+15-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:9:5-81
+15-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:9:22-78
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:10:5-11:40
+16-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:10:22-78
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:12:5-79
+17-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:12:22-77
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:13:5-78
+18-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:13:22-76
+19
+20    <queries>
+20-->[com.android.car.ui:car-ui-lib:2.1.0] C:\Users\pokem\.gradle\caches\transforms-3\c73e01a31304a1dda530109befce4967\transformed\jetified-car-ui-lib-2.1.0\AndroidManifest.xml:26:5-31:15
+21        <provider
+21-->[com.android.car.ui:car-ui-lib:2.1.0] C:\Users\pokem\.gradle\caches\transforms-3\c73e01a31304a1dda530109befce4967\transformed\jetified-car-ui-lib-2.1.0\AndroidManifest.xml:27:9-30:67
+22            android:name="com.android.car.ui.plugin.PluginNameProvider"
+22-->[com.android.car.ui:car-ui-lib:2.1.0] C:\Users\pokem\.gradle\caches\transforms-3\c73e01a31304a1dda530109befce4967\transformed\jetified-car-ui-lib-2.1.0\AndroidManifest.xml:28:13-72
+23            android:authorities="com.android.car.ui.plugin" />
+23-->[com.android.car.ui:car-ui-lib:2.1.0] C:\Users\pokem\.gradle\caches\transforms-3\c73e01a31304a1dda530109befce4967\transformed\jetified-car-ui-lib-2.1.0\AndroidManifest.xml:29:13-60
+24        <!-- Needs to be explicitly declared on Android R+ -->
+25        <package android:name="com.google.android.apps.maps" />
+25-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\pokem\.gradle\caches\transforms-3\637af9bdbfb68b329cb7650f2cdc825c\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
+25-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\pokem\.gradle\caches\transforms-3\637af9bdbfb68b329cb7650f2cdc825c\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
+26    </queries>
+27
+28    <uses-feature
+28-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\pokem\.gradle\caches\transforms-3\637af9bdbfb68b329cb7650f2cdc825c\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
+29        android:glEsVersion="0x00020000"
+29-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\pokem\.gradle\caches\transforms-3\637af9bdbfb68b329cb7650f2cdc825c\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
+30        android:required="true" />
+30-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\pokem\.gradle\caches\transforms-3\637af9bdbfb68b329cb7650f2cdc825c\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
+31
+32    <uses-permission android:name="android.permission.CAMERA" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+32-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:22:5-65
+32-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:22:22-62
+33    <uses-feature
+33-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:25:5-27:36
+34        android:name="android.hardware.camera"
+34-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:26:9-47
+35        android:required="false" />
+35-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:27:9-33
+36    <uses-feature
+36-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:28:5-30:36
+37        android:name="android.hardware.camera.front"
+37-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:29:9-53
+38        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+38-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:30:9-33
+39    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+40    <uses-feature
+40-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:33:5-35:36
+41        android:name="android.hardware.camera.autofocus"
+41-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:34:9-57
+42        android:required="false" />
+42-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:35:9-33
+43    <uses-feature
+43-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:36:5-38:36
+44        android:name="android.hardware.camera.flash"
+44-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:37:9-53
+45        android:required="false" />
+45-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:38:9-33
+46    <uses-feature
+46-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:39:5-41:36
+47        android:name="android.hardware.screen.landscape"
+47-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:40:9-57
+48        android:required="false" />
+48-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:41:9-33
+49    <uses-feature
+49-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:42:5-44:36
+50        android:name="android.hardware.wifi"
+50-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:43:9-45
+51        android:required="false" />
+51-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:44:9-33
+52
+53    <application
+53-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:15:5-104:19
+54        android:allowBackup="true"
+54-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:16:9-35
+55        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+55-->[androidx.core:core:1.8.0] C:\Users\pokem\.gradle\caches\transforms-3\102215101d21fdb02f0f27bbfd4ebd5d\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+56        android:dataExtractionRules="@xml/data_extraction_rules"
+56-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:17:9-65
+57        android:debuggable="true"
+58        android:extractNativeLibs="false"
+59        android:fullBackupContent="@xml/backup_rules"
+59-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:18:9-54
+60        android:hardwareAccelerated="true"
+60-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:25:9-43
+61        android:icon="@drawable/iconoapp"
+61-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:19:9-42
+62        android:label="@string/app_name"
+62-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:20:9-41
+63        android:roundIcon="@drawable/iconoapp"
+63-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:21:9-47
+64        android:supportsRtl="true"
+64-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:22:9-35
+65        android:testOnly="true"
+66        android:theme="@style/Theme.SmartLibrary" >
+66-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:23:9-50
+67        <service
+67-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:27:9-30:45
+68            android:name="com.google.android.gms.safetynet.SafetyNetClient"
+68-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:28:13-76
+69            android:exported="false" />
+69-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:29:13-37
+70
+71        <activity
+71-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:31:9-39:20
+72            android:name="es.upv.a3c.smartlibrary.LoginActivity"
+72-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:31:19-48
+73            android:exported="true"
+73-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:32:13-36
+74            android:screenOrientation="portrait" >
+74-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:33:13-49
+75            <intent-filter>
+75-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:34:13-38:29
+76                <action android:name="android.intent.action.MAIN" />
+76-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:35:17-69
+76-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:35:25-66
+77
+78                <category android:name="android.intent.category.LAUNCHER" />
+78-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:36:17-37:23
+78-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:36:27-74
+79            </intent-filter>
+80        </activity>
+81        <activity
+81-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:41:9-50:20
+82            android:name="es.upv.a3c.smartlibrary.MainActivity"
+82-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:42:13-41
+83            android:exported="true"
+83-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:43:13-36
+84            android:screenOrientation="portrait" >
+84-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:44:13-49
+85            <intent-filter>
+85-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:34:13-38:29
+86                <action android:name="android.intent.action.MAIN" />
+86-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:35:17-69
+86-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:35:25-66
+87
+88                <category android:name="android.intent.category.LAUNCHER" />
+88-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:36:17-37:23
+88-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:36:27-74
+89            </intent-filter>
+90        </activity>
 91        <activity
-91-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:23:9-27:61
-92            android:name="com.firebase.ui.auth.KickoffActivity"
-92-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:24:13-64
-93            android:exported="false"
-93-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:25:13-37
-94            android:label=""
-94-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:26:13-29
-95            android:theme="@style/FirebaseUI.Transparent" />
-95-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:27:13-58
-96        <activity
-96-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:28:9-32:61
-97            android:name="com.firebase.ui.auth.ui.idp.SingleSignInActivity"
-97-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:29:13-76
-98            android:exported="false"
-98-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:30:13-37
-99            android:label=""
-99-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:31:13-29
-100            android:theme="@style/FirebaseUI.Transparent" />
-100-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:32:13-58
-101        <activity
-101-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:33:9-37:61
-102            android:name="com.firebase.ui.auth.ui.credentials.CredentialSaveActivity"
-102-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:34:13-86
-103            android:exported="false"
-103-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:35:13-37
-104            android:label=""
-104-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:36:13-29
-105            android:theme="@style/FirebaseUI.Transparent" />
-105-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:37:13-58
-106        <activity
-106-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:38:9-42:58
-107            android:name="com.firebase.ui.auth.ui.email.RecoverPasswordActivity"
-107-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:39:13-81
-108            android:exported="false"
-108-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:40:13-37
-109            android:label="@string/fui_title_recover_password_activity"
-109-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:41:13-72
-110            android:windowSoftInputMode="adjustResize" />
-110-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:42:13-55
-111        <activity
-111-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:43:9-47:58
-112            android:name="com.firebase.ui.auth.ui.email.EmailActivity"
-112-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:44:13-71
-113            android:exported="false"
-113-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:45:13-37
-114            android:label="@string/fui_sign_in_default"
-114-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:46:13-56
-115            android:windowSoftInputMode="adjustResize" />
-115-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:47:13-55
+91-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:51:9-53:51
+92            android:name="es.upv.a3c.smartlibrary.UsuarioActivity"
+92-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:51:19-50
+93            android:label="Información sobre el usuario"
+93-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:52:13-57
+94            android:screenOrientation="portrait" />
+94-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:53:13-49
+95        <activity
+95-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:55:9-59:20
+96            android:name="es.upv.a3c.smartlibrary.ReservasActivity"
+96-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:56:13-45
+97            android:exported="true"
+97-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:57:13-36
+98            android:screenOrientation="portrait" >
+98-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:58:13-49
+99        </activity>
+100        <activity
+100-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:61:9-65:20
+101            android:name="es.upv.a3c.smartlibrary.EstadisticasActivity"
+101-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:62:13-49
+102            android:exported="true"
+102-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:63:13-36
+103            android:screenOrientation="portrait" >
+103-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:64:13-49
+104        </activity>
+105        <activity
+105-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:67:9-72:20
+106            android:name="es.upv.a3c.smartlibrary.EliminarUsuarioActivity"
+106-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:68:13-52
+107            android:exported="true"
+107-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:69:13-36
+108            android:screenOrientation="portrait"
+108-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:71:13-49
+109            android:theme="@style/Theme.AppCompat.Light.Dialog.MinWidth" >
+109-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:70:13-73
+110        </activity>
+111        <activity android:name="es.upv.a3c.smartlibrary.AcercadeActivity" />
+111-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:74:9-63
+111-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:74:19-51
+112        <activity
+112-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:76:9-79:20
+113            android:name="es.upv.a3c.smartlibrary.RegisterActivity"
+113-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:76:19-51
+114            android:screenOrientation="portrait" >
+114-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:77:13-49
+115        </activity>
 116        <activity
-116-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:48:9-52:77
-117            android:name="com.firebase.ui.auth.ui.phone.PhoneActivity"
-117-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:49:13-71
-118            android:exported="false"
-118-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:50:13-37
-119            android:label="@string/fui_sign_in_with_phone_number"
-119-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:51:13-66
-120            android:windowSoftInputMode="adjustResize|stateAlwaysVisible" />
-120-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:52:13-74
-121        <activity
-121-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:53:9-57:58
-122            android:name="com.firebase.ui.auth.ui.idp.WelcomeBackIdpPrompt"
-122-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:54:13-76
-123            android:exported="false"
-123-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:55:13-37
-124            android:label="@string/fui_title_welcome_back_idp_prompt"
-124-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:56:13-70
-125            android:windowSoftInputMode="adjustResize" />
-125-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:57:13-55
-126        <activity
-126-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:58:9-62:58
-127            android:name="com.firebase.ui.auth.ui.email.WelcomeBackPasswordPrompt"
-127-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:59:13-83
-128            android:exported="false"
-128-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:60:13-37
-129            android:label="@string/fui_title_welcome_back_password_prompt"
-129-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:61:13-75
-130            android:windowSoftInputMode="adjustResize" />
-130-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:62:13-55
+116-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:80:9-83:20
+117            android:name="es.upv.a3c.smartlibrary.PerfilUsuario"
+117-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:80:19-48
+118            android:screenOrientation="portrait" >
+118-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:81:13-49
+119        </activity>
+120        <activity
+120-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:84:9-87:20
+121            android:name="es.upv.a3c.smartlibrary.ReestablecerContraseña"
+121-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:84:19-57
+122            android:screenOrientation="portrait" >
+122-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:85:13-49
+123        </activity>
+124
+125        <meta-data
+125-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:89:9-90:55
+126            android:name="com.google.android.geo.API_KEY"
+126-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:89:20-65
+127            android:value="@string/google_maps_key" />
+127-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:90:13-52
+128
+129        <activity android:name="es.upv.a3c.smartlibrary.mapamaps" >
+129-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:91:9-93:20
+129-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:91:19-43
+130        </activity>
 131        <activity
-131-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:63:9-67:58
-132            android:name="com.firebase.ui.auth.ui.email.WelcomeBackEmailLinkPrompt"
-132-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:64:13-84
-133            android:exported="false"
-133-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:65:13-37
-134            android:label="@string/fui_title_welcome_back_password_prompt"
-134-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:66:13-75
-135            android:windowSoftInputMode="adjustResize" />
-135-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:67:13-55
-136        <activity
-136-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:68:9-73:58
-137            android:name="com.firebase.ui.auth.ui.email.EmailLinkCatcherActivity"
-137-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:69:13-82
-138            android:exported="false"
-138-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:70:13-37
-139            android:label=""
-139-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:71:13-29
-140            android:theme="@style/FirebaseUI.Transparent"
-140-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:72:13-58
-141            android:windowSoftInputMode="adjustResize" />
-141-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:73:13-55
-142        <activity
-142-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:74:9-78:58
-143            android:name="com.firebase.ui.auth.ui.email.EmailLinkErrorRecoveryActivity"
-143-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:75:13-88
-144            android:exported="false"
-144-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:76:13-37
-145            android:label="@string/fui_sign_in_default"
-145-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:77:13-56
-146            android:windowSoftInputMode="adjustResize" />
-146-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:78:13-55
-147        <activity
-147-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:79:9-82:65
-148            android:name="com.firebase.ui.auth.ui.idp.AuthMethodPickerActivity"
-148-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:80:13-80
-149            android:exported="false"
-149-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:81:13-37
-150            android:label="@string/fui_default_toolbar_title" />
-150-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:82:13-62
-151        <activity
-151-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:83:9-87:48
-152            android:name="com.facebook.FacebookActivity"
-152-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:84:13-57
-153            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-153-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:85:13-96
-154            android:label="@string/app_name" />
-154-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:86:13-45
-155        <activity
-155-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:88:9-100:20
-156            android:name="com.facebook.CustomTabActivity"
-156-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:89:13-58
-157            android:exported="true" >
-157-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:90:13-36
-158            <intent-filter>
-158-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:92:13-99:29
-159                <action android:name="android.intent.action.VIEW" />
-159-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:93:17-69
-159-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:93:25-66
+131-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:95:9-98:20
+132            android:name="es.upv.a3c.smartlibrary.Foros"
+132-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:95:19-40
+133            android:screenOrientation="portrait" >
+133-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:96:13-49
+134        </activity>
+135
+136        <meta-data
+136-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:99:9-102:21
+137            android:name="com.google.android.safetynet.API_KEY"
+137-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:99:20-71
+138            android:value="@string/google_browse" >
+138-->C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\src\main\AndroidManifest.xml:100:13-50
+139        </meta-data>
+140
+141        <provider
+141-->[com.android.car.ui:car-ui-lib:2.1.0] C:\Users\pokem\.gradle\caches\transforms-3\c73e01a31304a1dda530109befce4967\transformed\jetified-car-ui-lib-2.1.0\AndroidManifest.xml:34:9-39:71
+142            android:name="com.android.car.ui.core.CarUiInstaller"
+142-->[com.android.car.ui:car-ui-lib:2.1.0] C:\Users\pokem\.gradle\caches\transforms-3\c73e01a31304a1dda530109befce4967\transformed\jetified-car-ui-lib-2.1.0\AndroidManifest.xml:35:13-66
+143            android:authorities="es.upv.a3c.smartlibrary.CarUiInstaller"
+143-->[com.android.car.ui:car-ui-lib:2.1.0] C:\Users\pokem\.gradle\caches\transforms-3\c73e01a31304a1dda530109befce4967\transformed\jetified-car-ui-lib-2.1.0\AndroidManifest.xml:36:13-66
+144            android:directBootAware="true"
+144-->[com.android.car.ui:car-ui-lib:2.1.0] C:\Users\pokem\.gradle\caches\transforms-3\c73e01a31304a1dda530109befce4967\transformed\jetified-car-ui-lib-2.1.0\AndroidManifest.xml:37:13-43
+145            android:exported="false"
+145-->[com.android.car.ui:car-ui-lib:2.1.0] C:\Users\pokem\.gradle\caches\transforms-3\c73e01a31304a1dda530109befce4967\transformed\jetified-car-ui-lib-2.1.0\AndroidManifest.xml:38:13-37
+146            android:process="@string/car_ui_installer_process_name" />
+146-->[com.android.car.ui:car-ui-lib:2.1.0] C:\Users\pokem\.gradle\caches\transforms-3\c73e01a31304a1dda530109befce4967\transformed\jetified-car-ui-lib-2.1.0\AndroidManifest.xml:39:13-68
+147        <provider
+147-->[com.android.car.ui:car-ui-lib:2.1.0] C:\Users\pokem\.gradle\caches\transforms-3\c73e01a31304a1dda530109befce4967\transformed\jetified-car-ui-lib-2.1.0\AndroidManifest.xml:40:9-45:79
+148            android:name="com.android.car.ui.core.SearchResultsProvider"
+148-->[com.android.car.ui:car-ui-lib:2.1.0] C:\Users\pokem\.gradle\caches\transforms-3\c73e01a31304a1dda530109befce4967\transformed\jetified-car-ui-lib-2.1.0\AndroidManifest.xml:41:13-73
+149            android:authorities="es.upv.a3c.smartlibrary.SearchResultsProvider"
+149-->[com.android.car.ui:car-ui-lib:2.1.0] C:\Users\pokem\.gradle\caches\transforms-3\c73e01a31304a1dda530109befce4967\transformed\jetified-car-ui-lib-2.1.0\AndroidManifest.xml:42:13-73
+150            android:exported="true"
+150-->[com.android.car.ui:car-ui-lib:2.1.0] C:\Users\pokem\.gradle\caches\transforms-3\c73e01a31304a1dda530109befce4967\transformed\jetified-car-ui-lib-2.1.0\AndroidManifest.xml:43:13-36
+151            android:process="@string/car_ui_installer_process_name"
+151-->[com.android.car.ui:car-ui-lib:2.1.0] C:\Users\pokem\.gradle\caches\transforms-3\c73e01a31304a1dda530109befce4967\transformed\jetified-car-ui-lib-2.1.0\AndroidManifest.xml:44:13-68
+152            android:readPermission="com.android.car.ui.READ_SEARCH_RESULTS" />
+152-->[com.android.car.ui:car-ui-lib:2.1.0] C:\Users\pokem\.gradle\caches\transforms-3\c73e01a31304a1dda530109befce4967\transformed\jetified-car-ui-lib-2.1.0\AndroidManifest.xml:45:13-76
+153
+154        <meta-data
+154-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:16:9-18:69
+155            android:name="com.google.android.gms.version"
+155-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:17:13-58
+156            android:value="@integer/google_play_services_version" />
+156-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:18:13-66
+157        <meta-data
+157-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:19:9-21:63
+158            android:name="com.facebook.sdk.ApplicationId"
+158-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:20:13-58
+159            android:value="@string/facebook_application_id" />
+159-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:21:13-60
 160
-161                <category android:name="android.intent.category.DEFAULT" />
-161-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:95:17-76
-161-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:95:27-73
-162                <category android:name="android.intent.category.BROWSABLE" />
-162-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:96:17-78
-162-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:96:27-75
-163
-164                <data android:scheme="@string/facebook_login_protocol_scheme" />
-164-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:98:17-81
-164-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:98:23-78
-165            </intent-filter>
-166        </activity>
-167
-168        <provider
-168-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:102:9-106:38
-169            android:name="com.firebase.ui.auth.data.client.AuthUiInitProvider"
-169-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:103:13-79
-170            android:authorities="es.upv.a3c.smartlibrary.authuiinitprovider"
-170-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:104:13-70
-171            android:exported="false"
-171-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:105:13-37
-172            android:initOrder="90" />
-172-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:106:13-35
-173
-174        <service
-174-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\18ae456eefa18f20b20d3fd04790385f\transformed\firebase-storage-20.1.0\AndroidManifest.xml:29:9-35:19
-175            android:name="com.google.firebase.components.ComponentDiscoveryService"
-175-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\18ae456eefa18f20b20d3fd04790385f\transformed\firebase-storage-20.1.0\AndroidManifest.xml:30:13-84
-176            android:directBootAware="true"
-176-->[com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\e66b34993606700fb27a08e374852cfa\transformed\firebase-common-20.2.0\AndroidManifest.xml:34:13-43
-177            android:exported="false" >
-177-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\18ae456eefa18f20b20d3fd04790385f\transformed\firebase-storage-20.1.0\AndroidManifest.xml:31:13-37
-178            <meta-data
-178-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\18ae456eefa18f20b20d3fd04790385f\transformed\firebase-storage-20.1.0\AndroidManifest.xml:32:13-34:85
-179                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-179-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\18ae456eefa18f20b20d3fd04790385f\transformed\firebase-storage-20.1.0\AndroidManifest.xml:33:17-107
-180                android:value="com.google.firebase.components.ComponentRegistrar" />
-180-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\18ae456eefa18f20b20d3fd04790385f\transformed\firebase-storage-20.1.0\AndroidManifest.xml:34:17-82
-181            <meta-data
-181-->[com.google.firebase:firebase-database:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9617712fc2e3b472808a75f597c78fb6\transformed\firebase-database-20.1.0\AndroidManifest.xml:31:13-33:85
-182                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-182-->[com.google.firebase:firebase-database:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9617712fc2e3b472808a75f597c78fb6\transformed\firebase-database-20.1.0\AndroidManifest.xml:32:17-109
-183                android:value="com.google.firebase.components.ComponentRegistrar" />
-183-->[com.google.firebase:firebase-database:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9617712fc2e3b472808a75f597c78fb6\transformed\firebase-database-20.1.0\AndroidManifest.xml:33:17-82
-184            <meta-data
-184-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\pokem\.gradle\caches\transforms-3\a741201619a4e8795c97a33c8cd14e4b\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:19:13-21:85
-185                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-185-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\pokem\.gradle\caches\transforms-3\a741201619a4e8795c97a33c8cd14e4b\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:20:17-111
-186                android:value="com.google.firebase.components.ComponentRegistrar" />
-186-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\pokem\.gradle\caches\transforms-3\a741201619a4e8795c97a33c8cd14e4b\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:21:17-82
-187            <meta-data
-187-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:67:13-69:85
-188                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-188-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:68:17-109
-189                android:value="com.google.firebase.components.ComponentRegistrar" />
-189-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:69:17-82
-190        </service>
-191
-192        <activity
-192-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\AndroidManifest.xml:23:9-27:75
-193            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-193-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\AndroidManifest.xml:24:13-93
-194            android:excludeFromRecents="true"
-194-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\AndroidManifest.xml:25:13-46
-195            android:exported="false"
-195-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\AndroidManifest.xml:26:13-37
-196            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-196-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\AndroidManifest.xml:27:13-72
-197        <!--
-198            Service handling Google Sign-In user revocation. For apps that do not integrate with
-199            Google Sign-In, this service will never be started.
-200        -->
-201        <service
-201-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\AndroidManifest.xml:33:9-37:51
-202            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-202-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\AndroidManifest.xml:34:13-89
-203            android:exported="true"
-203-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\AndroidManifest.xml:35:13-36
-204            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-204-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\AndroidManifest.xml:36:13-107
-205            android:visibleToInstantApps="true" />
-205-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\pokem\.gradle\caches\transforms-3\3207bb2ee904c0394ca25c0cc03f0462\transformed\play-services-auth-20.3.0\AndroidManifest.xml:37:13-48
-206
-207        <activity
-207-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:27:9-44:20
-208            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-208-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:28:13-80
-209            android:excludeFromRecents="true"
-209-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:29:13-46
-210            android:exported="true"
-210-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:30:13-36
-211            android:launchMode="singleTask"
-211-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:31:13-44
-212            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-212-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:32:13-72
-213            <intent-filter>
-213-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:33:13-43:29
-214                <action android:name="android.intent.action.VIEW" />
-214-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:93:17-69
-214-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:93:25-66
-215
-216                <category android:name="android.intent.category.DEFAULT" />
-216-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:95:17-76
-216-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:95:27-73
-217                <category android:name="android.intent.category.BROWSABLE" />
-217-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:96:17-78
-217-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:96:27-75
-218
-219                <data
-219-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:98:17-81
-220                    android:host="firebase.auth"
-221                    android:path="/"
-222                    android:scheme="genericidp" />
-222-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:98:23-78
-223            </intent-filter>
-224        </activity>
+161        <activity
+161-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:23:9-27:61
+162            android:name="com.firebase.ui.auth.KickoffActivity"
+162-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:24:13-64
+163            android:exported="false"
+163-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:25:13-37
+164            android:label=""
+164-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:26:13-29
+165            android:theme="@style/FirebaseUI.Transparent" />
+165-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:27:13-58
+166        <activity
+166-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:28:9-32:61
+167            android:name="com.firebase.ui.auth.ui.idp.SingleSignInActivity"
+167-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:29:13-76
+168            android:exported="false"
+168-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:30:13-37
+169            android:label=""
+169-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:31:13-29
+170            android:theme="@style/FirebaseUI.Transparent" />
+170-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:32:13-58
+171        <activity
+171-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:33:9-37:61
+172            android:name="com.firebase.ui.auth.ui.credentials.CredentialSaveActivity"
+172-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:34:13-86
+173            android:exported="false"
+173-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:35:13-37
+174            android:label=""
+174-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:36:13-29
+175            android:theme="@style/FirebaseUI.Transparent" />
+175-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:37:13-58
+176        <activity
+176-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:38:9-42:58
+177            android:name="com.firebase.ui.auth.ui.email.RecoverPasswordActivity"
+177-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:39:13-81
+178            android:exported="false"
+178-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:40:13-37
+179            android:label="@string/fui_title_recover_password_activity"
+179-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:41:13-72
+180            android:windowSoftInputMode="adjustResize" />
+180-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:42:13-55
+181        <activity
+181-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:43:9-47:58
+182            android:name="com.firebase.ui.auth.ui.email.EmailActivity"
+182-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:44:13-71
+183            android:exported="false"
+183-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:45:13-37
+184            android:label="@string/fui_sign_in_default"
+184-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:46:13-56
+185            android:windowSoftInputMode="adjustResize" />
+185-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:47:13-55
+186        <activity
+186-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:48:9-52:77
+187            android:name="com.firebase.ui.auth.ui.phone.PhoneActivity"
+187-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:49:13-71
+188            android:exported="false"
+188-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:50:13-37
+189            android:label="@string/fui_sign_in_with_phone_number"
+189-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:51:13-66
+190            android:windowSoftInputMode="adjustResize|stateAlwaysVisible" />
+190-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:52:13-74
+191        <activity
+191-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:53:9-57:58
+192            android:name="com.firebase.ui.auth.ui.idp.WelcomeBackIdpPrompt"
+192-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:54:13-76
+193            android:exported="false"
+193-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:55:13-37
+194            android:label="@string/fui_title_welcome_back_idp_prompt"
+194-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:56:13-70
+195            android:windowSoftInputMode="adjustResize" />
+195-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:57:13-55
+196        <activity
+196-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:58:9-62:58
+197            android:name="com.firebase.ui.auth.ui.email.WelcomeBackPasswordPrompt"
+197-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:59:13-83
+198            android:exported="false"
+198-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:60:13-37
+199            android:label="@string/fui_title_welcome_back_password_prompt"
+199-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:61:13-75
+200            android:windowSoftInputMode="adjustResize" />
+200-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:62:13-55
+201        <activity
+201-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:63:9-67:58
+202            android:name="com.firebase.ui.auth.ui.email.WelcomeBackEmailLinkPrompt"
+202-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:64:13-84
+203            android:exported="false"
+203-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:65:13-37
+204            android:label="@string/fui_title_welcome_back_password_prompt"
+204-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:66:13-75
+205            android:windowSoftInputMode="adjustResize" />
+205-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:67:13-55
+206        <activity
+206-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:68:9-73:58
+207            android:name="com.firebase.ui.auth.ui.email.EmailLinkCatcherActivity"
+207-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:69:13-82
+208            android:exported="false"
+208-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:70:13-37
+209            android:label=""
+209-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:71:13-29
+210            android:theme="@style/FirebaseUI.Transparent"
+210-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:72:13-58
+211            android:windowSoftInputMode="adjustResize" />
+211-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:73:13-55
+212        <activity
+212-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:74:9-78:58
+213            android:name="com.firebase.ui.auth.ui.email.EmailLinkErrorRecoveryActivity"
+213-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:75:13-88
+214            android:exported="false"
+214-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:76:13-37
+215            android:label="@string/fui_sign_in_default"
+215-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:77:13-56
+216            android:windowSoftInputMode="adjustResize" />
+216-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:78:13-55
+217        <activity
+217-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:79:9-82:65
+218            android:name="com.firebase.ui.auth.ui.idp.AuthMethodPickerActivity"
+218-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:80:13-80
+219            android:exported="false"
+219-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:81:13-37
+220            android:label="@string/fui_default_toolbar_title" />
+220-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:82:13-62
+221        <activity
+221-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:83:9-87:48
+222            android:name="com.facebook.FacebookActivity"
+222-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:84:13-57
+223            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+223-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:85:13-96
+224            android:label="@string/app_name" />
+224-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:86:13-45
 225        <activity
-225-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:45:9-62:20
-226            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-226-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:46:13-79
-227            android:excludeFromRecents="true"
-227-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:47:13-46
-228            android:exported="true"
-228-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:48:13-36
-229            android:launchMode="singleTask"
-229-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:49:13-44
-230            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-230-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:50:13-72
-231            <intent-filter>
-231-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\AndroidManifest.xml:51:13-61:29
-232                <action android:name="android.intent.action.VIEW" />
-232-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:93:17-69
-232-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:93:25-66
+225-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:88:9-100:20
+226            android:name="com.facebook.CustomTabActivity"
+226-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:89:13-58
+227            android:exported="true" >
+227-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:90:13-36
+228            <intent-filter>
+228-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:92:13-99:29
+229                <action android:name="android.intent.action.VIEW" />
+229-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:93:17-69
+229-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:93:25-66
+230
+231                <category android:name="android.intent.category.DEFAULT" />
+231-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:95:17-76
+231-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:95:27-73
+232                <category android:name="android.intent.category.BROWSABLE" />
+232-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:96:17-78
+232-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:96:27-75
 233
-234                <category android:name="android.intent.category.DEFAULT" />
-234-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:95:17-76
-234-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:95:27-73
-235                <category android:name="android.intent.category.BROWSABLE" />
-235-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:96:17-78
-235-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:96:27-75
-236
-237                <data
-237-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:98:17-81
-238                    android:host="firebase.auth"
-239                    android:path="/"
-240                    android:scheme="recaptcha" />
-240-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\AndroidManifest.xml:98:23-78
-241            </intent-filter>
-242        </activity>
-243        <activity
-243-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:47:9-53:63
-244            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-244-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:48:13-74
-245            android:clearTaskOnLaunch="true"
-245-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:49:13-45
-246            android:screenOrientation="sensorLandscape"
-246-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:50:13-56
-247            android:stateNotNeeded="true"
-247-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:51:13-42
-248            android:theme="@style/zxing_CaptureTheme"
-248-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:52:13-54
-249            android:windowSoftInputMode="stateAlwaysHidden" />
-249-->[com.journeyapps:zxing-android-embedded:4.1.0] C:\Users\pokem\.gradle\caches\transforms-3\684a5e58189a97a017f14abba376c74e\transformed\zxing-android-embedded-4.1.0\AndroidManifest.xml:53:13-60
-250
-251        <provider
-251-->[com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\e66b34993606700fb27a08e374852cfa\transformed\firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
-252            android:name="com.google.firebase.provider.FirebaseInitProvider"
-252-->[com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\e66b34993606700fb27a08e374852cfa\transformed\firebase-common-20.2.0\AndroidManifest.xml:26:13-77
-253            android:authorities="es.upv.a3c.smartlibrary.firebaseinitprovider"
-253-->[com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\e66b34993606700fb27a08e374852cfa\transformed\firebase-common-20.2.0\AndroidManifest.xml:27:13-72
-254            android:directBootAware="true"
-254-->[com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\e66b34993606700fb27a08e374852cfa\transformed\firebase-common-20.2.0\AndroidManifest.xml:28:13-43
-255            android:exported="false"
-255-->[com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\e66b34993606700fb27a08e374852cfa\transformed\firebase-common-20.2.0\AndroidManifest.xml:29:13-37
-256            android:initOrder="100" />
-256-->[com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\e66b34993606700fb27a08e374852cfa\transformed\firebase-common-20.2.0\AndroidManifest.xml:30:13-36
-257
-258        <activity
-258-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\ae2c843528e04ad00306c7b9fed17697\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-259            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-259-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\ae2c843528e04ad00306c7b9fed17697\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-260            android:exported="false"
-260-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\ae2c843528e04ad00306c7b9fed17697\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-261            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-261-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\ae2c843528e04ad00306c7b9fed17697\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-262
-263        <provider
-263-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\09195a5dd91bc3d588cae653cd01434c\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-264            android:name="androidx.startup.InitializationProvider"
-264-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\09195a5dd91bc3d588cae653cd01434c\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-265            android:authorities="es.upv.a3c.smartlibrary.androidx-startup"
-265-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\09195a5dd91bc3d588cae653cd01434c\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-266            android:exported="false" >
-266-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\09195a5dd91bc3d588cae653cd01434c\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-267            <meta-data
-267-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\09195a5dd91bc3d588cae653cd01434c\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-268                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-268-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\09195a5dd91bc3d588cae653cd01434c\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-269                android:value="androidx.startup" />
-269-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\09195a5dd91bc3d588cae653cd01434c\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-270            <meta-data
-270-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\pokem\.gradle\caches\transforms-3\ea8421a87f85d746cc1f9e62cbe8bb18\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-271                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-271-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\pokem\.gradle\caches\transforms-3\ea8421a87f85d746cc1f9e62cbe8bb18\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-272                android:value="androidx.startup" />
-272-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\pokem\.gradle\caches\transforms-3\ea8421a87f85d746cc1f9e62cbe8bb18\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-273        </provider>
-274    </application>
-275
-276</manifest>
+234                <data android:scheme="@string/facebook_login_protocol_scheme" />
+234-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:98:17-81
+234-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:98:23-78
+235            </intent-filter>
+236        </activity>
+237
+238        <provider
+238-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:102:9-106:38
+239            android:name="com.firebase.ui.auth.data.client.AuthUiInitProvider"
+239-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:103:13-79
+240            android:authorities="es.upv.a3c.smartlibrary.authuiinitprovider"
+240-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:104:13-70
+241            android:exported="false"
+241-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:105:13-37
+242            android:initOrder="90" />
+242-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:106:13-35
+243
+244        <service
+244-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\3d1da5e2138039acb2f7d4e673638d8b\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:29:9-35:19
+245            android:name="com.google.firebase.components.ComponentDiscoveryService"
+245-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\3d1da5e2138039acb2f7d4e673638d8b\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:30:13-84
+246            android:directBootAware="true"
+246-->[com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\dc7803597803a1ddfce933714cfd7209\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:34:13-43
+247            android:exported="false" >
+247-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\3d1da5e2138039acb2f7d4e673638d8b\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:31:13-37
+248            <meta-data
+248-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\3d1da5e2138039acb2f7d4e673638d8b\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:32:13-34:85
+249                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+249-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\3d1da5e2138039acb2f7d4e673638d8b\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:33:17-107
+250                android:value="com.google.firebase.components.ComponentRegistrar" />
+250-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\3d1da5e2138039acb2f7d4e673638d8b\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:34:17-82
+251            <meta-data
+251-->[com.google.firebase:firebase-database:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\120a151daddca3044a3478db6b931538\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:31:13-33:85
+252                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+252-->[com.google.firebase:firebase-database:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\120a151daddca3044a3478db6b931538\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:32:17-109
+253                android:value="com.google.firebase.components.ComponentRegistrar" />
+253-->[com.google.firebase:firebase-database:20.1.0] C:\Users\pokem\.gradle\caches\transforms-3\120a151daddca3044a3478db6b931538\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:33:17-82
+254            <meta-data
+254-->[com.google.firebase:firebase-firestore:24.4.1] C:\Users\pokem\.gradle\caches\transforms-3\5feb41b22a2b01d76524ce752f8f2222\transformed\jetified-firebase-firestore-24.4.1\AndroidManifest.xml:19:13-21:85
+255                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+255-->[com.google.firebase:firebase-firestore:24.4.1] C:\Users\pokem\.gradle\caches\transforms-3\5feb41b22a2b01d76524ce752f8f2222\transformed\jetified-firebase-firestore-24.4.1\AndroidManifest.xml:20:17-111
+256                android:value="com.google.firebase.components.ComponentRegistrar" />
+256-->[com.google.firebase:firebase-firestore:24.4.1] C:\Users\pokem\.gradle\caches\transforms-3\5feb41b22a2b01d76524ce752f8f2222\transformed\jetified-firebase-firestore-24.4.1\AndroidManifest.xml:21:17-82
+257            <meta-data
+257-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:67:13-69:85
+258                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+258-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:68:17-109
+259                android:value="com.google.firebase.components.ComponentRegistrar" />
+259-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:69:17-82
+260        </service>
+261
+262        <activity
+262-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\pokem\.gradle\caches\transforms-3\c15306db9e8a97ea9d2a05b2699ac7ac\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:23:9-27:75
+263            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+263-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\pokem\.gradle\caches\transforms-3\c15306db9e8a97ea9d2a05b2699ac7ac\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:24:13-93
+264            android:excludeFromRecents="true"
+264-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\pokem\.gradle\caches\transforms-3\c15306db9e8a97ea9d2a05b2699ac7ac\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:25:13-46
+265            android:exported="false"
+265-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\pokem\.gradle\caches\transforms-3\c15306db9e8a97ea9d2a05b2699ac7ac\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:26:13-37
+266            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+266-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\pokem\.gradle\caches\transforms-3\c15306db9e8a97ea9d2a05b2699ac7ac\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:27:13-72
+267        <!--
+268            Service handling Google Sign-In user revocation. For apps that do not integrate with
+269            Google Sign-In, this service will never be started.
+270        -->
+271        <service
+271-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\pokem\.gradle\caches\transforms-3\c15306db9e8a97ea9d2a05b2699ac7ac\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:33:9-37:51
+272            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+272-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\pokem\.gradle\caches\transforms-3\c15306db9e8a97ea9d2a05b2699ac7ac\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:34:13-89
+273            android:exported="true"
+273-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\pokem\.gradle\caches\transforms-3\c15306db9e8a97ea9d2a05b2699ac7ac\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:35:13-36
+274            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+274-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\pokem\.gradle\caches\transforms-3\c15306db9e8a97ea9d2a05b2699ac7ac\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:36:13-107
+275            android:visibleToInstantApps="true" />
+275-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\pokem\.gradle\caches\transforms-3\c15306db9e8a97ea9d2a05b2699ac7ac\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:37:13-48
+276
+277        <activity
+277-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:27:9-44:20
+278            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+278-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:28:13-80
+279            android:excludeFromRecents="true"
+279-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:29:13-46
+280            android:exported="true"
+280-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:30:13-36
+281            android:launchMode="singleTask"
+281-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:31:13-44
+282            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+282-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:32:13-72
+283            <intent-filter>
+283-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:33:13-43:29
+284                <action android:name="android.intent.action.VIEW" />
+284-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:93:17-69
+284-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:93:25-66
+285
+286                <category android:name="android.intent.category.DEFAULT" />
+286-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:95:17-76
+286-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:95:27-73
+287                <category android:name="android.intent.category.BROWSABLE" />
+287-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:96:17-78
+287-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:96:27-75
+288
+289                <data
+289-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:98:17-81
+290                    android:host="firebase.auth"
+291                    android:path="/"
+292                    android:scheme="genericidp" />
+292-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:98:23-78
+293            </intent-filter>
+294        </activity>
+295        <activity
+295-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:45:9-62:20
+296            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+296-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:46:13-79
+297            android:excludeFromRecents="true"
+297-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:47:13-46
+298            android:exported="true"
+298-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:48:13-36
+299            android:launchMode="singleTask"
+299-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:49:13-44
+300            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+300-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:50:13-72
+301            <intent-filter>
+301-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\pokem\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:51:13-61:29
+302                <action android:name="android.intent.action.VIEW" />
+302-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:93:17-69
+302-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:93:25-66
+303
+304                <category android:name="android.intent.category.DEFAULT" />
+304-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:95:17-76
+304-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:95:27-73
+305                <category android:name="android.intent.category.BROWSABLE" />
+305-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:96:17-78
+305-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:96:27-75
+306
+307                <data
+307-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:98:17-81
+308                    android:host="firebase.auth"
+309                    android:path="/"
+310                    android:scheme="recaptcha" />
+310-->[com.firebaseui:firebase-ui-auth:7.1.1] C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\AndroidManifest.xml:98:23-78
+311            </intent-filter>
+312        </activity> <!-- Needs to be explicitly declared on P+ -->
+313        <uses-library
+313-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\pokem\.gradle\caches\transforms-3\637af9bdbfb68b329cb7650f2cdc825c\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
+314            android:name="org.apache.http.legacy"
+314-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\pokem\.gradle\caches\transforms-3\637af9bdbfb68b329cb7650f2cdc825c\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
+315            android:required="false" />
+315-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\pokem\.gradle\caches\transforms-3\637af9bdbfb68b329cb7650f2cdc825c\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
+316
+317        <activity
+317-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:47:9-53:63
+318            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+318-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:48:13-74
+319            android:clearTaskOnLaunch="true"
+319-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:49:13-45
+320            android:screenOrientation="sensorLandscape"
+320-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:50:13-56
+321            android:stateNotNeeded="true"
+321-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:51:13-42
+322            android:theme="@style/zxing_CaptureTheme"
+322-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:52:13-54
+323            android:windowSoftInputMode="stateAlwaysHidden" />
+323-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\pokem\.gradle\caches\transforms-3\2ecf5221484cec0a8fe0efca5d45a027\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:53:13-60
+324
+325        <provider
+325-->[com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\dc7803597803a1ddfce933714cfd7209\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
+326            android:name="com.google.firebase.provider.FirebaseInitProvider"
+326-->[com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\dc7803597803a1ddfce933714cfd7209\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:26:13-77
+327            android:authorities="es.upv.a3c.smartlibrary.firebaseinitprovider"
+327-->[com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\dc7803597803a1ddfce933714cfd7209\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:27:13-72
+328            android:directBootAware="true"
+328-->[com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\dc7803597803a1ddfce933714cfd7209\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:28:13-43
+329            android:exported="false"
+329-->[com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\dc7803597803a1ddfce933714cfd7209\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:29:13-37
+330            android:initOrder="100" />
+330-->[com.google.firebase:firebase-common:20.2.0] C:\Users\pokem\.gradle\caches\transforms-3\dc7803597803a1ddfce933714cfd7209\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:30:13-36
+331
+332        <activity
+332-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\af70d03cddd8f74e660d4209bf266ed2\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+333            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+333-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\af70d03cddd8f74e660d4209bf266ed2\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+334            android:exported="false"
+334-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\af70d03cddd8f74e660d4209bf266ed2\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+335            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+335-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\pokem\.gradle\caches\transforms-3\af70d03cddd8f74e660d4209bf266ed2\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+336
+337        <provider
+337-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\043ebb08fd1605c8d26eee8895b0fedf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+338            android:name="androidx.startup.InitializationProvider"
+338-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\043ebb08fd1605c8d26eee8895b0fedf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+339            android:authorities="es.upv.a3c.smartlibrary.androidx-startup"
+339-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\043ebb08fd1605c8d26eee8895b0fedf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+340            android:exported="false" >
+340-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\043ebb08fd1605c8d26eee8895b0fedf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+341            <meta-data
+341-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\043ebb08fd1605c8d26eee8895b0fedf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+342                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+342-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\043ebb08fd1605c8d26eee8895b0fedf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+343                android:value="androidx.startup" />
+343-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pokem\.gradle\caches\transforms-3\043ebb08fd1605c8d26eee8895b0fedf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+344            <meta-data
+344-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\pokem\.gradle\caches\transforms-3\89ff0e55e6ae9f2bfe5511814da6c859\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+345                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+345-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\pokem\.gradle\caches\transforms-3\89ff0e55e6ae9f2bfe5511814da6c859\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+346                android:value="androidx.startup" />
+346-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\pokem\.gradle\caches\transforms-3\89ff0e55e6ae9f2bfe5511814da6c859\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+347        </provider>
+348    </application>
+349
+350</manifest>

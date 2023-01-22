@@ -1,4 +1,4 @@
-# The proguard configuration file for the following section is C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\build\intermediates\default_proguard_files\global\proguard-android-optimize.txt-7.2.1
+# The proguard configuration file for the following section is C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\build\intermediates\default_proguard_files\global\proguard-android-optimize.txt-7.3.1
 # This is a configuration file for ProGuard.
 # http://proguard.sourceforge.net/index.html#manual/usage.html
 #
@@ -117,7 +117,7 @@
 # These classes are duplicated between android.jar and core-lambda-stubs.jar.
 -dontnote java.lang.invoke.**
 
-# End of content from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\build\intermediates\default_proguard_files\global\proguard-android-optimize.txt-7.2.1
+# End of content from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\build\intermediates\default_proguard_files\global\proguard-android-optimize.txt-7.3.1
 # The proguard configuration file for the following section is C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\proguard-rules.pro
 # Add project specific ProGuard rules here.
 # You can control the set of applied configuration files using the
@@ -144,6 +144,9 @@
 # The proguard configuration file for the following section is C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\build\intermediates\aapt_proguard_file\debug\aapt_rules.txt
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
 -keep class androidx.startup.InitializationProvider { <init>(); }
+-keep class com.android.car.ui.core.CarUiInstaller { <init>(); }
+-keep class com.android.car.ui.core.SearchResultsProvider { <init>(); }
+-keep class com.android.car.ui.plugin.PluginNameProvider { <init>(); }
 -keep class com.facebook.CustomTabActivity { <init>(); }
 -keep class com.facebook.FacebookActivity { <init>(); }
 -keep class com.firebase.ui.auth.KickoffActivity { <init>(); }
@@ -162,6 +165,7 @@
 -keep class com.google.android.gms.auth.api.signin.RevocationBoundService { <init>(); }
 -keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity { <init>(); }
 -keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
+-keep class com.google.android.gms.safetynet.SafetyNetClient { <init>(); }
 -keep class com.google.firebase.auth.internal.GenericIdpActivity { <init>(); }
 -keep class com.google.firebase.auth.internal.RecaptchaActivity { <init>(); }
 -keep class com.google.firebase.components.ComponentDiscoveryService { <init>(); }
@@ -170,10 +174,15 @@
 -keep class es.upv.a3c.smartlibrary.AcercadeActivity { <init>(); }
 -keep class es.upv.a3c.smartlibrary.EliminarUsuarioActivity { <init>(); }
 -keep class es.upv.a3c.smartlibrary.EstadisticasActivity { <init>(); }
+-keep class es.upv.a3c.smartlibrary.Foros { <init>(); }
 -keep class es.upv.a3c.smartlibrary.LoginActivity { <init>(); }
 -keep class es.upv.a3c.smartlibrary.MainActivity { <init>(); }
+-keep class es.upv.a3c.smartlibrary.PerfilUsuario { <init>(); }
+-keep class es.upv.a3c.smartlibrary.ReestablecerContraseña { <init>(); }
+-keep class es.upv.a3c.smartlibrary.RegisterActivity { <init>(); }
 -keep class es.upv.a3c.smartlibrary.ReservasActivity { <init>(); }
 -keep class es.upv.a3c.smartlibrary.UsuarioActivity { <init>(); }
+-keep class es.upv.a3c.smartlibrary.mapamaps { <init>(); }
 -keep class android.widget.Space { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class androidx.appcompat.app.AlertController$RecycleListView { <init>(android.content.Context, android.util.AttributeSet); }
@@ -208,11 +217,15 @@
 
 -keep class androidx.appcompat.widget.SearchView$SearchAutoComplete { <init>(android.content.Context, android.util.AttributeSet); }
 
+-keep class androidx.appcompat.widget.SwitchCompat { <init>(android.content.Context, android.util.AttributeSet); }
+
 -keep class androidx.appcompat.widget.Toolbar { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class androidx.appcompat.widget.ViewStubCompat { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class androidx.browser.browseractions.BrowserActionsFallbackMenuView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.cardview.widget.CardView { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class androidx.constraintlayout.widget.Barrier { <init>(android.content.Context, android.util.AttributeSet); }
 
@@ -226,9 +239,45 @@
 
 -keep class androidx.fragment.app.FragmentContainerView { <init>(android.content.Context, android.util.AttributeSet); }
 
+-keep class androidx.preference.UnPressableLinearLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.preference.internal.PreferenceImageView { <init>(android.content.Context, android.util.AttributeSet); }
+
 -keep class androidx.recyclerview.widget.RecyclerView { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class androidx.viewpager2.widget.ViewPager2 { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.android.car.ui.FocusArea { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.android.car.ui.FocusParkingView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.android.car.ui.SecureView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.android.car.ui.baselayout.ClickBlockingView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.android.car.ui.recyclerview.CarUiRecyclerView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.android.car.ui.recyclerview.CarUiRecyclerViewContainer { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.android.car.ui.toolbar.CarUiEditText { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.android.car.ui.toolbar.TabLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.android.car.ui.uxr.DrawableStateButton { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.android.car.ui.uxr.DrawableStateConstraintLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.android.car.ui.uxr.DrawableStateFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.android.car.ui.uxr.DrawableStateImageView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.android.car.ui.uxr.DrawableStateLinearLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.android.car.ui.uxr.DrawableStateRelativeLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.android.car.ui.uxr.DrawableStateSwitch { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.android.car.ui.uxr.DrawableStateTextView { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class com.android.volley.toolbox.NetworkImageView { <init>(android.content.Context, android.util.AttributeSet); }
 
@@ -242,15 +291,15 @@
 
 -keep class com.getbase.floatingactionbutton.FloatingActionsMenu { <init>(android.content.Context, android.util.AttributeSet); }
 
--keep class com.google.android.material.appbar.MaterialToolbar { <init>(android.content.Context, android.util.AttributeSet); }
+-keep class com.google.android.gms.maps.SupportMapFragment { <init>(); }
+
+-keep class com.google.android.material.appbar.AppBarLayout { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class com.google.android.material.button.MaterialButton { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class com.google.android.material.button.MaterialButtonToggleGroup { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class com.google.android.material.chip.Chip { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.google.android.material.chip.ChipGroup { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class com.google.android.material.datepicker.MaterialCalendarGridView { <init>(android.content.Context, android.util.AttributeSet); }
 
@@ -272,8 +321,6 @@
 
 -keep class com.google.android.material.textfield.TextInputLayout { <init>(android.content.Context, android.util.AttributeSet); }
 
--keep class com.google.android.material.textview.MaterialTextView { <init>(android.content.Context, android.util.AttributeSet); }
-
 -keep class com.google.android.material.timepicker.ChipTextInputComboView { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class com.google.android.material.timepicker.ClockFaceView { <init>(android.content.Context, android.util.AttributeSet); }
@@ -290,11 +337,65 @@
 
 -keep class me.zhanghai.android.materialprogressbar.MaterialProgressBar { <init>(android.content.Context, android.util.AttributeSet); }
 
+-keepclassmembers class * { *** animateCamera(android.view.View); }
+
 -keepclassmembers class * { *** cerrarSesion(android.view.View); }
+
+-keepclassmembers class * { *** onClickBotonHora(android.view.View); }
 
 
 # End of content from C:\Users\pokem\Downloads\Library con base datos\Smart.Library-library\app\build\intermediates\aapt_proguard_file\debug\aapt_rules.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\c73e01a31304a1dda530109befce4967\transformed\jetified-car-ui-lib-2.1.0\proguard.txt
+# required for replacing elements in PreferenceFragment
+-keep class com.android.car.ui.preference.CarUiDropDownPreference {*;}
+-keep class com.android.car.ui.preference.CarUiListPreference {*;}
+-keep class com.android.car.ui.preference.CarUiMultiSelectListPreference {*;}
+-keep class com.android.car.ui.preference.CarUiEditTextPreference {*;}
+-keep class com.android.car.ui.preference.CarUiSwitchPreference {*;}
+-keep class com.android.car.ui.preference.CarUiPreference {*;}
+-keep class com.android.car.ui.preference.** extends com.android.car.ui.preference.CarUiPreference {*;}
+
+# required for default scrollbar implementation.
+-keep class com.android.car.ui.recyclerview.DefaultScrollBar {*;}
+
+# required for MenuItem click listeners
+-keepclasseswithmembers class * extends android.app.Activity {
+  public void * (com.android.car.ui.toolbar.MenuItem);
+}
+
+# We dynamically link the oem apis, and proguard can't see them
+# when running, so it errors out without -dontwarn
+-dontwarn com.android.car.ui.plugin.oemapis.**
+
+# Required because the static lib doesn't call most of the methods
+# on adapters, but instead passes it to the plugin, where they
+# are called. Since proguard can't even see that those methods are
+# overriding oem api interfaces (since the oem apis are dynamically
+# linked and marked with -dontwarn), it thinks they're unused.
+-keep class com.android.car.ui.**AdapterV* {*;}
+
+# required for accessing oem apis
+-keep class com.android.car.ui.pluginsupport.OemApiUtil {*;}
+
+# Required for AppCompat instantiating our layout inflater factory,
+# Otherwise it will be obfuscated and the reference to it in xml won't match
+-keep class com.android.car.ui.CarUiLayoutInflaterFactory {*;}
+
+# Required for reflection code in CarUiInstaller
+-keep class com.android.car.ui.baselayout.Insets {*;}
+-keep class com.android.car.ui.core.BaseLayoutController {*;}
+
+# Required for car-lib APIs
+# One of the GAS apps is failing during obfuscation by CrossReferenceValidator.
+# The root cause is unknown, and the suggestion from the team was to
+# suppress this warning.
+-dontwarn android.car.Car
+
+# This is needed so proguard would ignore the missing content provider.
+-dontwarn com.android.car.ui.plugin.PluginNameProvider
+
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\c73e01a31304a1dda530109befce4967\transformed\jetified-car-ui-lib-2.1.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\proguard.txt
 # 3P providers are optional
 -dontwarn com.facebook.**
 # Keep the class names used to check for availablility
@@ -320,8 +421,8 @@
 # TODO remove https://github.com/google/gson/issues/1174
 -dontwarn com.google.gson.Gson$6
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\966c799c45f7b50349cac60b9936437e\transformed\firebase-ui-auth-7.1.1\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\ce02f3f7664ba9eb629fc57f47e65fc3\transformed\material-1.6.1\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\c981cee7c82db56b0e9b9fb1449ef9f8\transformed\jetified-firebase-ui-auth-7.1.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\888ee2e8fcc41cb2c09b6c71362471b0\transformed\material-1.7.0\proguard.txt
 # Copyright (C) 2015 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -369,8 +470,32 @@
 }
 
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\ce02f3f7664ba9eb629fc57f47e65fc3\transformed\material-1.6.1\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\dda4a0363e943e4de98d66b7e57aa4ec\transformed\library-1.6.1\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\888ee2e8fcc41cb2c09b6c71362471b0\transformed\material-1.7.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\ea5596d1148594f7d9062d9412b97cfe\transformed\preference-1.1.1\proguard.txt
+# Copyright (C) 2015 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Preference objects are inflated via reflection
+-keep public class androidx.preference.Preference {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+-keep public class * extends androidx.preference.Preference {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\ea5596d1148594f7d9062d9412b97cfe\transformed\preference-1.1.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\6deb77d5ca9982c2d77f731cf40d18ac\transformed\jetified-library-1.6.1\proguard.txt
 # Add project specific ProGuard rules here.
 # By default, the flags in this file are appended to flags specified
 # in /opt/android-sdk/tools/proguard/proguard-android.txt
@@ -391,8 +516,8 @@
 
 -keep class me.zhanghai.android.materialprogressbar.** { *; }
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\dda4a0363e943e4de98d66b7e57aa4ec\transformed\library-1.6.1\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\a628b047a528adad8d38afe27c2e2503\transformed\appcompat-1.5.1\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\6deb77d5ca9982c2d77f731cf40d18ac\transformed\jetified-library-1.6.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\3884b320dccfe5fe24360e981acf9b57\transformed\appcompat-1.5.1\proguard.txt
 # Copyright (C) 2018 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -416,8 +541,30 @@
   <methods>;
 }
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\a628b047a528adad8d38afe27c2e2503\transformed\appcompat-1.5.1\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\19ef208e1689858cc37b5fb428245319\transformed\volley-1.2.1\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\3884b320dccfe5fe24360e981acf9b57\transformed\appcompat-1.5.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\0cbbe009a16b962bf03015d7c4c030c5\transformed\jetified-firebase-ui-firestore-8.0.2\proguard.txt
+-dontwarn com.firebase.ui.firestore.paging.**
+
+# Generated keep rule for Lifecycle observer adapter.
+-if class com.firebase.ui.firestore.paging.FirestorePagingAdapter {
+    <init>(...);
+}
+-keep class com.firebase.ui.firestore.paging.FirestorePagingAdapter_LifecycleAdapter {
+    <init>(...);
+}
+
+# Generated keep rule for Lifecycle observer adapter.
+-if class com.firebase.ui.firestore.FirestoreRecyclerAdapter {
+    <init>(...);
+}
+-keep class com.firebase.ui.firestore.FirestoreRecyclerAdapter_LifecycleAdapter {
+    <init>(...);
+}
+
+
+
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\0cbbe009a16b962bf03015d7c4c030c5\transformed\jetified-firebase-ui-firestore-8.0.2\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\383c0867bd0291f436c91b525641e4d1\transformed\jetified-volley-1.2.1\proguard.txt
 # Prevent Proguard from inlining methods that are intentionally extracted to ensure locals have a
 # constrained liveness scope by the GC. This is needed to avoid keeping previous request references
 # alive for an indeterminate amount of time. See also https://github.com/google/volley/issues/114
@@ -428,16 +575,16 @@
     void processRequest();
 }
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\19ef208e1689858cc37b5fb428245319\transformed\volley-1.2.1\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\3ff03487fc46a85374e81ab08540d0a6\transformed\floatingactionbutton-1.10.1\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\383c0867bd0291f436c91b525641e4d1\transformed\jetified-volley-1.2.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\3db717df1d1b0731ee984cfb200f5487\transformed\jetified-floatingactionbutton-1.10.1\proguard.txt
 # keep getters/setters in RotatingDrawable so that animations can still work.
 -keepclassmembers class com.getbase.floatingactionbutton.FloatingActionsMenu$RotatingDrawable {
    void set*(***);
    *** get*();
 }
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\3ff03487fc46a85374e81ab08540d0a6\transformed\floatingactionbutton-1.10.1\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\a741201619a4e8795c97a33c8cd14e4b\transformed\firebase-firestore-24.4.0\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\3db717df1d1b0731ee984cfb200f5487\transformed\jetified-floatingactionbutton-1.10.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\5feb41b22a2b01d76524ce752f8f2222\transformed\jetified-firebase-firestore-24.4.1\proguard.txt
 # Needed for DNS resolution.  Present in OpenJDK, but not Android
 -dontwarn javax.naming.**
 
@@ -457,8 +604,8 @@
 -dontwarn okio.**
 -dontwarn com.google.j2objc.annotations.**
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\a741201619a4e8795c97a33c8cd14e4b\transformed\firebase-firestore-24.4.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\5feb41b22a2b01d76524ce752f8f2222\transformed\jetified-firebase-firestore-24.4.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\proguard.txt
 -dontwarn com.google.appengine.api.**
 -dontwarn okio.**
 -dontwarn org.apache.**
@@ -482,21 +629,65 @@
   <fields>;
 }
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\776d412a61849a7093696cb56d55f669\transformed\firebase-auth-21.1.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\cfe71196ae08322e0516214e8ff3ea9a\transformed\firebase-auth-interop-20.0.0\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\9cd45a11b045238402e335d79a9254bb\transformed\jetified-firebase-auth-21.1.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\6cc4d0189ea8596edc0e6ed2a482d102\transformed\recyclerview-1.2.1\proguard.txt
+# Copyright (C) 2015 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# When layoutManager xml attribute is used, RecyclerView inflates
+#LayoutManagers' constructors using reflection.
+-keep public class * extends androidx.recyclerview.widget.RecyclerView$LayoutManager {
+    public <init>(android.content.Context, android.util.AttributeSet, int, int);
+    public <init>();
+}
+
+-keepclassmembers class androidx.recyclerview.widget.RecyclerView {
+    public void suppressLayout(boolean);
+    public boolean isLayoutSuppressed();
+}
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\6cc4d0189ea8596edc0e6ed2a482d102\transformed\recyclerview-1.2.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\7563d34bcadaccd8b88b6b38314182fb\transformed\jetified-glide-4.14.2\proguard.txt
+-keep public class * implements com.bumptech.glide.module.GlideModule
+-keep class * extends com.bumptech.glide.module.AppGlideModule {
+ <init>(...);
+}
+-keep public enum com.bumptech.glide.load.ImageHeaderParser$** {
+  **[] $VALUES;
+  public *;
+}
+-keep class com.bumptech.glide.load.data.ParcelFileDescriptorRewinder$InternalRewinder {
+  *** rewind();
+}
+
+# Uncomment for DexGuard only
+#-keepresourcexmlelements manifest/application/meta-data@value=GlideModule
+
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\7563d34bcadaccd8b88b6b38314182fb\transformed\jetified-glide-4.14.2\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\c94871849ba551d755ef39e8ec3eb2ca\transformed\jetified-firebase-auth-interop-20.0.0\proguard.txt
 # Can be removed once we pull in a dependency on firebase-common that includes
 # https://github.com/firebase/firebase-android-sdk/pull/1472/commits/856f1ca1151cdd88679bbc778892f23dfa34fc06#diff-a2ed34b5a38b4c6c686b09e54865eb48
 -dontwarn com.google.auto.value.AutoValue
 -dontwarn com.google.auto.value.AutoValue$Builder
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\cfe71196ae08322e0516214e8ff3ea9a\transformed\firebase-auth-interop-20.0.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\e66b34993606700fb27a08e374852cfa\transformed\firebase-common-20.2.0\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\c94871849ba551d755ef39e8ec3eb2ca\transformed\jetified-firebase-auth-interop-20.0.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\dc7803597803a1ddfce933714cfd7209\transformed\jetified-firebase-common-20.2.0\proguard.txt
 -dontwarn com.google.firebase.platforminfo.KotlinDetector
 -dontwarn com.google.auto.value.AutoValue
 -dontwarn com.google.auto.value.AutoValue$Builder
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\e66b34993606700fb27a08e374852cfa\transformed\firebase-common-20.2.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\eebb32d457bf724b99a7bfdbdbdf3120\transformed\play-services-auth-base-18.0.4\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\dc7803597803a1ddfce933714cfd7209\transformed\jetified-firebase-common-20.2.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\64ba58f39f0fdd51fd98cdcc5e3f3574\transformed\jetified-play-services-auth-base-18.0.4\proguard.txt
 # We keep all fields for every generated proto file as the runtime uses
 # reflection over them that ProGuard cannot detect. Without this keep
 # rule, fields may be removed that would cause runtime failures.
@@ -504,8 +695,14 @@
   <fields>;
 }
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\eebb32d457bf724b99a7bfdbdbdf3120\transformed\play-services-auth-base-18.0.4\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\ae2c843528e04ad00306c7b9fed17697\transformed\play-services-base-18.0.1\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\64ba58f39f0fdd51fd98cdcc5e3f3574\transformed\jetified-play-services-auth-base-18.0.4\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\b60ad3929ae398eb71b9582d72ba5f3c\transformed\jetified-play-services-fido-19.0.0\proguard.txt
+# Methods enable and disable in this class are complained as unresolved
+# references, but they are system APIs and are not used by Fido client apps.
+-dontwarn android.nfc.NfcAdapter
+
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\b60ad3929ae398eb71b9582d72ba5f3c\transformed\jetified-play-services-fido-19.0.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\af70d03cddd8f74e660d4209bf266ed2\transformed\jetified-play-services-base-18.0.1\proguard.txt
 # b/35135904 Ensure that proguard will not strip the mResultGuardian.
 -keepclassmembers class com.google.android.gms.common.api.internal.BasePendingResult {
   com.google.android.gms.common.api.internal.BasePendingResult$ReleasableResultGuardian mResultGuardian;
@@ -513,12 +710,12 @@
 
 
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\ae2c843528e04ad00306c7b9fed17697\transformed\play-services-base-18.0.1\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\fc2986fbe7609999a376f72423b22a78\transformed\play-services-tasks-18.0.1\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\af70d03cddd8f74e660d4209bf266ed2\transformed\jetified-play-services-base-18.0.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\e1c6226710c42f4dc0ada853c053395a\transformed\jetified-play-services-tasks-18.0.1\proguard.txt
 
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\fc2986fbe7609999a376f72423b22a78\transformed\play-services-tasks-18.0.1\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\cda6b2e66c2f63b3b55d415b621196fd\transformed\play-services-basement-18.1.0\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\e1c6226710c42f4dc0ada853c053395a\transformed\jetified-play-services-tasks-18.0.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\de6489bed9e6c347316284be579eccf0\transformed\jetified-play-services-basement-18.1.0\proguard.txt
 # Needed when building against pre-Marshmallow SDK.
 -dontwarn android.security.NetworkSecurityPolicy
 
@@ -591,8 +788,8 @@
 
 
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\cda6b2e66c2f63b3b55d415b621196fd\transformed\play-services-basement-18.1.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\ada796b0ae7e608aec43ed69b9ecae00\transformed\fragment-1.3.6\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\de6489bed9e6c347316284be579eccf0\transformed\jetified-play-services-basement-18.1.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\732ee410234ca2ffc9e7b3c733aee392\transformed\fragment-1.3.6\proguard.txt
 # Copyright (C) 2020 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -613,8 +810,8 @@
     public <init>();
 }
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\ada796b0ae7e608aec43ed69b9ecae00\transformed\fragment-1.3.6\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\f6a0053eee54c86e3989c3af1c754943\transformed\lifecycle-viewmodel-2.5.1\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\732ee410234ca2ffc9e7b3c733aee392\transformed\fragment-1.3.6\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\469909d8fd8c906576831ed638faf856\transformed\lifecycle-viewmodel-2.5.1\proguard.txt
 -keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
     <init>();
 }
@@ -623,8 +820,8 @@
     <init>(android.app.Application);
 }
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\f6a0053eee54c86e3989c3af1c754943\transformed\lifecycle-viewmodel-2.5.1\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\09cd7f207db9e66e4a8cd2db281e6645\transformed\lifecycle-viewmodel-savedstate-2.5.1\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\469909d8fd8c906576831ed638faf856\transformed\lifecycle-viewmodel-2.5.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\29585e429ff4189055272e39187b33c4\transformed\jetified-lifecycle-viewmodel-savedstate-2.5.1\proguard.txt
 -keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
     <init>(androidx.lifecycle.SavedStateHandle);
 }
@@ -633,8 +830,8 @@
     <init>(android.app.Application,androidx.lifecycle.SavedStateHandle);
 }
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\09cd7f207db9e66e4a8cd2db281e6645\transformed\lifecycle-viewmodel-savedstate-2.5.1\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\c21e9f262f5cd817fc7d67785a83fdb4\transformed\coordinatorlayout-1.1.0\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\29585e429ff4189055272e39187b33c4\transformed\jetified-lifecycle-viewmodel-savedstate-2.5.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\d1350ca4937108931d93b191bc9e14c3\transformed\coordinatorlayout-1.1.0\proguard.txt
 # Copyright (C) 2016 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -658,8 +855,8 @@
 # Make sure we keep annotations for CoordinatorLayout's DefaultBehavior and ViewPager's DecorView
 -keepattributes *Annotation*
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\c21e9f262f5cd817fc7d67785a83fdb4\transformed\coordinatorlayout-1.1.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\b50ed18cca91452259f0fc5f95b524ba\transformed\transition-1.2.0\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\d1350ca4937108931d93b191bc9e14c3\transformed\coordinatorlayout-1.1.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\19686230992c6355ebca1cf4ebaf8808\transformed\transition-1.2.0\proguard.txt
 # Copyright (C) 2017 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -679,8 +876,8 @@
   androidx.transition.ChangeBounds$ViewBounds mViewBounds;
 }
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\b50ed18cca91452259f0fc5f95b524ba\transformed\transition-1.2.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\0a421e77e68cd8219501a6fc2c87549e\transformed\vectordrawable-animated-1.1.0\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\19686230992c6355ebca1cf4ebaf8808\transformed\transition-1.2.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\1f697cf1f74c88a4f7b9599a78119589\transformed\vectordrawable-animated-1.1.0\proguard.txt
 # Copyright (C) 2016 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -701,35 +898,8 @@
    *** get*();
 }
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\0a421e77e68cd8219501a6fc2c87549e\transformed\vectordrawable-animated-1.1.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\49ec733aae324e4f50e190109026c740\transformed\recyclerview-1.1.0\proguard.txt
-# Copyright (C) 2015 The Android Open Source Project
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
-# When layoutManager xml attribute is used, RecyclerView inflates
-#LayoutManagers' constructors using reflection.
--keep public class * extends androidx.recyclerview.widget.RecyclerView$LayoutManager {
-    public <init>(android.content.Context, android.util.AttributeSet, int, int);
-    public <init>();
-}
-
--keepclassmembers class androidx.recyclerview.widget.RecyclerView {
-    public void suppressLayout(boolean);
-    public boolean isLayoutSuppressed();
-}
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\49ec733aae324e4f50e190109026c740\transformed\recyclerview-1.1.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\1ca0464ff56afd3aa794b857d3c17a14\transformed\media-1.0.0\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\1f697cf1f74c88a4f7b9599a78119589\transformed\vectordrawable-animated-1.1.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\a4d6f59e9104a014b0dafef4e6d58e4b\transformed\media-1.0.0\proguard.txt
 # Copyright (C) 2017 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -753,8 +923,8 @@
 -keep class androidx.media.** implements android.os.Parcelable {
     public static final android.os.Parcelable$Creator *;
 }
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\1ca0464ff56afd3aa794b857d3c17a14\transformed\media-1.0.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\2918a66d163dea0404f53e82d285c4d8\transformed\core-1.8.0\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\a4d6f59e9104a014b0dafef4e6d58e4b\transformed\media-1.0.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\102215101d21fdb02f0f27bbfd4ebd5d\transformed\core-1.8.0\proguard.txt
 # Never inline methods, but allow shrinking and obfuscation.
 -keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.ViewCompat$Api* {
   <methods>;
@@ -772,12 +942,12 @@
   <methods>;
 }
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\2918a66d163dea0404f53e82d285c4d8\transformed\core-1.8.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\ea8421a87f85d746cc1f9e62cbe8bb18\transformed\lifecycle-process-2.4.1\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\102215101d21fdb02f0f27bbfd4ebd5d\transformed\core-1.8.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\89ff0e55e6ae9f2bfe5511814da6c859\transformed\jetified-lifecycle-process-2.4.1\proguard.txt
 # this rule is need to work properly when app is compiled with api 28, see b/142778206
 -keepclassmembers class * extends androidx.lifecycle.EmptyActivityLifecycleCallbacks { *; }
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\ea8421a87f85d746cc1f9e62cbe8bb18\transformed\lifecycle-process-2.4.1\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\f1b49b467381333fb8bde733704c2c1a\transformed\lifecycle-runtime-2.5.1\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\89ff0e55e6ae9f2bfe5511814da6c859\transformed\jetified-lifecycle-process-2.4.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\6c1ccea930ec56c47c399d6791ab7b6c\transformed\lifecycle-runtime-2.5.1\proguard.txt
 -keepattributes AnnotationDefault,
                 RuntimeVisibleAnnotations,
                 RuntimeVisibleParameterAnnotations,
@@ -801,8 +971,8 @@
 # this rule is need to work properly when app is compiled with api 28, see b/142778206
 # Also this rule prevents registerIn from being inlined.
 -keepclassmembers class androidx.lifecycle.ReportFragment$LifecycleCallbacks { *; }
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\f1b49b467381333fb8bde733704c2c1a\transformed\lifecycle-runtime-2.5.1\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\3c3664e304ea495e4c031c7712f289c3\transformed\savedstate-1.2.0\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\6c1ccea930ec56c47c399d6791ab7b6c\transformed\lifecycle-runtime-2.5.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\14062913151183f3fa2e9466d2e8bf46\transformed\jetified-savedstate-1.2.0\proguard.txt
 # Copyright (C) 2019 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -821,23 +991,23 @@
     <init>();
 }
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\3c3664e304ea495e4c031c7712f289c3\transformed\savedstate-1.2.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\4073ab3e820681ca8f60de7aed1ad955\transformed\versionedparcelable-1.1.1\proguard.txt
--keep class * implements androidx.versionedparcelable.VersionedParcelable
--keep public class android.support.**Parcelizer { *; }
--keep public class androidx.**Parcelizer { *; }
--keep public class androidx.versionedparcelable.ParcelImpl
-
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\4073ab3e820681ca8f60de7aed1ad955\transformed\versionedparcelable-1.1.1\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\8d7300b8986d50a646ec9c24d03b6826\transformed\firebase-components-17.0.1\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\14062913151183f3fa2e9466d2e8bf46\transformed\jetified-savedstate-1.2.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\525bbb18af1a2791d801e6e33e2d4fd6\transformed\jetified-firebase-components-17.0.1\proguard.txt
 -dontwarn com.google.firebase.components.Component$Instantiation
 -dontwarn com.google.firebase.components.Component$ComponentType
 
 -keep class * implements com.google.firebase.components.ComponentRegistrar
 -keep,allowshrinking interface com.google.firebase.components.ComponentRegistrar
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\8d7300b8986d50a646ec9c24d03b6826\transformed\firebase-components-17.0.1\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\b710f836a8ef65121a8d6736761924ff\transformed\startup-runtime-1.1.1\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\525bbb18af1a2791d801e6e33e2d4fd6\transformed\jetified-firebase-components-17.0.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\bbdf55842576286c2d58980929d5419a\transformed\versionedparcelable-1.1.1\proguard.txt
+-keep class * implements androidx.versionedparcelable.VersionedParcelable
+-keep public class android.support.**Parcelizer { *; }
+-keep public class androidx.**Parcelizer { *; }
+-keep public class androidx.versionedparcelable.ParcelImpl
+
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\bbdf55842576286c2d58980929d5419a\transformed\versionedparcelable-1.1.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\f57dc32da872b14c04c7971ef63703b8\transformed\jetified-startup-runtime-1.1.1\proguard.txt
 # It's important that we preserve initializer names, given they are used in the AndroidManifest.xml.
 -keepnames class * extends androidx.startup.Initializer
 
@@ -851,8 +1021,8 @@
 
 -assumenosideeffects class androidx.startup.StartupLogger { public static <methods>; }
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\b710f836a8ef65121a8d6736761924ff\transformed\startup-runtime-1.1.1\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\292caee7c63aa979eecc8bef8c4ad490\transformed\rules\lib\META-INF\proguard\androidx-annotations.pro
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\f57dc32da872b14c04c7971ef63703b8\transformed\jetified-startup-runtime-1.1.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\8b2b51af866de94ed1f0a7abfcb05e50\transformed\rules\lib\META-INF\proguard\androidx-annotations.pro
 -keep,allowobfuscation @interface androidx.annotation.Keep
 -keep @androidx.annotation.Keep class * {*;}
 
@@ -872,8 +1042,8 @@
   @androidx.annotation.DoNotInline <methods>;
 }
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\292caee7c63aa979eecc8bef8c4ad490\transformed\rules\lib\META-INF\proguard\androidx-annotations.pro
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\6f4881f5d1fa6b08dd528fe6b905bbf9\transformed\rules\lib\META-INF\com.android.tools\r8\coroutines.pro
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\8b2b51af866de94ed1f0a7abfcb05e50\transformed\rules\lib\META-INF\proguard\androidx-annotations.pro
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\f642c0eeeec548fceb9d1c60f5df3de4\transformed\rules\lib\META-INF\com.android.tools\r8\coroutines.pro
 # When editing this file, update the following files as well:
 # - META-INF/proguard/coroutines.pro
 # - META-INF/com.android.tools/proguard/coroutines.pro
@@ -901,8 +1071,8 @@
 
 # An annotation used for build tooling, won't be directly accessed.
 -dontwarn org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\6f4881f5d1fa6b08dd528fe6b905bbf9\transformed\rules\lib\META-INF\com.android.tools\r8\coroutines.pro
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\12ea8c57b95f1268fc9a324c7fd9797d\transformed\rules\lib\META-INF\com.android.tools\r8-from-1.6.0\coroutines.pro
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\f642c0eeeec548fceb9d1c60f5df3de4\transformed\rules\lib\META-INF\com.android.tools\r8\coroutines.pro
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\de2f6427ca2045d377d7d45dd75f0cf3\transformed\rules\lib\META-INF\com.android.tools\r8-from-1.6.0\coroutines.pro
 # Allow R8 to optimize away the FastServiceLoader.
 # Together with ServiceLoader optimization in R8
 # this results in direct instantiation when loading Dispatchers.Main
@@ -927,8 +1097,8 @@
     boolean getDEBUG() return false;
     boolean getRECOVER_STACK_TRACES() return false;
 }
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\12ea8c57b95f1268fc9a324c7fd9797d\transformed\rules\lib\META-INF\com.android.tools\r8-from-1.6.0\coroutines.pro
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\806bc6f4031a1065b4f3571ef409385f\transformed\annotation-experimental-1.1.0\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\de2f6427ca2045d377d7d45dd75f0cf3\transformed\rules\lib\META-INF\com.android.tools\r8-from-1.6.0\coroutines.pro
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\f3b080ea363857bd08014b0dc99f987b\transformed\jetified-annotation-experimental-1.1.0\proguard.txt
 # Copyright (C) 2020 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -953,8 +1123,8 @@
 -dontwarn kotlin.annotation.Retention
 -dontwarn kotlin.annotation.Target
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\806bc6f4031a1065b4f3571ef409385f\transformed\annotation-experimental-1.1.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\363c65e2912cdb6dd510d6ccdd0f090a\transformed\protolite-well-known-types-18.0.0\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\f3b080ea363857bd08014b0dc99f987b\transformed\jetified-annotation-experimental-1.1.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\426bf887dedd6fd7c22ea435b327d57a\transformed\jetified-protolite-well-known-types-18.0.0\proguard.txt
 # Add project specific ProGuard rules here.
 # You can control the set of applied configuration files using the
 # proguardFiles setting in build.gradle.
@@ -983,8 +1153,8 @@
   <fields>;
 }
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\363c65e2912cdb6dd510d6ccdd0f090a\transformed\protolite-well-known-types-18.0.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\5fc675d977f9e6a5a2af0a37b22ba465\transformed\grpc-android-1.48.1\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\426bf887dedd6fd7c22ea435b327d57a\transformed\jetified-protolite-well-known-types-18.0.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\c5350db49be5645594d4f6d0da3a91f4\transformed\jetified-grpc-android-1.50.2\proguard.txt
 -keepclassmembers class io.grpc.okhttp.OkHttpChannelBuilder {
   io.grpc.okhttp.OkHttpChannelBuilder forTarget(java.lang.String);
   io.grpc.okhttp.OkHttpChannelBuilder scheduledExecutorService(java.util.concurrent.ScheduledExecutorService);
@@ -992,7 +1162,10 @@
   io.grpc.okhttp.OkHttpChannelBuilder transportExecutor(java.util.concurrent.Executor);
 }
 
-# End of content from C:\Users\pokem\.gradle\caches\transforms-3\5fc675d977f9e6a5a2af0a37b22ba465\transformed\grpc-android-1.48.1\proguard.txt
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\c5350db49be5645594d4f6d0da3a91f4\transformed\jetified-grpc-android-1.50.2\proguard.txt
+# The proguard configuration file for the following section is C:\Users\pokem\.gradle\caches\transforms-3\722cec153f30d8aa89d1386b5253ccb3\transformed\rules\lib\META-INF\proguard\rxjava3.pro
+-dontwarn java.util.concurrent.Flow*
+# End of content from C:\Users\pokem\.gradle\caches\transforms-3\722cec153f30d8aa89d1386b5253ccb3\transformed\rules\lib\META-INF\proguard\rxjava3.pro
 # The proguard configuration file for the following section is <unknown>
 -ignorewarnings
 # End of content from <unknown>

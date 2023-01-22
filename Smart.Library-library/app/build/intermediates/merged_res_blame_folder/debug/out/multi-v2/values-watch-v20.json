@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "es.upv.a3c.smartlibrary.app-mergeDebugResources-40:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "es.upv.a3c.smartlibrary.app-mergeDebugResources-46:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\pokem\\.gradle\\caches\\transforms-3\\3207bb2ee904c0394ca25c0cc03f0462\\transformed\\play-services-auth-20.3.0\\res\\values-watch-v20\\values.xml",
+                    "source": "C:\\Users\\pokem\\.gradle\\caches\\transforms-3\\c15306db9e8a97ea9d2a05b2699ac7ac\\transformed\\jetified-play-services-auth-20.4.0\\res\\values-watch-v20\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\pokem\\.gradle\\caches\\transforms-3\\a628b047a528adad8d38afe27c2e2503\\transformed\\appcompat-1.5.1\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\pokem\\.gradle\\caches\\transforms-3\\3884b320dccfe5fe24360e981acf9b57\\transformed\\appcompat-1.5.1\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

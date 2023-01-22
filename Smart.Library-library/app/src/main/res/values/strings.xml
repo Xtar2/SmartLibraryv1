@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Smart Library</string>
+    <string name="TextoAcercade">
+
+        Esta aplicación ha sido desrrollada para mejorar su estancia en las bibliotecas
+        de la universidad.\n\n
+-----------------------------------------------------------------\n\n
+-En la página principal podrá realizar reservas de:\n
+
+- Libros, ya sea con el título o escaneando el ISBN con la cámara de su mobil.\n
+
+- Plazas de estudio en la biblioteca\n
+
+- Cabinas de estudio de un máximo de 4 personas.\n
+
+En la sección de usuario podra acceder a sus reservas y modificarlas desde allí.\n\n
+
+------------------------------------------------------------------\n\n
+
+Aviso: La aplicación registrara su estancia en la biblioteca, avisandole si su silla lleva demasiado tiempo vacía o si su postura es incorrecta, también le avisaremos cuando lleve demasiado tiempo sentado por bien de su salud.\n  </string>
+
+    <string name="dialog_start_game">
+        Hola
+    </string>
+    <string name="start">
+        Hola
+    </string>
+    <string name="cancel">
+        Hola
+    </string>
+
+
+    <string name="scan">Scan</string>
+
+<string name="Prueba">
+    En esta aplicación podremos reservar tanto libros como plazas como cabinas
+
+</string>
+
+
+
+
+    <string name="facebook_app_id">445659974391504</string>
+    <string name="fb_login_protocol_scheme">fb445659974391504</string>
+
+    <string-array name="categorias">
+        <item>GTI</item>
+        <item>Turismo</item>
+        <item>Ciencias Ambientales</item>
+        <item>Audiovisuales</item>
+        <item>Teleco</item>
+    </string-array>
+
+
+</resources>

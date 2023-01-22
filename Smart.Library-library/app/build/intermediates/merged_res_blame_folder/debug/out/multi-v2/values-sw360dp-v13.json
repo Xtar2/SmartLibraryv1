@@ -1,16 +1,33 @@
 {
     "logs": [
         {
-            "outputFile": "es.upv.a3c.smartlibrary.app-mergeDebugResources-40:/values-sw360dp-v13/values-sw360dp-v13.xml",
+            "outputFile": "es.upv.a3c.smartlibrary.app-mergeDebugResources-46:/values-sw360dp-v13/values-sw360dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\pokem\\.gradle\\caches\\transforms-3\\966c799c45f7b50349cac60b9936437e\\transformed\\firebase-ui-auth-7.1.1\\res\\values-sw360dp-v13\\values-sw360dp-v13.xml",
+                    "source": "C:\\Users\\pokem\\.gradle\\caches\\transforms-3\\c981cee7c82db56b0e9b9fb1449ef9f8\\transformed\\jetified-firebase-ui-auth-7.1.1\\res\\values-sw360dp-v13\\values-sw360dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",
                         "startOffsets": "55,125,186,247,302,356,414",
                         "endColumns": "69,60,60,54,53,57,56",
                         "endOffsets": "120,181,242,297,351,409,466"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "127,197,258,319,374,428,486",
+                        "endColumns": "69,60,60,54,53,57,56",
+                        "endOffsets": "192,253,314,369,423,481,538"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\pokem\\.gradle\\caches\\transforms-3\\ea5596d1148594f7d9062d9412b97cfe\\transformed\\preference-1.1.1\\res\\values-sw360dp-v13\\values-sw360dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "71",
+                        "endOffsets": "122"
                     }
                 }
             ]

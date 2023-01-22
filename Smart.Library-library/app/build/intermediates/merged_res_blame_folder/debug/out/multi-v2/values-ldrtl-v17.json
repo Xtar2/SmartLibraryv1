@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "es.upv.a3c.smartlibrary.app-mergeDebugResources-40:/values-ldrtl-v17/values-ldrtl-v17.xml",
+            "outputFile": "es.upv.a3c.smartlibrary.app-mergeDebugResources-46:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\pokem\\.gradle\\caches\\transforms-3\\ce02f3f7664ba9eb629fc57f47e65fc3\\transformed\\material-1.6.1\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "source": "C:\\Users\\pokem\\.gradle\\caches\\transforms-3\\888ee2e8fcc41cb2c09b6c71362471b0\\transformed\\material-1.7.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

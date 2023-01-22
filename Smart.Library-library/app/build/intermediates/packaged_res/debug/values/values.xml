@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
+    <string-array name="categorias">
+        <item>GTI</item>
+        <item>Turismo</item>
+        <item>Ciencias Ambientales</item>
+        <item>Audiovisuales</item>
+        <item>Teleco</item>
+    </string-array>
     <color name="BackgroundDialog">#2E2D2D</color>
-    <color name="BotonesPrimarios">#395f60</color>
-    <color name="ColorPrincipal">#de6b07</color>
-    <color name="ColorPrincipalSuave">#ff8f2d</color>
+    <color name="BotonesPrimarios">#203738</color>
+    <color name="ColorPrincipal">#203738</color>
+    <color name="ColorPrincipalSuave">#203738</color>
     <color name="black">#FF000000</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
@@ -11,6 +18,10 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
+    <string name="Prueba">
+    En esta aplicación podremos reservar tanto libros como plazas como cabinas
+
+</string>
     <string name="TextoAcercade">
 
         Esta aplicación ha sido desrrollada para mejorar su estancia en las bibliotecas
@@ -37,10 +48,20 @@ Aviso: La aplicación registrara su estancia en la biblioteca, avisandole si su 
     <string name="dialog_start_game">
         Hola
     </string>
+    <string name="facebook_app_id">445659974391504</string>
+    <string name="fb_login_protocol_scheme">fb445659974391504</string>
     <string name="gcm_defaultSenderId" translatable="false">1040440461692</string>
     <string name="google_api_key" translatable="false">AIzaSyCMo8-eWUCmHHRv2ej8QeKTh4Ez3Bm77CE</string>
     <string name="google_app_id" translatable="false">1:1040440461692:android:17062fa9ffab131328bcf9</string>
+    <string name="google_browse" templateMergeStrategy="preserve" translatable="false">
+
+AIzaSyCJ4CiepEjhWhxY8k8wP0dwIsHbbjuYXwA
+ </string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCMo8-eWUCmHHRv2ej8QeKTh4Ez3Bm77CE</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+
+AIzaSyD3cMvRkNOucOIC5lL1k__KKTsDaORzvlY
+ </string>
     <string name="google_storage_bucket" translatable="false">smart-library-69561.appspot.com</string>
     <string name="project_id" translatable="false">smart-library-69561</string>
     <string name="scan">Scan</string>
@@ -56,11 +77,11 @@ Aviso: La aplicación registrara su estancia en la biblioteca, avisandole si su 
         
         <item name="colorPrimary">@color/ColorPrincipalSuave</item>
         <item name="colorPrimaryVariant">@color/ColorPrincipal</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnPrimary">#5A3E71</item>
         
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">@color/ColorPrincipal</item>
+        <item name="colorSecondaryVariant">@color/ColorPrincipal</item>
+        <item name="colorOnSecondary">@color/ColorPrincipal</item>
         
         <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
         

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "es.upv.a3c.smartlibrary.app-mergeDebugResources-40:/values-v18/values-v18.xml",
+            "outputFile": "es.upv.a3c.smartlibrary.app-mergeDebugResources-46:/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\pokem\\.gradle\\caches\\transforms-3\\a628b047a528adad8d38afe27c2e2503\\transformed\\appcompat-1.5.1\\res\\values-v18\\values-v18.xml",
+                    "source": "C:\\Users\\pokem\\.gradle\\caches\\transforms-3\\3884b320dccfe5fe24360e981acf9b57\\transformed\\appcompat-1.5.1\\res\\values-v18\\values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

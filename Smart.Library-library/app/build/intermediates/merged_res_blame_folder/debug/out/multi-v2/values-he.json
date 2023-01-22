@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "es.upv.a3c.smartlibrary.app-mergeDebugResources-40:/values-he/values-he.xml",
+            "outputFile": "es.upv.a3c.smartlibrary.app-mergeDebugResources-46:/values-he/values-he.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\pokem\\.gradle\\caches\\transforms-3\\684a5e58189a97a017f14abba376c74e\\transformed\\zxing-android-embedded-4.1.0\\res\\values-he\\values-he.xml",
+                    "source": "C:\\Users\\pokem\\.gradle\\caches\\transforms-3\\2ecf5221484cec0a8fe0efca5d45a027\\transformed\\jetified-zxing-android-embedded-4.3.0\\res\\values-he\\values-he.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

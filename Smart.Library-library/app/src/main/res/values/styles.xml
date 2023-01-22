@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="etiqueta">
+<item name="android:background">@drawable/fondo_fab</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="FondoBoton1">
+        <item name="android:background">@drawable/acercadee</item>
+
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight">    </style>
+</resources>
